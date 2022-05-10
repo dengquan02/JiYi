@@ -1,0 +1,23 @@
+#server:
+#  port:
+#    8060
+#
+#spring:
+#  application:
+#    name: order-service
+#  datasource:
+#    username: web_and_soa
+#    password: web_and_soa123
+#    url: jdbc:mysql://8.132.35.100:3306/web_and_soa?useUnicode=true&characterEncoding=utf-8
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 1.116.42.243:8847
+#        username: nacos
+#        password: nacos
+#        namespace: public
+#mybatis:
+#  type-aliases-package: com.dq.ordermanager.pojo
+#  mapper-locations: classpath:mybatis/mapper/*.xml
+#

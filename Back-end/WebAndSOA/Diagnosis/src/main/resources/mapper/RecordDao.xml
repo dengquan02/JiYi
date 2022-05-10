@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ghz.diagnosis.dao.RecordDao">
+
+    <resultMap id="BaseResultMap" type="com.ghz.diagnosis.entity.Record">
+        <!--@Table record-->
+        <result property="recordId" column="record_id" jdbcType="INTEGER"/>
+        <result property="patientId" column="patient_id" jdbcType="CHAR"/>
+        <result property="doctorId" column="doctor_id" jdbcType="CHAR"/>
+        <result property="content" column="content" jdbcType="VARCHAR"/>
+        <result property="date" column="record_date" jdbcType="DATE"/>
+    </resultMap>
+
+    <select id="patientQueryAllRecordsById" resultMap="BaseResultMap">
+        select
+          record_id, patient_id, doctor_id, content, record_date
+        from web_and_soa.record
+        where patient_id = #{patient_id}
+    </select>
+
+    <select id="doctorQueryAllRecordsById" resultMap="BaseResultMap">
+        select
+            record_id, patient_id, doctor_id, content, record_date
+        from web_and_soa.record
+        where doctor_id = #{doctor_id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllRecords" resultMap="BaseResultMap">
+        select
+          record_id, patient_id, doctor_id, content, record_date
+        from web_and_soa.record
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="BaseResultMap">
+        select
+          record_id, patient_id, doctor_id, content, record_date
+        from web_and_soa.record
+        <where>
+            <if test="recordId != null">
+                and record_id = #{recordId}
+            </if>
+            <if test="patientId != null">
+                and patient_id = #{patientId}
+            </if>
+            <if test="doctorId != null">
+                and doctor_id = #{doctorId}
+            </if>
+            <if test="content != null and content != ''">
+                and content = #{content}
+            </if>
+            <if test="date != null">
+                and date = #{date}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="recordId" useGeneratedKeys="true">
+        insert into web_and_soa.record(patient_id, doctor_id, content, record_date)
+        values (#{patientId}, #{doctorId}, #{content}, #{date})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update web_and_soa.record
+        <set>
+            <if test="patientId != null">
+                patient_id = #{patientId},
+            </if>
+            <if test="doctorId != null">
+                doctor_id = #{doctorId},
+            </if>
+            <if test="content != null and content != ''">
+                content = #{content},
+            </if>
+            <if test="date != null">
+                record_date = #{date},
+            </if>
+        </set>
+        where record_id = #{recordId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from web_and_soa.record where record_id = #{recordId}
+    </delete>
+
+</mapper>

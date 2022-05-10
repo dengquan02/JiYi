@@ -1,0 +1,18 @@
+#server:
+#  port: 8031
+#
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://8.132.35.100:3306/web_and_soa
+#    username: web_and_soa
+#    password: web_and_soa123
+#  application:
+#    name: searchdoctor-service
+#  cloud:
+#    nacos:
+#      server-addr: 1.116.42.243:8847
+#      discovery:
+#        username: nacos
+#        password: nacos
+#        namespace: public

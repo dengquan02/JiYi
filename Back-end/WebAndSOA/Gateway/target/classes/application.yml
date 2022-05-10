@@ -1,0 +1,82 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: reservation-route
+          uri: lb://reservation-service
+          predicates:
+            - Path=/reservation-service/**
+          filters:
+            - StripPrefix=1
+
+        - id: diagnosis-route
+          uri: lb://diagnosis-service
+          predicates:
+            - Path=/diagnosis-service/**
+          filters:
+            - StripPrefix=1
+
+        - id: login-route
+          uri: lb://login-service
+          predicates:
+            - Path=/login-service/**
+          filters:
+            - StripPrefix=1
+
+        - id: manageuser-route
+          uri: lb://manageuser-service
+          predicates:
+            - Path=/manageuser-service/**
+          filters:
+            - StripPrefix=1
+
+        - id: signup-route
+          uri: lb://signup-service
+          predicates:
+            - Path=/signup-service/**
+          filters:
+            - StripPrefix=1
+
+        - id: item-route
+          uri: lb://item-service
+          predicates:
+            - Path=/item-service/**
+          filters:
+            - StripPrefix=1
+
+        - id: search-doctor-route
+          uri: lb://search-doctor-service
+          predicates:
+            - Path=/search-doctor-service/**
+          filters:
+            - StripPrefix=1
+
+        - id: search-hospital-route
+          uri: lb://search-hospital-service
+          predicates:
+            - Path=/search-hospital-service/**
+          filters:
+            - StripPrefix=1
+
+        - id: search-department-route
+          uri: lb://search-department-service
+          predicates:
+            - Path=/search-department-service/**
+          filters:
+            - StripPrefix=1
+
+        - id: order-route
+          uri: lb://order-service
+          predicates:
+            - Path=/order-service/**
+          filters:
+            - StripPrefix=1
+    nacos:
+      discovery:
+        server-addr: 47.102.148.102:8848
+        username: nacos
+        password: nacos

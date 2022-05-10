@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dq.ordermanager.mapper.OrderItemMapper">
+
+    <select id="queryItemsByOrder" resultType="OrderItem">
+        select * from web_and_soa.order_item where order_id = #{order_id}
+    </select>
+
+
+    <select id="generateOrderItem" parameterType="OrderItem">
+        insert into web_and_soa.order_item (order_id,item_id,num) values (#{order_id},#{item_id},#{num})
+    </select>
+
+
+    <update id="updateOrderItem" parameterType="OrderItem">
+        update web_and_soa.order_item set item_id=#{item_id},num=#{num} where order_id = #{order_id}
+    </update>
+
+
+    <select id="deleteItemsByOrder">
+        delete from web_and_soa.order_item where order_id = #{order_id}
+    </select>
+
+</mapper>
