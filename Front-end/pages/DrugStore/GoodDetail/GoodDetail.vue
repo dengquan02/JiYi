@@ -19,7 +19,7 @@
 	}
 </script>
 
-<style>
+<style lang="scss">
 .status_bar {
 	height: var(--status-bar-height);
 	width: 100%;
