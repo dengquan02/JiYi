@@ -46,8 +46,11 @@
             "path" : "pages/DrugStore/Homepage/Homepage",
             "style" :                                                                                    
             {
+                "navigationStyle": "default",
                 "navigationBarTitleText": "购药商城",
-                "enablePullDownRefresh": false
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#b50e03",//顶部背景色
+                "navigationBarTextStyle": "white"
             }
             
         }
@@ -73,8 +76,11 @@
             "path" : "pages/Covid/covid-19/covid-19",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "navigationStyle": "default",
+                "navigationBarTitleText": "疫情实时",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#1058D1",//顶部背景色
+                "navigationBarTextStyle": "white"
             }
             
         }
@@ -99,8 +105,11 @@
             "path" : "pages/Reservation/HospitalList/HospitalList",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+				"navigationStyle": "default",
+                "navigationBarTitleText": "预约挂号",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#1058D1",//顶部背景色
+				"navigationBarTextStyle": "white"
             }
             
         }
@@ -140,6 +149,7 @@
             }
             
         }
+        
     ],
 	"globalStyle": {
 		"navigationStyle": "custom",
