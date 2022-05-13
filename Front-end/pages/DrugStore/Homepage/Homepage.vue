@@ -1,8 +1,5 @@
 <template>
 	<view>
-		<view class="status_bar">
-		    <!-- 这里是状态栏 -->
-	    </view>
 		<view class="home">
 			<swiper indicator-dots circular>
 				<swiper-item v-for="item in swipers" :key="item.id">
@@ -120,11 +117,6 @@
 
 <style lang="scss">
 @import '@/static/iconfont/iconfont.css';
-.status_bar {
-	height: var(--status-bar-height);
-	width: 100%;
-    background-color: $shop-color;
-  }
 .home {
 	swiper {
 		width: 750rpx;

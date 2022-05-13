@@ -4373,21 +4373,20 @@ var render = function() {
     "v-uni-view",
     { attrs: { _i: 0 } },
     [
-      _c("v-uni-view", { staticClass: _vm._$g(1, "sc"), attrs: { _i: 1 } }),
       _c(
         "v-uni-view",
-        { staticClass: _vm._$g(2, "sc"), attrs: { _i: 2 } },
+        { staticClass: _vm._$g(1, "sc"), attrs: { _i: 1 } },
         [
           _c(
             "v-uni-swiper",
-            { attrs: { "indicator-dots": true, circular: true, _i: 3 } },
-            _vm._l(_vm._$g(4, "f"), function(item, $10, $20, $30) {
+            { attrs: { "indicator-dots": true, circular: true, _i: 2 } },
+            _vm._l(_vm._$g(3, "f"), function(item, $10, $20, $30) {
               return _c(
                 "v-uni-swiper-item",
-                { key: item, attrs: { _i: "4-" + $30 } },
+                { key: item, attrs: { _i: "3-" + $30 } },
                 [
                   _c("v-uni-image", {
-                    attrs: { src: _vm._$g("5-" + $30, "a-src"), _i: "5-" + $30 }
+                    attrs: { src: _vm._$g("4-" + $30, "a-src"), _i: "4-" + $30 }
                   })
                 ],
                 1
@@ -4397,14 +4396,14 @@ var render = function() {
           ),
           _c(
             "v-uni-view",
-            { staticClass: _vm._$g(6, "sc"), attrs: { _i: 6 } },
-            _vm._l(_vm._$g(7, "f"), function(item, index, $21, $31) {
+            { staticClass: _vm._$g(5, "sc"), attrs: { _i: 5 } },
+            _vm._l(_vm._$g(6, "f"), function(item, index, $21, $31) {
               return _c(
                 "v-uni-view",
                 {
                   key: item,
-                  staticClass: _vm._$g("7-" + $31, "sc"),
-                  attrs: { _i: "7-" + $31 },
+                  staticClass: _vm._$g("6-" + $31, "sc"),
+                  attrs: { _i: "6-" + $31 },
                   on: {
                     click: function($event) {
                       return _vm.$handleViewEvent($event)
@@ -4413,11 +4412,11 @@ var render = function() {
                 },
                 [
                   _c("v-uni-view", {
-                    class: _vm._$g("8-" + $31, "c"),
-                    attrs: { _i: "8-" + $31 }
+                    class: _vm._$g("7-" + $31, "c"),
+                    attrs: { _i: "7-" + $31 }
                   }),
-                  _c("v-uni-text", { attrs: { _i: "9-" + $31 } }, [
-                    _vm._v(_vm._$g("9-" + $31, "t0-0"))
+                  _c("v-uni-text", { attrs: { _i: "8-" + $31 } }, [
+                    _vm._v(_vm._$g("8-" + $31, "t0-0"))
                   ])
                 ],
                 1
@@ -4427,11 +4426,11 @@ var render = function() {
           ),
           _c(
             "v-uni-view",
-            { staticClass: _vm._$g(10, "sc"), attrs: { _i: 10 } },
+            { staticClass: _vm._$g(9, "sc"), attrs: { _i: 9 } },
             [
               _c(
                 "v-uni-view",
-                { staticClass: _vm._$g(11, "sc"), attrs: { _i: 11 } },
+                { staticClass: _vm._$g(10, "sc"), attrs: { _i: 10 } },
                 [_vm._v("热    门    商    品")]
               )
             ],
@@ -4532,7 +4531,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ./node_modules/css-loader/dist/runtime/api.js */ 16);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\n@font-face {\r\n  font-family: 'iconfont';  /* project id 3399674 */\r\n  src: url('');\r\n  src: url('#iefix') format('embedded-opentype'),\r\n  url('https://at.alicdn.com/t/font_3399674_jfnt5ag5von.woff2') format('woff2'),\r\n  url('https://at.alicdn.com/t/font_3399674_jfnt5ag5von.woff') format('woff'),\r\n  url('https://at.alicdn.com/t/font_3399674_jfnt5ag5von.ttf') format('truetype'),\r\n  url('#iconfont') format('svg');\n}\n.iconfont {\r\n  font-family: \"iconfont\" !important;\r\n  font-size: 16px;\r\n  font-style: normal;\r\n  -webkit-font-smoothing: antialiased;\r\n  -moz-osx-font-smoothing: grayscale;\n}\n.icon-gouwuche:before {\r\n  content: \"\\e73d\";\n}\n.icon-shouye:before {\r\n  content: \"\\e626\";\n}\n.icon-news:before {\r\n  content: \"\\e6aa\";\n}\n.icon-lianxiwomen:before {\r\n  content: \"\\e61d\";\n}\n.status_bar {\r\n  height: var(--status-bar-height);\r\n  width: 100%;\r\n  background-color: #b50e03;\n}\n.home uni-swiper {\r\n  width: 750rpx;\r\n  height: 380rpx;\n}\n.home uni-swiper uni-image {\r\n  height: 100%;\r\n  width: 100%;\n}\n.home .nav {\r\n  display: flex;\n}\n.home .nav .nav_item {\r\n  width: 25%;\r\n  text-align: center;\n}\n.home .nav .nav_item uni-view {\r\n  width: 120rpx;\r\n  height: 120rpx;\r\n  background: #b50e03;\r\n  border-radius: 60rpx;\r\n  margin: 10px auto;\r\n  line-height: 120rpx;\r\n  color: #fff;\r\n  font-size: 50rpx;\n}\n.home .nav .nav_item .icon-tupian {\r\n  font-size: 45rpx;\n}\n.home .nav .nav_item uni-text {\r\n  font-size: 28rpx;\n}\n.home .hot_goods {\r\n  background: #eee;\r\n  overflow: hidden;\r\n  margin-top: 10px;\n}\n.home .hot_goods .tit {\r\n  height: 50px;\r\n  line-height: 50px;\r\n  color: #b50e03;\r\n  text-align: center;\r\n  font-weight: 500;\r\n  background: #fff;\r\n  margin: 10rpx 0;\n}\r\n", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\n@font-face {\r\n  font-family: 'iconfont';  /* project id 3399674 */\r\n  src: url('#iefix') format('embedded-opentype'),\r\n  url('https://at.alicdn.com/t/font_3399674_jfnt5ag5von.woff2') format('woff2'),\r\n  url('https://at.alicdn.com/t/font_3399674_jfnt5ag5von.woff') format('woff'),\r\n  url('https://at.alicdn.com/t/font_3399674_jfnt5ag5von.ttf') format('truetype'),\r\n  url('#iconfont') format('svg');\n}\n.iconfont {\r\n  font-family: \"iconfont\" !important;\r\n  font-size: 16px;\r\n  font-style: normal;\r\n  -webkit-font-smoothing: antialiased;\r\n  -moz-osx-font-smoothing: grayscale;\n}\n.icon-gouwuche:before {\r\n  content: \"\\e73d\";\n}\n.icon-shouye:before {\r\n  content: \"\\e626\";\n}\n.icon-news:before {\r\n  content: \"\\e6aa\";\n}\n.icon-lianxiwomen:before {\r\n  content: \"\\e61d\";\n}\n.home uni-swiper {\r\n  width: 750rpx;\r\n  height: 380rpx;\n}\n.home uni-swiper uni-image {\r\n  height: 100%;\r\n  width: 100%;\n}\n.home .nav {\r\n  display: flex;\n}\n.home .nav .nav_item {\r\n  width: 25%;\r\n  text-align: center;\n}\n.home .nav .nav_item uni-view {\r\n  width: 120rpx;\r\n  height: 120rpx;\r\n  background: #b50e03;\r\n  border-radius: 60rpx;\r\n  margin: 10px auto;\r\n  line-height: 120rpx;\r\n  color: #fff;\r\n  font-size: 50rpx;\n}\n.home .nav .nav_item .icon-tupian {\r\n  font-size: 45rpx;\n}\n.home .nav .nav_item uni-text {\r\n  font-size: 28rpx;\n}\n.home .hot_goods {\r\n  background: #eee;\r\n  overflow: hidden;\r\n  margin-top: 10px;\n}\n.home .hot_goods .tit {\r\n  height: 50px;\r\n  line-height: 50px;\r\n  color: #b50e03;\r\n  text-align: center;\r\n  font-weight: 500;\r\n  background: #fff;\r\n  margin: 10rpx 0;\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -4980,7 +4979,756 @@ var render = function() {
   return _c(
     "v-uni-view",
     { attrs: { _i: 0 } },
-    [_c("v-uni-view", { staticClass: _vm._$g(1, "sc"), attrs: { _i: 1 } })],
+    [
+      _vm._$g(1, "i")
+        ? _c(
+            "v-uni-view",
+            { attrs: { _i: 1 } },
+            [
+              _c("v-uni-image", {
+                staticStyle: { width: "100%" },
+                attrs: { src: _vm._$g(2, "a-src"), mode: "widthFix", _i: 2 }
+              }),
+              _c(
+                "v-uni-view",
+                { staticClass: _vm._$g(3, "sc"), attrs: { _i: 3 } },
+                [
+                  _c(
+                    "v-uni-view",
+                    { staticClass: _vm._$g(4, "sc"), attrs: { _i: 4 } },
+                    [
+                      _c(
+                        "v-uni-text",
+                        { staticClass: _vm._$g(5, "sc"), attrs: { _i: 5 } },
+                        [_vm._v("最新疫情")]
+                      ),
+                      _c(
+                        "v-uni-text",
+                        { staticClass: _vm._$g(6, "sc"), attrs: { _i: 6 } },
+                        [_vm._v("截止：" + _vm._$g(6, "t0-0"))]
+                      )
+                    ],
+                    1
+                  ),
+                  _c(
+                    "v-uni-view",
+                    { attrs: { _i: 7 } },
+                    [
+                      _c(
+                        "v-uni-text",
+                        {
+                          staticClass: _vm._$g(8, "sc"),
+                          attrs: { "data-target": "shuoming", _i: 8 },
+                          on: {
+                            click: function($event) {
+                              return _vm.$handleViewEvent($event)
+                            }
+                          }
+                        },
+                        [_vm._v("数据说明")]
+                      ),
+                      _c(
+                        "v-uni-view",
+                        {
+                          staticClass: _vm._$g(9, "sc"),
+                          class: _vm._$g(9, "c"),
+                          attrs: { _i: 9 },
+                          on: {
+                            click: function($event) {
+                              return _vm.$handleViewEvent($event)
+                            }
+                          }
+                        },
+                        [
+                          _c(
+                            "v-uni-view",
+                            {
+                              staticClass: _vm._$g(10, "sc"),
+                              attrs: { _i: 10 },
+                              on: {
+                                click: function($event) {
+                                  return _vm.$handleViewEvent($event, {
+                                    stop: true
+                                  })
+                                }
+                              }
+                            },
+                            [
+                              _c(
+                                "v-uni-view",
+                                {
+                                  staticClass: _vm._$g(11, "sc"),
+                                  attrs: { _i: 11 }
+                                },
+                                [_vm._v("疫情数据说明")]
+                              ),
+                              _c(
+                                "v-uni-view",
+                                {
+                                  staticClass: _vm._$g(12, "sc"),
+                                  attrs: { _i: 12 }
+                                },
+                                [
+                                  _c("v-uni-view", { attrs: { _i: 13 } }, [
+                                    _vm._v("1. 数据来源：")
+                                  ]),
+                                  _c("v-uni-view", { attrs: { _i: 14 } }, [
+                                    _vm._v(
+                                      "全部数据来源于国家卫健委、各省市区卫健委、各省市区政府、港澳台官方渠道公开数据；"
+                                    )
+                                  ]),
+                                  _c("v-uni-view", { attrs: { _i: 15 } }, [
+                                    _vm._v("2. 数据更新时间：")
+                                  ]),
+                                  _c("v-uni-view", { attrs: { _i: 16 } }, [
+                                    _vm._v(
+                                      "实时更新全国及各省市区数据，因核实计算需求，会与官方的发布时间存在一定时间的延迟；"
+                                    )
+                                  ]),
+                                  _c("v-uni-view", { attrs: { _i: 17 } }, [
+                                    _vm._v("3. 数据统计方法：")
+                                  ]),
+                                  _c("v-uni-view", { attrs: { _i: 18 } }, [
+                                    _vm._v(
+                                      "a）每日上午优先将全国数据与国家卫健委公布数据保持一致（此时各省市数据尚未及时更新，会出现全国数据大于各省份合计数的情况）；"
+                                    )
+                                  ]),
+                                  _c("v-uni-view", { attrs: { _i: 19 } }, [
+                                    _vm._v(
+                                      "b）当各省公布数据总和大于国家公布数据时，则全国数据直接切换为各省数据总和；"
+                                    )
+                                  ]),
+                                  _c("v-uni-view", { attrs: { _i: 20 } }, [
+                                    _vm._v("c）全国数据含港澳台地区数据；")
+                                  ]),
+                                  _c("v-uni-view", { attrs: { _i: 21 } }, [
+                                    _vm._v(
+                                      "4. 全国疫情状况中，除疑似病例数据以外，“较昨日+/-”的数据为“当前实时数据-昨日24小时内国家卫健委公布的官方数据” ；"
+                                    )
+                                  ]),
+                                  _c("v-uni-view", { attrs: { _i: 22 } }, [
+                                    _vm._v(
+                                      "5. 疑似病例数据统计按日更新，仅同步全国总数，采用国家卫健委每日通报的数据，暂不呈现分省疑似病例；“较昨日+/-”数据来源于国家卫健委每日公布的新增疑似病例数据；"
+                                    )
+                                  ])
+                                ],
+                                1
+                              ),
+                              _c(
+                                "v-uni-view",
+                                {
+                                  staticClass: _vm._$g(23, "sc"),
+                                  attrs: { _i: 23 }
+                                },
+                                [
+                                  _c(
+                                    "v-uni-view",
+                                    {
+                                      staticClass: _vm._$g(24, "sc"),
+                                      attrs: { _i: 24 }
+                                    },
+                                    [
+                                      _c(
+                                        "v-uni-button",
+                                        {
+                                          staticClass: _vm._$g(25, "sc"),
+                                          attrs: { _i: 25 },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.$handleViewEvent(
+                                                $event
+                                              )
+                                            }
+                                          }
+                                        },
+                                        [_vm._v("知道了")]
+                                      )
+                                    ],
+                                    1
+                                  )
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _c(
+                "v-uni-view",
+                { staticClass: _vm._$g(26, "sc"), attrs: { _i: 26 } },
+                [
+                  _c(
+                    "v-uni-view",
+                    { staticClass: _vm._$g(27, "sc"), attrs: { _i: 27 } },
+                    [
+                      _c(
+                        "v-uni-view",
+                        { staticClass: _vm._$g(28, "sc"), attrs: { _i: 28 } },
+                        [
+                          _c(
+                            "v-uni-view",
+                            {
+                              staticClass: _vm._$g(29, "sc"),
+                              attrs: { _i: 29 }
+                            },
+                            [_vm._v("确诊")]
+                          ),
+                          _c(
+                            "v-uni-view",
+                            {
+                              staticClass: _vm._$g(30, "sc"),
+                              attrs: { _i: 30 }
+                            },
+                            [_vm._v(_vm._$g(30, "t0-0"))]
+                          ),
+                          _c(
+                            "v-uni-view",
+                            {
+                              staticClass: _vm._$g(31, "sc"),
+                              attrs: { _i: 31 }
+                            },
+                            [_vm._v("较昨日")]
+                          ),
+                          _c(
+                            "v-uni-view",
+                            {
+                              staticClass: _vm._$g(32, "sc"),
+                              attrs: { _i: 32 }
+                            },
+                            [_vm._v("+" + _vm._$g(32, "t0-0"))]
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _c(
+                    "v-uni-view",
+                    { staticClass: _vm._$g(33, "sc"), attrs: { _i: 33 } },
+                    [
+                      _c(
+                        "v-uni-view",
+                        { staticClass: _vm._$g(34, "sc"), attrs: { _i: 34 } },
+                        [
+                          _c(
+                            "v-uni-view",
+                            {
+                              staticClass: _vm._$g(35, "sc"),
+                              attrs: { _i: 35 }
+                            },
+                            [_vm._v("疑似")]
+                          ),
+                          _c(
+                            "v-uni-view",
+                            {
+                              staticClass: _vm._$g(36, "sc"),
+                              attrs: { _i: 36 }
+                            },
+                            [_vm._v(_vm._$g(36, "t0-0"))]
+                          ),
+                          _c(
+                            "v-uni-view",
+                            {
+                              staticClass: _vm._$g(37, "sc"),
+                              attrs: { _i: 37 }
+                            },
+                            [_vm._v("较昨日")]
+                          ),
+                          _c(
+                            "v-uni-view",
+                            {
+                              staticClass: _vm._$g(38, "sc"),
+                              attrs: { _i: 38 }
+                            },
+                            [_vm._v("+" + _vm._$g(38, "t0-0"))]
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _c(
+                    "v-uni-view",
+                    { staticClass: _vm._$g(39, "sc"), attrs: { _i: 39 } },
+                    [
+                      _c(
+                        "v-uni-view",
+                        { staticClass: _vm._$g(40, "sc"), attrs: { _i: 40 } },
+                        [
+                          _c(
+                            "v-uni-view",
+                            {
+                              staticClass: _vm._$g(41, "sc"),
+                              attrs: { _i: 41 }
+                            },
+                            [_vm._v("治愈")]
+                          ),
+                          _c(
+                            "v-uni-view",
+                            {
+                              staticClass: _vm._$g(42, "sc"),
+                              attrs: { _i: 42 }
+                            },
+                            [_vm._v(_vm._$g(42, "t0-0"))]
+                          ),
+                          _c(
+                            "v-uni-view",
+                            {
+                              staticClass: _vm._$g(43, "sc"),
+                              attrs: { _i: 43 }
+                            },
+                            [_vm._v("较昨日")]
+                          ),
+                          _c(
+                            "v-uni-view",
+                            {
+                              staticClass: _vm._$g(44, "sc"),
+                              attrs: { _i: 44 }
+                            },
+                            [_vm._v("+" + _vm._$g(44, "t0-0"))]
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _c(
+                    "v-uni-view",
+                    { staticClass: _vm._$g(45, "sc"), attrs: { _i: 45 } },
+                    [
+                      _c(
+                        "v-uni-view",
+                        { staticClass: _vm._$g(46, "sc"), attrs: { _i: 46 } },
+                        [
+                          _c(
+                            "v-uni-view",
+                            {
+                              staticClass: _vm._$g(47, "sc"),
+                              attrs: { _i: 47 }
+                            },
+                            [_vm._v("死亡")]
+                          ),
+                          _c(
+                            "v-uni-view",
+                            {
+                              staticClass: _vm._$g(48, "sc"),
+                              attrs: { _i: 48 }
+                            },
+                            [_vm._v(_vm._$g(48, "t0-0"))]
+                          ),
+                          _c(
+                            "v-uni-view",
+                            {
+                              staticClass: _vm._$g(49, "sc"),
+                              attrs: { _i: 49 }
+                            },
+                            [_vm._v("较昨日")]
+                          ),
+                          _c(
+                            "v-uni-view",
+                            {
+                              staticClass: _vm._$g(50, "sc"),
+                              attrs: { _i: 50 }
+                            },
+                            [_vm._v("+" + _vm._$g(50, "t0-0"))]
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _c(
+                "v-uni-view",
+                { staticClass: _vm._$g(51, "sc"), attrs: { _i: 51 } },
+                [
+                  _c(
+                    "v-uni-view",
+                    { staticClass: _vm._$g(52, "sc"), attrs: { _i: 52 } },
+                    [
+                      _c(
+                        "v-uni-view",
+                        { staticClass: _vm._$g(53, "sc"), attrs: { _i: 53 } },
+                        [
+                          _c(
+                            "v-uni-view",
+                            {
+                              staticClass: _vm._$g(54, "sc"),
+                              attrs: { _i: 54 }
+                            },
+                            [
+                              _c(
+                                "v-uni-view",
+                                {
+                                  staticClass: _vm._$g(55, "sc"),
+                                  staticStyle: {
+                                    "background-image":
+                                      "url(../../../static/covid/tool_change.png)"
+                                  },
+                                  attrs: { "data-target": "gridModal", _i: 55 },
+                                  on: {
+                                    click: function($event) {
+                                      return _vm.$handleViewEvent($event)
+                                    }
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "v-uni-text",
+                                    {
+                                      staticClass: _vm._$g(56, "sc"),
+                                      staticStyle: {
+                                        "margin-top": "170upx",
+                                        color: "#333333"
+                                      },
+                                      attrs: { _i: 56 }
+                                    },
+                                    [_vm._v("切换城市")]
+                                  )
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          ),
+                          _c(
+                            "v-uni-view",
+                            {
+                              staticClass: _vm._$g(57, "sc"),
+                              attrs: { _i: 57 }
+                            },
+                            [
+                              _c(
+                                "v-uni-view",
+                                {
+                                  staticClass: _vm._$g(58, "sc"),
+                                  staticStyle: {
+                                    "background-image":
+                                      "url(../../../static/covid/tool_search.png)"
+                                  },
+                                  attrs: { "data-target": "community", _i: 58 },
+                                  on: {
+                                    click: function($event) {
+                                      return _vm.$handleViewEvent($event)
+                                    }
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "v-uni-text",
+                                    {
+                                      staticClass: _vm._$g(59, "sc"),
+                                      staticStyle: {
+                                        "margin-top": "170upx",
+                                        color: "#333333"
+                                      },
+                                      attrs: { _i: 59 }
+                                    },
+                                    [_vm._v("小区疫情查询")]
+                                  )
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _c(
+                    "v-uni-view",
+                    {
+                      staticClass: _vm._$g(60, "sc"),
+                      class: _vm._$g(60, "c"),
+                      attrs: { _i: 60 },
+                      on: {
+                        click: function($event) {
+                          return _vm.$handleViewEvent($event)
+                        }
+                      }
+                    },
+                    [
+                      _c(
+                        "v-uni-view",
+                        {
+                          staticClass: _vm._$g(61, "sc"),
+                          attrs: { _i: 61 },
+                          on: {
+                            click: function($event) {
+                              return _vm.$handleViewEvent($event, {
+                                stop: true
+                              })
+                            }
+                          }
+                        },
+                        [
+                          _c(
+                            "v-uni-view",
+                            {
+                              staticClass: _vm._$g(62, "sc"),
+                              attrs: { _i: 62 }
+                            },
+                            _vm._l(_vm._$g(63, "f"), function(
+                              item,
+                              index,
+                              $20,
+                              $30
+                            ) {
+                              return _c(
+                                "v-uni-view",
+                                {
+                                  key: item,
+                                  staticClass: _vm._$g("63-" + $30, "sc"),
+                                  attrs: { _i: "63-" + $30 },
+                                  on: {
+                                    click: function($event) {
+                                      return _vm.$handleViewEvent($event)
+                                    }
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "v-uni-text",
+                                    { attrs: { _i: "64-" + $30 } },
+                                    [_vm._v(_vm._$g("64-" + $30, "t0-0"))]
+                                  )
+                                ],
+                                1
+                              )
+                            }),
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _c(
+                    "v-uni-view",
+                    {
+                      staticClass: _vm._$g(65, "sc"),
+                      class: _vm._$g(65, "c"),
+                      attrs: { _i: 65 },
+                      on: {
+                        click: function($event) {
+                          return _vm.$handleViewEvent($event)
+                        }
+                      }
+                    },
+                    [
+                      _c(
+                        "v-uni-view",
+                        {
+                          staticClass: _vm._$g(66, "sc"),
+                          attrs: { _i: 66 },
+                          on: {
+                            click: function($event) {
+                              return _vm.$handleViewEvent($event, {
+                                stop: true
+                              })
+                            }
+                          }
+                        },
+                        [
+                          _c(
+                            "v-uni-view",
+                            {
+                              staticClass: _vm._$g(67, "sc"),
+                              attrs: { _i: 67 }
+                            },
+                            _vm._l(_vm._$g(68, "f"), function(
+                              item,
+                              index,
+                              $21,
+                              $31
+                            ) {
+                              return _c(
+                                "v-uni-view",
+                                {
+                                  key: item,
+                                  staticClass: _vm._$g("68-" + $31, "sc"),
+                                  attrs: { _i: "68-" + $31 },
+                                  on: {
+                                    click: function($event) {
+                                      return _vm.$handleViewEvent($event)
+                                    }
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "v-uni-text",
+                                    { attrs: { _i: "69-" + $31 } },
+                                    [_vm._v(_vm._$g("69-" + $31, "t0-0"))]
+                                  )
+                                ],
+                                1
+                              )
+                            }),
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _c(
+                    "v-uni-view",
+                    { staticClass: _vm._$g(70, "sc"), attrs: { _i: 70 } },
+                    [_vm._v(_vm._$g(70, "t0-0"))]
+                  ),
+                  _c(
+                    "v-uni-view",
+                    { staticClass: _vm._$g(71, "sc"), attrs: { _i: 71 } },
+                    [
+                      _c(
+                        "v-uni-view",
+                        { staticClass: _vm._$g(72, "sc"), attrs: { _i: 72 } },
+                        [_vm._v("地区")]
+                      ),
+                      _c(
+                        "v-uni-view",
+                        { staticClass: _vm._$g(73, "sc"), attrs: { _i: 73 } },
+                        [_vm._v("确诊")]
+                      ),
+                      _c(
+                        "v-uni-view",
+                        { staticClass: _vm._$g(74, "sc"), attrs: { _i: 74 } },
+                        [_vm._v("治愈")]
+                      ),
+                      _c(
+                        "v-uni-view",
+                        { staticClass: _vm._$g(75, "sc"), attrs: { _i: 75 } },
+                        [_vm._v("疑似")]
+                      ),
+                      _c(
+                        "v-uni-view",
+                        { staticClass: _vm._$g(76, "sc"), attrs: { _i: 76 } },
+                        [_vm._v("死亡")]
+                      )
+                    ],
+                    1
+                  ),
+                  _c(
+                    "v-uni-view",
+                    {
+                      staticClass: _vm._$g(77, "sc"),
+                      staticStyle: { padding: "0", "margin-top": "0" },
+                      attrs: { _i: 77 }
+                    },
+                    [
+                      _vm._l(_vm._$g(78, "f"), function(item, index, $22, $32) {
+                        return [
+                          _c(
+                            "v-uni-view",
+                            {
+                              key: item["k0"],
+                              staticClass: _vm._$g("79-" + $32, "sc"),
+                              attrs: { _i: "79-" + $32 }
+                            },
+                            [_vm._v(_vm._$g("79-" + $32, "t0-0"))]
+                          ),
+                          _c(
+                            "v-uni-view",
+                            {
+                              key: item["k1"],
+                              staticClass: _vm._$g("80-" + $32, "sc"),
+                              attrs: { _i: "80-" + $32 }
+                            },
+                            [_vm._v(_vm._$g("80-" + $32, "t0-0"))]
+                          ),
+                          _c(
+                            "v-uni-view",
+                            {
+                              key: item["k2"],
+                              staticClass: _vm._$g("81-" + $32, "sc"),
+                              attrs: { _i: "81-" + $32 }
+                            },
+                            [_vm._v(_vm._$g("81-" + $32, "t0-0"))]
+                          ),
+                          _c(
+                            "v-uni-view",
+                            {
+                              key: item["k3"],
+                              staticClass: _vm._$g("82-" + $32, "sc"),
+                              attrs: { _i: "82-" + $32 }
+                            },
+                            [_vm._v(_vm._$g("82-" + $32, "t0-0"))]
+                          ),
+                          _c(
+                            "v-uni-view",
+                            {
+                              key: item["k4"],
+                              staticClass: _vm._$g("83-" + $32, "sc"),
+                              attrs: { _i: "83-" + $32 }
+                            },
+                            [_vm._v(_vm._$g("83-" + $32, "t0-0"))]
+                          )
+                        ]
+                      })
+                    ],
+                    2
+                  )
+                ],
+                1
+              ),
+              _c(
+                "v-uni-view",
+                { staticClass: _vm._$g(84, "sc"), attrs: { _i: 84 } },
+                [
+                  _c(
+                    "v-uni-view",
+                    { staticClass: _vm._$g(85, "sc"), attrs: { _i: 85 } },
+                    [_vm._v("疫情地图")]
+                  ),
+                  _c("v-uni-view", { attrs: { _i: 86 } }, [
+                    _vm._v("数据来源：国家及各省市地区卫健委")
+                  ])
+                ],
+                1
+              ),
+              _c("iframe", {
+                staticClass: _vm._$g(87, "sc"),
+                staticStyle: {
+                  height: "300px",
+                  "min-height": "300px",
+                  padding: "0px 0.15rem",
+                  width: "calc(100% - 0.3rem)",
+                  border: "0"
+                },
+                attrs: {
+                  name: "scrollIframe",
+                  src: "https://m.look.360.cn/static/html/whmap/index.html",
+                  _i: 87
+                }
+              }),
+              _c("v-uni-view", {
+                staticClass: _vm._$g(88, "sc"),
+                attrs: { _i: 88 }
+              })
+            ],
+            1
+          )
+        : _vm._e()
+    ],
     1
   )
 }
@@ -5072,7 +5820,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ./node_modules/css-loader/dist/runtime/api.js */ 16);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\n.status_bar {\r\n  height: var(--status-bar-height);\r\n  width: 100%;\r\n  background-color: #1058D1;\n}\r\n", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\r\n/*\r\n  ColorUi for uniApp  v2.1.6 | by 文晓港 2019-05-31 10:44:24\r\n  仅供学习交流，如作它用所承受的法律责任一概与作者无关  \r\n  \r\n  *使用ColorUi开发扩展与插件时，请注明基于ColorUi开发 \r\n  \r\n  （QQ交流群：240787041）\r\n*/\r\n/* ==================\r\n        初始化\r\n ==================== */\nbody {\r\n  background-color: #f1f1f1;\r\n  font-size: 28upx;\r\n  color: #333333;\r\n  font-family: Helvetica Neue, Helvetica, sans-serif;\n}\nuni-view,\r\nuni-scroll-view,\r\nuni-swiper,\r\nuni-button,\r\nuni-input,\r\nuni-textarea,\r\nuni-label,\r\nuni-navigator,\r\nuni-image {\r\n  box-sizing: border-box;\n}\n.round {\r\n  border-radius: 5000upx;\n}\n.radius {\r\n  border-radius: 6upx;\n}\r\n/* ==================\r\n          图片\r\n ==================== */\nuni-image {\r\n  max-width: 100%;\r\n  display: inline-block;\r\n  position: relative;\r\n  z-index: 0;\n}\nuni-image.loading::before {\r\n  content: \"\";\r\n  background-color: #f5f5f5;\r\n  display: block;\r\n  position: absolute;\r\n  width: 100%;\r\n  height: 100%;\r\n  z-index: -2;\n}\nuni-image.loading::after {\r\n  content: \"\\e7f1\";\r\n  font-family: \"cuIcon\";\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 32upx;\r\n  height: 32upx;\r\n  line-height: 32upx;\r\n  right: 0;\r\n  bottom: 0;\r\n  z-index: -1;\r\n  font-size: 32upx;\r\n  margin: auto;\r\n  color: #ccc;\r\n  -webkit-animation: cuIcon-spin 2s infinite linear;\r\n  animation: cuIcon-spin 2s infinite linear;\r\n  display: block;\n}\n.response {\r\n  width: 100%;\n}\r\n/* ==================\r\n         开关\r\n ==================== */\nuni-switch,\r\nuni-checkbox,\r\nuni-radio {\r\n  position: relative;\n}\nuni-switch::after,\r\nuni-switch::before {\r\n  font-family: \"cuIcon\";\r\n  content: \"\\e645\";\r\n  position: absolute;\r\n  color: #ffffff !important;\r\n  top: 0%;\r\n  left: 0upx;\r\n  font-size: 26upx;\r\n  line-height: 26px;\r\n  width: 50%;\r\n  text-align: center;\r\n  pointer-events: none;\r\n  -webkit-transform: scale(0, 0);\r\n          transform: scale(0, 0);\r\n  transition: all 0.3s ease-in-out 0s;\r\n  z-index: 9;\r\n  bottom: 0;\r\n  height: 26px;\r\n  margin: auto;\n}\nuni-switch::before {\r\n  content: \"\\e646\";\r\n  right: 0;\r\n  -webkit-transform: scale(1, 1);\r\n          transform: scale(1, 1);\r\n  left: auto;\n}\nuni-switch[checked]::after,\r\nuni-switch.checked::after {\r\n  -webkit-transform: scale(1, 1);\r\n          transform: scale(1, 1);\n}\nuni-switch[checked]::before,\r\nuni-switch.checked::before {\r\n  -webkit-transform: scale(0, 0);\r\n          transform: scale(0, 0);\n}\nuni-radio::before,\r\nuni-checkbox::before {\r\n  font-family: \"cuIcon\";\r\n  content: \"\\e645\";\r\n  position: absolute;\r\n  color: #ffffff !important;\r\n  top: 50%;\r\n  margin-top: -8px;\r\n  right: 5px;\r\n  font-size: 32upx;\r\n  line-height: 16px;\r\n  pointer-events: none;\r\n  -webkit-transform: scale(1, 1);\r\n          transform: scale(1, 1);\r\n  transition: all 0.3s ease-in-out 0s;\r\n  z-index: 9;\n}\nuni-radio .wx-radio-input,\r\nuni-checkbox .wx-checkbox-input,\r\nuni-radio .uni-radio-input,\r\nuni-checkbox .uni-checkbox-input {\r\n  margin: 0;\r\n  width: 24px;\r\n  height: 24px;\n}\nuni-checkbox.round .wx-checkbox-input,\r\nuni-checkbox.round .uni-checkbox-input {\r\n  border-radius: 100upx;\n}\nuni-switch[checked]::before {\r\n  -webkit-transform: scale(0, 0);\r\n          transform: scale(0, 0);\n}\nuni-switch .wx-switch-input,\r\nuni-switch .uni-switch-input {\r\n  border: none;\r\n  padding: 0 24px;\r\n  width: 48px;\r\n  height: 26px;\r\n  margin: 0;\r\n  border-radius: 100upx;\n}\nuni-switch .wx-switch-input:not([class*=\"bg-\"]),\r\nuni-switch .uni-switch-input:not([class*=\"bg-\"]) {\r\n  background: #8799a3 !important;\n}\nuni-switch .wx-switch-input::after,\r\nuni-switch .uni-switch-input::after {\r\n  margin: auto;\r\n  width: 26px;\r\n  height: 26px;\r\n  border-radius: 100upx;\r\n  left: 0upx;\r\n  top: 0upx;\r\n  bottom: 0upx;\r\n  position: absolute;\r\n  -webkit-transform: scale(0.9, 0.9);\r\n          transform: scale(0.9, 0.9);\r\n  transition: all 0.1s ease-in-out 0s;\n}\nuni-switch .wx-switch-input.wx-switch-input-checked::after,\r\nuni-switch .uni-switch-input.uni-switch-input-checked::after {\r\n  margin: auto;\r\n  left: 22px;\r\n  box-shadow: none;\r\n  -webkit-transform: scale(0.9, 0.9);\r\n          transform: scale(0.9, 0.9);\n}\nuni-radio-group {\r\n  display: inline-block;\n}\nuni-switch.radius .wx-switch-input::after,\r\nuni-switch.radius .wx-switch-input,\r\nuni-switch.radius .wx-switch-input::before,\r\nuni-switch.radius .uni-switch-input::after,\r\nuni-switch.radius .uni-switch-input,\r\nuni-switch.radius .uni-switch-input::before {\r\n  border-radius: 10upx;\n}\nuni-switch .wx-switch-input::before,\r\nuni-radio.radio::before,\r\nuni-checkbox .wx-checkbox-input::before,\r\nuni-radio .wx-radio-input::before,\r\nuni-switch .uni-switch-input::before,\r\nuni-radio.radio::before,\r\nuni-checkbox .uni-checkbox-input::before,\r\nuni-radio .uni-radio-input::before {\r\n  display: none;\n}\nuni-radio.radio[checked]::after,\r\nuni-radio.radio .uni-radio-input-checked::after {\r\n  content: \"\";\r\n  background-color: transparent;\r\n  display: block;\r\n  position: absolute;\r\n  width: 8px;\r\n  height: 8px;\r\n  z-index: 999;\r\n  top: 0upx;\r\n  left: 0upx;\r\n  right: 0;\r\n  bottom: 0;\r\n  margin: auto;\r\n  border-radius: 200upx;\r\n  border: 7px solid #ffffff !important;\n}\n.switch-sex::after {\r\n  content: \"\\e71c\";\n}\n.switch-sex::before {\r\n  content: \"\\e71a\";\n}\n.switch-sex .wx-switch-input,\r\n.switch-sex .uni-switch-input {\r\n  background: #e54d42 !important;\r\n  border-color: #e54d42 !important;\n}\n.switch-sex[checked] .wx-switch-input,\r\n.switch-sex.checked .uni-switch-input {\r\n  background: #0081ff !important;\r\n  border-color: #0081ff !important;\n}\nuni-switch.red[checked] .wx-switch-input.wx-switch-input-checked,\r\nuni-checkbox.red[checked] .wx-checkbox-input,\r\nuni-radio.red[checked] .wx-radio-input,\r\nuni-switch.red.checked .uni-switch-input.uni-switch-input-checked,\r\nuni-checkbox.red.checked .uni-checkbox-input,\r\nuni-radio.red.checked .uni-radio-input {\r\n  background-color: #e54d42 !important;\r\n  border-color: #e54d42 !important;\r\n  color: #ffffff !important;\n}\nuni-switch.orange[checked] .wx-switch-input,\r\nuni-checkbox.orange[checked] .wx-checkbox-input,\r\nuni-radio.orange[checked] .wx-radio-input,\r\nuni-switch.orange.checked .uni-switch-input,\r\nuni-checkbox.orange.checked .uni-checkbox-input,\r\nuni-radio.orange.checked .uni-radio-input {\r\n  background-color: #f37b1d !important;\r\n  border-color: #f37b1d !important;\r\n  color: #ffffff !important;\n}\nuni-switch.yellow[checked] .wx-switch-input,\r\nuni-checkbox.yellow[checked] .wx-checkbox-input,\r\nuni-radio.yellow[checked] .wx-radio-input,\r\nuni-switch.yellow.checked .uni-switch-input,\r\nuni-checkbox.yellow.checked .uni-checkbox-input,\r\nuni-radio.yellow.checked .uni-radio-input {\r\n  background-color: #fbbd08 !important;\r\n  border-color: #fbbd08 !important;\r\n  color: #333333 !important;\n}\nuni-switch.olive[checked] .wx-switch-input,\r\nuni-checkbox.olive[checked] .wx-checkbox-input,\r\nuni-radio.olive[checked] .wx-radio-input,\r\nuni-switch.olive.checked .uni-switch-input,\r\nuni-checkbox.olive.checked .uni-checkbox-input,\r\nuni-radio.olive.checked .uni-radio-input {\r\n  background-color: #8dc63f !important;\r\n  border-color: #8dc63f !important;\r\n  color: #ffffff !important;\n}\nuni-switch.green[checked] .wx-switch-input,\r\nuni-switch[checked] .wx-switch-input,\r\nuni-checkbox.green[checked] .wx-checkbox-input,\r\nuni-checkbox[checked] .wx-checkbox-input,\r\nuni-radio.green[checked] .wx-radio-input,\r\nuni-radio[checked] .wx-radio-input,\r\nuni-switch.green.checked .uni-switch-input,\r\nuni-switch.checked .uni-switch-input,\r\nuni-checkbox.green.checked .uni-checkbox-input,\r\nuni-checkbox.checked .uni-checkbox-input,\r\nuni-radio.green.checked .uni-radio-input,\r\nuni-radio.checked .uni-radio-input {\r\n  background-color: #39b54a !important;\r\n  border-color: #39b54a !important;\r\n  color: #ffffff !important;\r\n  border-color: #39B54A !important;\n}\nuni-switch.cyan[checked] .wx-switch-input,\r\nuni-checkbox.cyan[checked] .wx-checkbox-input,\r\nuni-radio.cyan[checked] .wx-radio-input,\r\nuni-switch.cyan.checked .uni-switch-input,\r\nuni-checkbox.cyan.checked .uni-checkbox-input,\r\nuni-radio.cyan.checked .uni-radio-input {\r\n  background-color: #1cbbb4 !important;\r\n  border-color: #1cbbb4 !important;\r\n  color: #ffffff !important;\n}\nuni-switch.blue[checked] .wx-switch-input,\r\nuni-checkbox.blue[checked] .wx-checkbox-input,\r\nuni-radio.blue[checked] .wx-radio-input,\r\nuni-switch.blue.checked .uni-switch-input,\r\nuni-checkbox.blue.checked .uni-checkbox-input,\r\nuni-radio.blue.checked .uni-radio-input {\r\n  background-color: #0081ff !important;\r\n  border-color: #0081ff !important;\r\n  color: #ffffff !important;\n}\nuni-switch.purple[checked] .wx-switch-input,\r\nuni-checkbox.purple[checked] .wx-checkbox-input,\r\nuni-radio.purple[checked] .wx-radio-input,\r\nuni-switch.purple.checked .uni-switch-input,\r\nuni-checkbox.purple.checked .uni-checkbox-input,\r\nuni-radio.purple.checked .uni-radio-input {\r\n  background-color: #6739b6 !important;\r\n  border-color: #6739b6 !important;\r\n  color: #ffffff !important;\n}\nuni-switch.mauve[checked] .wx-switch-input,\r\nuni-checkbox.mauve[checked] .wx-checkbox-input,\r\nuni-radio.mauve[checked] .wx-radio-input,\r\nuni-switch.mauve.checked .uni-switch-input,\r\nuni-checkbox.mauve.checked .uni-checkbox-input,\r\nuni-radio.mauve.checked .uni-radio-input {\r\n  background-color: #9c26b0 !important;\r\n  border-color: #9c26b0 !important;\r\n  color: #ffffff !important;\n}\nuni-switch.pink[checked] .wx-switch-input,\r\nuni-checkbox.pink[checked] .wx-checkbox-input,\r\nuni-radio.pink[checked] .wx-radio-input,\r\nuni-switch.pink.checked .uni-switch-input,\r\nuni-checkbox.pink.checked .uni-checkbox-input,\r\nuni-radio.pink.checked .uni-radio-input {\r\n  background-color: #e03997 !important;\r\n  border-color: #e03997 !important;\r\n  color: #ffffff !important;\n}\nuni-switch.brown[checked] .wx-switch-input,\r\nuni-checkbox.brown[checked] .wx-checkbox-input,\r\nuni-radio.brown[checked] .wx-radio-input,\r\nuni-switch.brown.checked .uni-switch-input,\r\nuni-checkbox.brown.checked .uni-checkbox-input,\r\nuni-radio.brown.checked .uni-radio-input {\r\n  background-color: #a5673f !important;\r\n  border-color: #a5673f !important;\r\n  color: #ffffff !important;\n}\nuni-switch.grey[checked] .wx-switch-input,\r\nuni-checkbox.grey[checked] .wx-checkbox-input,\r\nuni-radio.grey[checked] .wx-radio-input,\r\nuni-switch.grey.checked .uni-switch-input,\r\nuni-checkbox.grey.checked .uni-checkbox-input,\r\nuni-radio.grey.checked .uni-radio-input {\r\n  background-color: #8799a3 !important;\r\n  border-color: #8799a3 !important;\r\n  color: #ffffff !important;\n}\nuni-switch.gray[checked] .wx-switch-input,\r\nuni-checkbox.gray[checked] .wx-checkbox-input,\r\nuni-radio.gray[checked] .wx-radio-input,\r\nuni-switch.gray.checked .uni-switch-input,\r\nuni-checkbox.gray.checked .uni-checkbox-input,\r\nuni-radio.gray.checked .uni-radio-input {\r\n  background-color: #f0f0f0 !important;\r\n  border-color: #f0f0f0 !important;\r\n  color: #333333 !important;\n}\nuni-switch.black[checked] .wx-switch-input,\r\nuni-checkbox.black[checked] .wx-checkbox-input,\r\nuni-radio.black[checked] .wx-radio-input,\r\nuni-switch.black.checked .uni-switch-input,\r\nuni-checkbox.black.checked .uni-checkbox-input,\r\nuni-radio.black.checked .uni-radio-input {\r\n  background-color: #333333 !important;\r\n  border-color: #333333 !important;\r\n  color: #ffffff !important;\n}\nuni-switch.white[checked] .wx-switch-input,\r\nuni-checkbox.white[checked] .wx-checkbox-input,\r\nuni-radio.white[checked] .wx-radio-input,\r\nuni-switch.white.checked .uni-switch-input,\r\nuni-checkbox.white.checked .uni-checkbox-input,\r\nuni-radio.white.checked .uni-radio-input {\r\n  background-color: #ffffff !important;\r\n  border-color: #ffffff !important;\r\n  color: #333333 !important;\n}\r\n/* ==================\r\n          边框\r\n ==================== */\r\n/* -- 实线 -- */\n.solid,\r\n.solid-top,\r\n.solid-right,\r\n.solid-bottom,\r\n.solid-left,\r\n.solids,\r\n.solids-top,\r\n.solids-right,\r\n.solids-bottom,\r\n.solids-left,\r\n.dashed,\r\n.dashed-top,\r\n.dashed-right,\r\n.dashed-bottom,\r\n.dashed-left {\r\n  position: relative;\n}\n.solid::after,\r\n.solid-top::after,\r\n.solid-right::after,\r\n.solid-bottom::after,\r\n.solid-left::after,\r\n.solids::after,\r\n.solids-top::after,\r\n.solids-right::after,\r\n.solids-bottom::after,\r\n.solids-left::after,\r\n.dashed::after,\r\n.dashed-top::after,\r\n.dashed-right::after,\r\n.dashed-bottom::after,\r\n.dashed-left::after {\r\n  content: \" \";\r\n  width: 200%;\r\n  height: 200%;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  border-radius: inherit;\r\n  -webkit-transform: scale(0.5);\r\n          transform: scale(0.5);\r\n  -webkit-transform-origin: 0 0;\r\n          transform-origin: 0 0;\r\n  pointer-events: none;\r\n  box-sizing: border-box;\n}\n.solid::after {\r\n  border: 1upx solid rgba(0, 0, 0, 0.1);\n}\n.solid-top::after {\r\n  border-top: 1upx solid rgba(0, 0, 0, 0.1);\n}\n.solid-right::after {\r\n  border-right: 1upx solid rgba(0, 0, 0, 0.1);\n}\n.solid-bottom::after {\r\n  border-bottom: 1upx solid rgba(0, 0, 0, 0.1);\n}\n.solid-left::after {\r\n  border-left: 1upx solid rgba(0, 0, 0, 0.1);\n}\n.solids::after {\r\n  border: 8upx solid #eee;\n}\n.solids-top::after {\r\n  border-top: 8upx solid #eee;\n}\n.solids-right::after {\r\n  border-right: 8upx solid #eee;\n}\n.solids-bottom::after {\r\n  border-bottom: 8upx solid #eee;\n}\n.solids-left::after {\r\n  border-left: 8upx solid #eee;\n}\r\n/* -- 虚线 -- */\n.dashed::after {\r\n  border: 1upx dashed #ddd;\n}\n.dashed-top::after {\r\n  border-top: 1upx dashed #ddd;\n}\n.dashed-right::after {\r\n  border-right: 1upx dashed #ddd;\n}\n.dashed-bottom::after {\r\n  border-bottom: 1upx dashed #ddd;\n}\n.dashed-left::after {\r\n  border-left: 1upx dashed #ddd;\n}\r\n/* -- 阴影 -- */\n.shadow[class*='white'] {\r\n  --ShadowSize: 0 1upx 6upx;\n}\n.shadow-lg {\r\n  --ShadowSize: 0upx 40upx 100upx 0upx;\n}\n.shadow-warp {\r\n  position: relative;\r\n  box-shadow: 0 0 10upx rgba(0, 0, 0, 0.1);\n}\n.shadow-warp:before,\r\n.shadow-warp:after {\r\n  position: absolute;\r\n  content: \"\";\r\n  top: 20upx;\r\n  bottom: 30upx;\r\n  left: 20upx;\r\n  width: 50%;\r\n  box-shadow: 0 30upx 20upx rgba(0, 0, 0, 0.2);\r\n  -webkit-transform: rotate(-3deg);\r\n          transform: rotate(-3deg);\r\n  z-index: -1;\n}\n.shadow-warp:after {\r\n  right: 20upx;\r\n  left: auto;\r\n  -webkit-transform: rotate(3deg);\r\n          transform: rotate(3deg);\n}\n.shadow-blur {\r\n  position: relative;\n}\n.shadow-blur::before {\r\n  content: \"\";\r\n  display: block;\r\n  background: inherit;\r\n  -webkit-filter: blur(10upx);\r\n          filter: blur(10upx);\r\n  position: absolute;\r\n  width: 100%;\r\n  height: 100%;\r\n  top: 10upx;\r\n  left: 10upx;\r\n  z-index: -1;\r\n  opacity: 0.4;\r\n  -webkit-transform-origin: 0 0;\r\n          transform-origin: 0 0;\r\n  border-radius: inherit;\r\n  -webkit-transform: scale(1, 1);\r\n          transform: scale(1, 1);\n}\r\n/* ==================\r\n          按钮\r\n ==================== */\n.cu-btn {\r\n  position: relative;\r\n  border: 0upx;\r\n  display: inline-flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  box-sizing: border-box;\r\n  padding: 0 30upx;\r\n  font-size: 28upx;\r\n  height: 64upx;\r\n  line-height: 1;\r\n  text-align: center;\r\n  text-decoration: none;\r\n  overflow: visible;\r\n  margin-left: initial;\r\n  -webkit-transform: translate(0upx, 0upx);\r\n          transform: translate(0upx, 0upx);\r\n  margin-right: initial;\n}\n.cu-btn::after {\r\n  display: none;\n}\n.cu-btn:not([class*=\"bg-\"]) {\r\n  background-color: #f0f0f0;\n}\n.cu-btn[class*=\"line\"] {\r\n  background-color: transparent;\n}\n.cu-btn[class*=\"line\"]::after {\r\n  content: \" \";\r\n  display: block;\r\n  width: 200%;\r\n  height: 200%;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  border: 1upx solid currentColor;\r\n  -webkit-transform: scale(0.5);\r\n          transform: scale(0.5);\r\n  -webkit-transform-origin: 0 0;\r\n          transform-origin: 0 0;\r\n  box-sizing: border-box;\r\n  border-radius: 12upx;\r\n  z-index: 1;\r\n  pointer-events: none;\n}\n.cu-btn.round[class*=\"line\"]::after {\r\n  border-radius: 1000upx;\n}\n.cu-btn[class*=\"lines\"]::after {\r\n  border: 6upx solid currentColor;\n}\n.cu-btn[class*=\"bg-\"]::after {\r\n  display: none;\n}\n.cu-btn.sm {\r\n  padding: 0 20upx;\r\n  font-size: 20upx;\r\n  height: 48upx;\n}\n.cu-btn.lg {\r\n  padding: 0 40upx;\r\n  font-size: 32upx;\r\n  height: 80upx;\n}\n.cu-btn.cuIcon.sm {\r\n  width: 48upx;\r\n  height: 48upx;\n}\n.cu-btn.cuIcon {\r\n  width: 64upx;\r\n  height: 64upx;\r\n  border-radius: 500upx;\r\n  padding: 0;\n}\nuni-button.cuIcon.lg {\r\n  width: 80upx;\r\n  height: 80upx;\n}\n.cu-btn.shadow-blur::before {\r\n  top: 4upx;\r\n  left: 4upx;\r\n  -webkit-filter: blur(6upx);\r\n          filter: blur(6upx);\r\n  opacity: 0.6;\n}\n.cu-btn.button-hover {\r\n  -webkit-transform: translate(1upx, 1upx);\r\n          transform: translate(1upx, 1upx);\n}\n.block {\r\n  display: block;\n}\n.cu-btn.block {\r\n  display: flex;\n}\n.cu-btn[disabled] {\r\n  opacity: 0.6;\r\n  color: #ffffff;\n}\r\n/* ==================\r\n          徽章\r\n ==================== */\n.cu-tag {\r\n  font-size: 24upx;\r\n  vertical-align: middle;\r\n  position: relative;\r\n  display: inline-flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  box-sizing: border-box;\r\n  padding: 0upx 16upx;\r\n  height: 48upx;\r\n  font-family: Helvetica Neue, Helvetica, sans-serif;\r\n  white-space: nowrap;\n}\n.cu-tag:not([class*=\"bg\"]):not([class*=\"line\"]) {\r\n  background-color: #f1f1f1;\n}\n.cu-tag[class*=\"line-\"]::after {\r\n  content: \" \";\r\n  width: 200%;\r\n  height: 200%;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  border: 1upx solid currentColor;\r\n  -webkit-transform: scale(0.5);\r\n          transform: scale(0.5);\r\n  -webkit-transform-origin: 0 0;\r\n          transform-origin: 0 0;\r\n  box-sizing: border-box;\r\n  border-radius: inherit;\r\n  z-index: 1;\r\n  pointer-events: none;\n}\n.cu-tag.radius[class*=\"line\"]::after {\r\n  border-radius: 12upx;\n}\n.cu-tag.round[class*=\"line\"]::after {\r\n  border-radius: 1000upx;\n}\n.cu-tag[class*=\"line-\"]::after {\r\n  border-radius: 0;\n}\n.cu-tag + .cu-tag {\r\n  margin-left: 10upx;\n}\n.cu-tag.sm {\r\n  font-size: 20upx;\r\n  padding: 0upx 12upx;\r\n  height: 32upx;\n}\n.cu-capsule {\r\n  display: inline-flex;\r\n  vertical-align: middle;\n}\n.cu-capsule + .cu-capsule {\r\n  margin-left: 10upx;\n}\n.cu-capsule .cu-tag {\r\n  margin: 0;\n}\n.cu-capsule .cu-tag[class*=\"line-\"]:last-child::after {\r\n  border-left: 0upx solid transparent;\n}\n.cu-capsule .cu-tag[class*=\"line-\"]:first-child::after {\r\n  border-right: 0upx solid transparent;\n}\n.cu-capsule.radius .cu-tag:first-child {\r\n  border-top-left-radius: 6upx;\r\n  border-bottom-left-radius: 6upx;\n}\n.cu-capsule.radius .cu-tag:last-child::after,\r\n.cu-capsule.radius .cu-tag[class*=\"line-\"] {\r\n  border-top-right-radius: 12upx;\r\n  border-bottom-right-radius: 12upx;\n}\n.cu-capsule.round .cu-tag:first-child {\r\n  border-top-left-radius: 200upx;\r\n  border-bottom-left-radius: 200upx;\r\n  text-indent: 4upx;\n}\n.cu-capsule.round .cu-tag:last-child::after,\r\n.cu-capsule.round .cu-tag:last-child {\r\n  border-top-right-radius: 200upx;\r\n  border-bottom-right-radius: 200upx;\r\n  text-indent: -4upx;\n}\n.cu-tag.badge {\r\n  border-radius: 200upx;\r\n  position: absolute;\r\n  top: -10upx;\r\n  right: -10upx;\r\n  font-size: 20upx;\r\n  padding: 0upx 10upx;\r\n  height: 28upx;\r\n  color: #ffffff;\n}\n.cu-tag.badge:not([class*=\"bg-\"]) {\r\n  background-color: #dd514c;\n}\n.cu-tag:empty:not([class*=\"cuIcon-\"]) {\r\n  padding: 0upx;\r\n  width: 16upx;\r\n  height: 16upx;\r\n  top: -4upx;\r\n  right: -4upx;\n}\n.cu-tag[class*=\"cuIcon-\"] {\r\n  width: 32upx;\r\n  height: 32upx;\r\n  top: -4upx;\r\n  right: -4upx;\n}\r\n/* ==================\r\n          头像\r\n ==================== */\n.cu-avatar {\r\n  font-variant: small-caps;\r\n  margin: 0;\r\n  padding: 0;\r\n  display: inline-flex;\r\n  text-align: center;\r\n  justify-content: center;\r\n  align-items: center;\r\n  background-color: #ccc;\r\n  color: #ffffff;\r\n  white-space: nowrap;\r\n  position: relative;\r\n  width: 64upx;\r\n  height: 64upx;\r\n  background-size: cover;\r\n  background-position: center;\r\n  vertical-align: middle;\r\n  font-size: 1.5em;\n}\n.cu-avatar.sm {\r\n  width: 48upx;\r\n  height: 48upx;\r\n  font-size: 1em;\n}\n.cu-avatar.lg {\r\n  width: 96upx;\r\n  height: 96upx;\r\n  font-size: 2em;\n}\n.cu-avatar.xl {\r\n  width: 128upx;\r\n  height: 128upx;\r\n  font-size: 2.5em;\n}\n.cu-avatar .avatar-text {\r\n  font-size: 0.4em;\n}\n.cu-avatar-group {\r\n  direction: rtl;\r\n  unicode-bidi: bidi-override;\r\n  padding: 0 10upx 0 40upx;\r\n  display: inline-block;\n}\n.cu-avatar-group .cu-avatar {\r\n  margin-left: -30upx;\r\n  border: 4upx solid #f1f1f1;\r\n  vertical-align: middle;\n}\n.cu-avatar-group .cu-avatar.sm {\r\n  margin-left: -20upx;\r\n  border: 1upx solid #f1f1f1;\n}\r\n/* ==================\r\n         进度条\r\n ==================== */\n.cu-progress {\r\n  overflow: hidden;\r\n  height: 28upx;\r\n  background-color: #ebeef5;\r\n  display: inline-flex;\r\n  align-items: center;\r\n  width: 100%;\n}\n.cu-progress + uni-view,\r\n.cu-progress + uni-text {\r\n  line-height: 1;\n}\n.cu-progress.xs {\r\n  height: 10upx;\n}\n.cu-progress.sm {\r\n  height: 20upx;\n}\n.cu-progress uni-view {\r\n  width: 0;\r\n  height: 100%;\r\n  align-items: center;\r\n  display: flex;\r\n  justify-items: flex-end;\r\n  justify-content: space-around;\r\n  font-size: 20upx;\r\n  color: #ffffff;\r\n  transition: width 0.6s ease;\n}\n.cu-progress uni-text {\r\n  align-items: center;\r\n  display: flex;\r\n  font-size: 20upx;\r\n  color: #333333;\r\n  text-indent: 10upx;\n}\n.cu-progress.text-progress {\r\n  padding-right: 60upx;\n}\n.cu-progress.striped uni-view {\r\n  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);\r\n  background-size: 72upx 72upx;\n}\n.cu-progress.active uni-view {\r\n  -webkit-animation: progress-stripes 2s linear infinite;\r\n          animation: progress-stripes 2s linear infinite;\n}\n@-webkit-keyframes progress-stripes {\nfrom {\r\n    background-position: 72upx 0;\n}\nto {\r\n    background-position: 0 0;\n}\n}\n@keyframes progress-stripes {\nfrom {\r\n    background-position: 72upx 0;\n}\nto {\r\n    background-position: 0 0;\n}\n}\r\n/* ==================\r\n          加载\r\n ==================== */\n.cu-load {\r\n  display: block;\r\n  line-height: 3em;\r\n  text-align: center;\n}\n.cu-load::before {\r\n  font-family: \"cuIcon\";\r\n  display: inline-block;\r\n  margin-right: 6upx;\n}\n.cu-load.loading::before {\r\n  content: \"\\e67a\";\r\n  -webkit-animation: cuIcon-spin 2s infinite linear;\r\n          animation: cuIcon-spin 2s infinite linear;\n}\n.cu-load.loading::after {\r\n  content: \"加载中...\";\n}\n.cu-load.over::before {\r\n  content: \"\\e64a\";\n}\n.cu-load.over::after {\r\n  content: \"没有更多了\";\n}\n.cu-load.erro::before {\r\n  content: \"\\e658\";\n}\n.cu-load.erro::after {\r\n  content: \"加载失败\";\n}\n.cu-load.load-cuIcon::before {\r\n  font-size: 32upx;\n}\n.cu-load.load-cuIcon::after {\r\n  display: none;\n}\n.cu-load.load-cuIcon.over {\r\n  display: none;\n}\n.cu-load.load-modal {\r\n  position: fixed;\r\n  top: 0;\r\n  right: 0;\r\n  bottom: 140upx;\r\n  left: 0;\r\n  margin: auto;\r\n  width: 260upx;\r\n  height: 260upx;\r\n  background-color: #ffffff;\r\n  border-radius: 10upx;\r\n  box-shadow: 0 0 0upx 2000upx rgba(0, 0, 0, 0.5);\r\n  display: flex;\r\n  align-items: center;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  font-size: 28upx;\r\n  z-index: 9999;\r\n  line-height: 2.4em;\n}\n.cu-load.load-modal [class*=\"cuIcon-\"] {\r\n  font-size: 60upx;\n}\n.cu-load.load-modal uni-image {\r\n  width: 70upx;\r\n  height: 70upx;\n}\n.cu-load.load-modal::after {\r\n  content: \"\";\r\n  position: absolute;\r\n  background-color: #ffffff;\r\n  border-radius: 50%;\r\n  width: 200upx;\r\n  height: 200upx;\r\n  font-size: 10px;\r\n  border-top: 6upx solid rgba(0, 0, 0, 0.05);\r\n  border-right: 6upx solid rgba(0, 0, 0, 0.05);\r\n  border-bottom: 6upx solid rgba(0, 0, 0, 0.05);\r\n  border-left: 6upx solid #f37b1d;\r\n  -webkit-animation: cuIcon-spin 1s infinite linear;\r\n          animation: cuIcon-spin 1s infinite linear;\r\n  z-index: -1;\n}\n.load-progress {\r\n  pointer-events: none;\r\n  top: 0;\r\n  position: fixed;\r\n  width: 100%;\r\n  left: 0;\r\n  z-index: 2000;\n}\n.load-progress.hide {\r\n  display: none;\n}\n.load-progress .load-progress-bar {\r\n  position: relative;\r\n  width: 100%;\r\n  height: 4upx;\r\n  overflow: hidden;\r\n  transition: all 200ms ease 0s;\n}\n.load-progress .load-progress-spinner {\r\n  position: absolute;\r\n  top: 10upx;\r\n  right: 10upx;\r\n  z-index: 2000;\r\n  display: block;\n}\n.load-progress .load-progress-spinner::after {\r\n  content: \"\";\r\n  display: block;\r\n  width: 24upx;\r\n  height: 24upx;\r\n  box-sizing: border-box;\r\n  border: solid 4upx transparent;\r\n  border-top-color: inherit;\r\n  border-left-color: inherit;\r\n  border-radius: 50%;\r\n  -webkit-animation: load-progress-spinner 0.4s linear infinite;\r\n  animation: load-progress-spinner 0.4s linear infinite;\n}\n@-webkit-keyframes load-progress-spinner {\n0% {\r\n    -webkit-transform: rotate(0);\r\n    transform: rotate(0);\n}\n100% {\r\n    -webkit-transform: rotate(360deg);\r\n    transform: rotate(360deg);\n}\n}\n@keyframes load-progress-spinner {\n0% {\r\n    -webkit-transform: rotate(0);\r\n    transform: rotate(0);\n}\n100% {\r\n    -webkit-transform: rotate(360deg);\r\n    transform: rotate(360deg);\n}\n}\r\n/* ==================\r\n          列表\r\n ==================== */\n.grayscale {\r\n  -webkit-filter: grayscale(1);\r\n          filter: grayscale(1);\n}\n.cu-list + .cu-list {\r\n  margin-top: 30upx;\n}\n.cu-list > .cu-item {\r\n  transition: all .6s ease-in-out 0s;\r\n  -webkit-transform: translateX(0upx);\r\n          transform: translateX(0upx);\n}\n.cu-list > .cu-item.move-cur {\r\n  -webkit-transform: translateX(-260upx);\r\n          transform: translateX(-260upx);\n}\n.cu-list > .cu-item .move {\r\n  position: absolute;\r\n  right: 0;\r\n  display: flex;\r\n  width: 260upx;\r\n  height: 100%;\r\n  -webkit-transform: translateX(100%);\r\n          transform: translateX(100%);\n}\n.cu-list > .cu-item .move uni-view {\r\n  display: flex;\r\n  flex: 1;\r\n  justify-content: center;\r\n  align-items: center;\n}\n.cu-list.menu-avatar {\r\n  overflow: hidden;\n}\n.cu-list.menu-avatar > .cu-item {\r\n  position: relative;\r\n  display: flex;\r\n  padding-right: 10upx;\r\n  height: 140upx;\r\n  background-color: #ffffff;\r\n  justify-content: flex-end;\r\n  align-items: center;\n}\n.cu-list.menu-avatar > .cu-item > .cu-avatar {\r\n  position: absolute;\r\n  left: 30upx;\n}\n.cu-list.menu-avatar > .cu-item .flex .text-cut {\r\n  max-width: 510upx;\n}\n.cu-list.menu-avatar > .cu-item .content {\r\n  position: absolute;\r\n  left: 146upx;\r\n  width: calc(100% - 96upx - 60upx - 120upx - 20upx);\r\n  line-height: 1.6em;\n}\n.cu-list.menu-avatar > .cu-item .content.flex-sub {\r\n  width: calc(100% - 96upx - 60upx - 20upx);\n}\n.cu-list.menu-avatar > .cu-item .content > uni-view:first-child {\r\n  font-size: 30upx;\r\n  display: flex;\r\n  align-items: center;\n}\n.cu-list.menu-avatar > .cu-item .content .cu-tag.sm {\r\n  display: inline-block;\r\n  margin-left: 10upx;\r\n  height: 28upx;\r\n  font-size: 16upx;\r\n  line-height: 32upx;\n}\n.cu-list.menu-avatar > .cu-item .action {\r\n  width: 100upx;\r\n  text-align: center;\n}\n.cu-list.menu-avatar > .cu-item .action uni-view + uni-view {\r\n  margin-top: 10upx;\n}\n.cu-list.menu-avatar.comment > .cu-item .content {\r\n  position: relative;\r\n  left: 0;\r\n  width: auto;\r\n  flex: 1;\n}\n.cu-list.menu-avatar.comment > .cu-item {\r\n  padding: 30upx 30upx 30upx 120upx;\r\n  height: auto;\n}\n.cu-list.menu-avatar.comment .cu-avatar {\r\n  align-self: flex-start;\n}\n.cu-list.menu > .cu-item {\r\n  position: relative;\r\n  display: flex;\r\n  padding: 0 30upx;\r\n  min-height: 100upx;\r\n  background-color: #ffffff;\r\n  justify-content: space-between;\r\n  align-items: center;\n}\n.cu-list.menu > .cu-item:last-child:after {\r\n  border: none;\n}\n.cu-list.menu-avatar > .cu-item:after,\r\n.cu-list.menu > .cu-item:after {\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  box-sizing: border-box;\r\n  width: 200%;\r\n  height: 200%;\r\n  border-bottom: 1upx solid #ddd;\r\n  border-radius: inherit;\r\n  content: \" \";\r\n  -webkit-transform: scale(0.5);\r\n          transform: scale(0.5);\r\n  -webkit-transform-origin: 0 0;\r\n          transform-origin: 0 0;\r\n  pointer-events: none;\n}\n.cu-list.menu > .cu-item.grayscale {\r\n  background-color: #f5f5f5;\n}\n.cu-list.menu > .cu-item.cur {\r\n  background-color: #fcf7e9;\n}\n.cu-list.menu > .cu-item.arrow {\r\n  padding-right: 90upx;\n}\n.cu-list.menu > .cu-item.arrow:before {\r\n  position: absolute;\r\n  top: 0;\r\n  right: 30upx;\r\n  bottom: 0;\r\n  display: block;\r\n  margin: auto;\r\n  width: 30upx;\r\n  height: 30upx;\r\n  color: #8799a3;\r\n  content: \"\\e6a3\";\r\n  text-align: center;\r\n  font-size: 34upx;\r\n  font-family: cuIcon;\r\n  line-height: 30upx;\n}\n.cu-list.menu > .cu-item uni-button.content {\r\n  padding: 0;\r\n  background-color: transparent;\r\n  justify-content: flex-start;\n}\n.cu-list.menu > .cu-item uni-button.content:after {\r\n  display: none;\n}\n.cu-list.menu > .cu-item .cu-avatar-group .cu-avatar {\r\n  border-color: #ffffff;\n}\n.cu-list.menu > .cu-item .content > uni-view:first-child {\r\n  display: flex;\r\n  align-items: center;\n}\n.cu-list.menu > .cu-item .content > uni-text[class*=cuIcon] {\r\n  display: inline-block;\r\n  margin-right: 10upx;\r\n  width: 1.6em;\r\n  text-align: center;\n}\n.cu-list.menu > .cu-item .content > uni-image {\r\n  display: inline-block;\r\n  margin-right: 10upx;\r\n  width: 1.6em;\r\n  height: 1.6em;\r\n  vertical-align: middle;\n}\n.cu-list.menu > .cu-item .content {\r\n  font-size: 30upx;\r\n  line-height: 1.6em;\r\n  flex: 1;\n}\n.cu-list.menu > .cu-item .content .cu-tag.sm {\r\n  display: inline-block;\r\n  margin-left: 10upx;\r\n  height: 28upx;\r\n  font-size: 16upx;\r\n  line-height: 32upx;\n}\n.cu-list.menu > .cu-item .action .cu-tag:empty {\r\n  right: 10upx;\n}\n.cu-list.menu {\r\n  display: block;\r\n  overflow: hidden;\n}\n.cu-list.menu.sm-border > .cu-item:after {\r\n  left: 30upx;\r\n  width: calc(200% - 120upx);\n}\n.cu-list.grid > .cu-item {\r\n  position: relative;\r\n  display: flex;\r\n  padding: 20upx 0 30upx;\r\n  transition-duration: 0s;\r\n  flex-direction: column;\n}\n.cu-list.grid > .cu-item:after {\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  box-sizing: border-box;\r\n  width: 200%;\r\n  height: 200%;\r\n  border-right: 1px solid rgba(0, 0, 0, 0.1);\r\n  border-bottom: 1px solid rgba(0, 0, 0, 0.1);\r\n  border-radius: inherit;\r\n  content: \" \";\r\n  -webkit-transform: scale(0.5);\r\n          transform: scale(0.5);\r\n  -webkit-transform-origin: 0 0;\r\n          transform-origin: 0 0;\r\n  pointer-events: none;\n}\n.cu-list.grid > .cu-item uni-text {\r\n  display: block;\r\n  margin-top: 10upx;\r\n  color: #888;\r\n  font-size: 26upx;\r\n  line-height: 40upx;\n}\n.cu-list.grid > .cu-item [class*=cuIcon] {\r\n  position: relative;\r\n  display: block;\r\n  margin-top: 20upx;\r\n  width: 100%;\r\n  font-size: 48upx;\n}\n.cu-list.grid > .cu-item .cu-tag {\r\n  right: auto;\r\n  left: 50%;\r\n  margin-left: 20upx;\n}\n.cu-list.grid {\r\n  background-color: #ffffff;\r\n  text-align: center;\n}\n.cu-list.grid.no-border > .cu-item {\r\n  padding-top: 10upx;\r\n  padding-bottom: 20upx;\n}\n.cu-list.grid.no-border > .cu-item:after {\r\n  border: none;\n}\n.cu-list.grid.no-border {\r\n  padding: 20upx 10upx;\n}\n.cu-list.grid.col-3 > .cu-item:nth-child(3n):after,\r\n.cu-list.grid.col-4 > .cu-item:nth-child(4n):after,\r\n.cu-list.grid.col-5 > .cu-item:nth-child(5n):after {\r\n  border-right-width: 0;\n}\n.cu-list.card-menu {\r\n  overflow: hidden;\r\n  margin-right: 30upx;\r\n  margin-left: 30upx;\r\n  border-radius: 20upx;\n}\r\n/* ==================\r\n          操作条\r\n ==================== */\n.cu-bar {\r\n  display: flex;\r\n  position: relative;\r\n  align-items: center;\r\n  min-height: 100upx;\r\n  justify-content: space-between;\n}\n.cu-bar .action {\r\n  display: flex;\r\n  align-items: center;\r\n  height: 100%;\r\n  justify-content: center;\r\n  max-width: 100%;\n}\n.cu-bar .action.border-title {\r\n  position: relative;\r\n  top: -10upx;\n}\n.cu-bar .action.border-title uni-text[class*=\"bg-\"]:last-child {\r\n  position: absolute;\r\n  bottom: -0.5rem;\r\n  min-width: 2rem;\r\n  height: 6upx;\r\n  left: 0;\n}\n.cu-bar .action.sub-title {\r\n  position: relative;\r\n  top: -0.2rem;\n}\n.cu-bar .action.sub-title uni-text {\r\n  position: relative;\r\n  z-index: 1;\n}\n.cu-bar .action.sub-title uni-text[class*=\"bg-\"]:last-child {\r\n  position: absolute;\r\n  display: inline-block;\r\n  bottom: -0.2rem;\r\n  border-radius: 6upx;\r\n  width: 100%;\r\n  height: 0.6rem;\r\n  left: 0.6rem;\r\n  opacity: 0.3;\r\n  z-index: 0;\n}\n.cu-bar .action.sub-title uni-text[class*=\"text-\"]:last-child {\r\n  position: absolute;\r\n  display: inline-block;\r\n  bottom: -0.7rem;\r\n  left: 0.5rem;\r\n  opacity: 0.2;\r\n  z-index: 0;\r\n  text-align: right;\r\n  font-weight: 900;\r\n  font-size: 36upx;\n}\n.cu-bar.justify-center .action.border-title uni-text:last-child,\r\n.cu-bar.justify-center .action.sub-title uni-text:last-child {\r\n  left: 0;\r\n  right: 0;\r\n  margin: auto;\r\n  text-align: center;\n}\n.cu-bar .action:first-child {\r\n  margin-left: 30upx;\r\n  font-size: 30upx;\n}\n.cu-bar .action uni-text.text-cut {\r\n  text-align: left;\r\n  width: 100%;\n}\n.cu-bar .cu-avatar:first-child {\r\n  margin-left: 20upx;\n}\n.cu-bar .action:first-child > uni-text[class*=\"cuIcon-\"] {\r\n  margin-left: -0.3em;\r\n  margin-right: 0.3em;\n}\n.cu-bar .action:last-child {\r\n  margin-right: 30upx;\n}\n.cu-bar .action > uni-text[class*=\"cuIcon-\"],\r\n.cu-bar .action > uni-view[class*=\"cuIcon-\"] {\r\n  font-size: 36upx;\n}\n.cu-bar .action > uni-text[class*=\"cuIcon-\"] + uni-text[class*=\"cuIcon-\"] {\r\n  margin-left: 0.5em;\n}\n.cu-bar .content {\r\n  position: absolute;\r\n  text-align: center;\r\n  width: calc(100% - 340upx);\r\n  left: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  top: 0;\r\n  margin: auto;\r\n  height: 60upx;\r\n  font-size: 32upx;\r\n  line-height: 60upx;\r\n  cursor: none;\r\n  pointer-events: none;\r\n  text-overflow: ellipsis;\r\n  white-space: nowrap;\r\n  overflow: hidden;\n}\n.cu-bar.ios .content {\r\n  bottom: 7px;\r\n  height: 30px;\r\n  font-size: 32upx;\r\n  line-height: 30px;\n}\n.cu-bar.btn-group {\r\n  justify-content: space-around;\n}\n.cu-bar.btn-group uni-button {\r\n  padding: 20upx 32upx;\n}\n.cu-bar.btn-group uni-button {\r\n  flex: 1;\r\n  margin: 0 20upx;\r\n  max-width: 50%;\n}\n.cu-bar .search-form {\r\n  background-color: #f5f5f5;\r\n  line-height: 64upx;\r\n  height: 64upx;\r\n  font-size: 24upx;\r\n  color: #333333;\r\n  flex: 1;\r\n  display: flex;\r\n  align-items: center;\r\n  margin: 0 30upx;\n}\n.cu-bar .search-form + .action {\r\n  margin-right: 30upx;\n}\n.cu-bar .search-form uni-input {\r\n  flex: 1;\r\n  padding-right: 30upx;\r\n  height: 64upx;\r\n  line-height: 64upx;\r\n  font-size: 26upx;\r\n  background-color: transparent;\n}\n.cu-bar .search-form [class*=\"cuIcon-\"] {\r\n  margin: 0 0.5em 0 0.8em;\n}\n.cu-bar .search-form [class*=\"cuIcon-\"]::before {\r\n  top: 0upx;\n}\n.cu-bar.fixed,\r\n.nav.fixed {\r\n  position: fixed;\r\n  width: 100%;\r\n  top: 0;\r\n  z-index: 1024;\r\n  box-shadow: 0 1upx 6upx rgba(0, 0, 0, 0.1);\n}\n.cu-bar.foot {\r\n  position: fixed;\r\n  width: 100%;\r\n  bottom: 0;\r\n  z-index: 1024;\r\n  box-shadow: 0 -1upx 6upx rgba(0, 0, 0, 0.1);\n}\n.cu-bar.tabbar {\r\n  padding: 0;\r\n  height: calc(100upx + env(safe-area-inset-bottom) / 2);\r\n  padding-bottom: calc(env(safe-area-inset-bottom) / 2);\n}\n.cu-tabbar-height {\r\n  min-height: 100upx;\r\n  height: calc(100upx + env(safe-area-inset-bottom) / 2);\n}\n.cu-bar.tabbar.shadow {\r\n  box-shadow: 0 -1upx 6upx rgba(0, 0, 0, 0.1);\n}\n.cu-bar.tabbar .action {\r\n  font-size: 22upx;\r\n  position: relative;\r\n  flex: 1;\r\n  text-align: center;\r\n  padding: 0;\r\n  display: block;\r\n  height: auto;\r\n  line-height: 1;\r\n  margin: 0;\r\n  background-color: inherit;\r\n  overflow: initial;\n}\n.cu-bar.tabbar.shop .action {\r\n  width: 140upx;\r\n  flex: initial;\n}\n.cu-bar.tabbar .action.add-action {\r\n  position: relative;\r\n  z-index: 2;\r\n  padding-top: 50upx;\n}\n.cu-bar.tabbar .action.add-action [class*=\"cuIcon-\"] {\r\n  position: absolute;\r\n  width: 70upx;\r\n  z-index: 2;\r\n  height: 70upx;\r\n  border-radius: 50%;\r\n  line-height: 70upx;\r\n  font-size: 50upx;\r\n  top: -35upx;\r\n  left: 0;\r\n  right: 0;\r\n  margin: auto;\r\n  padding: 0;\n}\n.cu-bar.tabbar .action.add-action::after {\r\n  content: \"\";\r\n  position: absolute;\r\n  width: 100upx;\r\n  height: 100upx;\r\n  top: -50upx;\r\n  left: 0;\r\n  right: 0;\r\n  margin: auto;\r\n  box-shadow: 0 -3upx 8upx rgba(0, 0, 0, 0.08);\r\n  border-radius: 50upx;\r\n  background-color: inherit;\r\n  z-index: 0;\n}\n.cu-bar.tabbar .action.add-action::before {\r\n  content: \"\";\r\n  position: absolute;\r\n  width: 100upx;\r\n  height: 30upx;\r\n  bottom: 30upx;\r\n  left: 0;\r\n  right: 0;\r\n  margin: auto;\r\n  background-color: inherit;\r\n  z-index: 1;\n}\n.cu-bar.tabbar .btn-group {\r\n  flex: 1;\r\n  display: flex;\r\n  justify-content: space-around;\r\n  align-items: center;\r\n  padding: 0 10upx;\n}\n.cu-bar.tabbar uni-button.action::after {\r\n  border: 0;\n}\n.cu-bar.tabbar .action [class*=\"cuIcon-\"] {\r\n  width: 100upx;\r\n  position: relative;\r\n  display: block;\r\n  height: auto;\r\n  margin: 0 auto 10upx;\r\n  text-align: center;\r\n  font-size: 40upx;\n}\n.cu-bar.tabbar .action .cuIcon-cu-image {\r\n  margin: 0 auto;\n}\n.cu-bar.tabbar .action .cuIcon-cu-image uni-image {\r\n  width: 50upx;\r\n  height: 50upx;\r\n  display: inline-block;\n}\n.cu-bar.tabbar .submit {\r\n  align-items: center;\r\n  display: flex;\r\n  justify-content: center;\r\n  text-align: center;\r\n  position: relative;\r\n  flex: 2;\r\n  align-self: stretch;\n}\n.cu-bar.tabbar .submit:last-child {\r\n  flex: 2.6;\n}\n.cu-bar.tabbar .submit + .submit {\r\n  flex: 2;\n}\n.cu-bar.tabbar.border .action::before {\r\n  content: \" \";\r\n  width: 200%;\r\n  height: 200%;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  -webkit-transform: scale(0.5);\r\n          transform: scale(0.5);\r\n  -webkit-transform-origin: 0 0;\r\n          transform-origin: 0 0;\r\n  border-right: 1upx solid rgba(0, 0, 0, 0.1);\r\n  z-index: 3;\n}\n.cu-bar.tabbar.border .action:last-child:before {\r\n  display: none;\n}\n.cu-bar.input {\r\n  padding-right: 20upx;\r\n  background-color: #ffffff;\n}\n.cu-bar.input uni-input {\r\n  overflow: initial;\r\n  line-height: 64upx;\r\n  height: 64upx;\r\n  min-height: 64upx;\r\n  flex: 1;\r\n  font-size: 30upx;\r\n  margin: 0 20upx;\n}\n.cu-bar.input .action {\r\n  margin-left: 20upx;\n}\n.cu-bar.input .action [class*=\"cuIcon-\"] {\r\n  font-size: 48upx;\n}\n.cu-bar.input uni-input + .action {\r\n  margin-right: 20upx;\r\n  margin-left: 0upx;\n}\n.cu-bar.input .action:first-child [class*=\"cuIcon-\"] {\r\n  margin-left: 0upx;\n}\n.cu-custom {\r\n  display: block;\r\n  position: relative;\n}\n.cu-custom .cu-bar .content {\r\n  width: calc(100% - 440upx);\n}\n.cu-custom .cu-bar .content uni-image {\r\n  height: 60upx;\r\n  width: 240upx;\n}\n.cu-custom .cu-bar {\r\n  min-height: 0px;\r\n  box-shadow: 0upx 0upx 0upx;\r\n  z-index: 9999;\n}\n.cu-custom .cu-bar .border-custom {\r\n  position: relative;\r\n  background: rgba(0, 0, 0, 0.15);\r\n  border-radius: 1000upx;\r\n  height: 30px;\n}\n.cu-custom .cu-bar .border-custom::after {\r\n  content: \" \";\r\n  width: 200%;\r\n  height: 200%;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  border-radius: inherit;\r\n  -webkit-transform: scale(0.5);\r\n          transform: scale(0.5);\r\n  -webkit-transform-origin: 0 0;\r\n          transform-origin: 0 0;\r\n  pointer-events: none;\r\n  box-sizing: border-box;\r\n  border: 1upx solid #ffffff;\r\n  opacity: 0.5;\n}\n.cu-custom .cu-bar .border-custom::before {\r\n  content: \" \";\r\n  width: 1upx;\r\n  height: 110%;\r\n  position: absolute;\r\n  top: 22.5%;\r\n  left: 0;\r\n  right: 0;\r\n  margin: auto;\r\n  -webkit-transform: scale(0.5);\r\n          transform: scale(0.5);\r\n  -webkit-transform-origin: 0 0;\r\n          transform-origin: 0 0;\r\n  pointer-events: none;\r\n  box-sizing: border-box;\r\n  opacity: 0.6;\r\n  background-color: #ffffff;\n}\n.cu-custom .cu-bar .border-custom uni-text {\r\n  display: block;\r\n  flex: 1;\r\n  margin: auto !important;\r\n  text-align: center;\r\n  font-size: 34upx;\n}\r\n/* ==================\r\n         导航栏\r\n ==================== */\n.nav {\r\n  white-space: nowrap;\n}\n::-webkit-scrollbar {\r\n  display: none;\n}\n.nav .cu-item {\r\n  height: 90upx;\r\n  display: inline-block;\r\n  line-height: 90upx;\r\n  margin: 0 10upx;\r\n  padding: 0 20upx;\n}\n.nav .cu-item.cur {\r\n  border-bottom: 4upx solid;\n}\r\n/* ==================\r\n         时间轴\r\n ==================== */\n.cu-timeline {\r\n  display: block;\r\n  background-color: #ffffff;\n}\n.cu-timeline .cu-time {\r\n  width: 120upx;\r\n  text-align: center;\r\n  padding: 20upx 0;\r\n  font-size: 26upx;\r\n  color: #888;\r\n  display: block;\n}\n.cu-timeline > .cu-item {\r\n  padding: 30upx 30upx 30upx 120upx;\r\n  position: relative;\r\n  display: block;\r\n  z-index: 0;\n}\n.cu-timeline > .cu-item:not([class*=\"text-\"]) {\r\n  color: #ccc;\n}\n.cu-timeline > .cu-item::after {\r\n  content: \"\";\r\n  display: block;\r\n  position: absolute;\r\n  width: 1upx;\r\n  background-color: #ddd;\r\n  left: 60upx;\r\n  height: 100%;\r\n  top: 0;\r\n  z-index: 8;\n}\n.cu-timeline > .cu-item::before {\r\n  font-family: \"cuIcon\";\r\n  display: block;\r\n  position: absolute;\r\n  top: 36upx;\r\n  z-index: 9;\r\n  background-color: #ffffff;\r\n  width: 50upx;\r\n  height: 50upx;\r\n  text-align: center;\r\n  border: none;\r\n  line-height: 50upx;\r\n  left: 36upx;\n}\n.cu-timeline > .cu-item:not([class*=\"cuIcon-\"])::before {\r\n  content: \"\\e763\";\n}\n.cu-timeline > .cu-item[class*=\"cuIcon-\"]::before {\r\n  background-color: #ffffff;\r\n  width: 50upx;\r\n  height: 50upx;\r\n  text-align: center;\r\n  border: none;\r\n  line-height: 50upx;\r\n  left: 36upx;\n}\n.cu-timeline > .cu-item > .content {\r\n  padding: 30upx;\r\n  border-radius: 6upx;\r\n  display: block;\r\n  line-height: 1.6;\n}\n.cu-timeline > .cu-item > .content:not([class*=\"bg-\"]) {\r\n  background-color: #f1f1f1;\r\n  color: #333333;\n}\n.cu-timeline > .cu-item > .content + .content {\r\n  margin-top: 20upx;\n}\r\n/* ==================\r\n         聊天\r\n ==================== */\n.cu-chat {\r\n  display: flex;\r\n  flex-direction: column;\n}\n.cu-chat .cu-item {\r\n  display: flex;\r\n  padding: 30upx 30upx 70upx;\r\n  position: relative;\n}\n.cu-chat .cu-item > .cu-avatar {\r\n  width: 80upx;\r\n  height: 80upx;\n}\n.cu-chat .cu-item > .main {\r\n  max-width: calc(100% - 260upx);\r\n  margin: 0 40upx;\r\n  display: flex;\r\n  align-items: center;\n}\n.cu-chat .cu-item > uni-image {\r\n  height: 320upx;\n}\n.cu-chat .cu-item > .main .content {\r\n  padding: 20upx;\r\n  border-radius: 6upx;\r\n  display: inline-flex;\r\n  max-width: 100%;\r\n  align-items: center;\r\n  font-size: 30upx;\r\n  position: relative;\r\n  min-height: 80upx;\r\n  line-height: 40upx;\r\n  text-align: left;\n}\n.cu-chat .cu-item > .main .content:not([class*=\"bg-\"]) {\r\n  background-color: #ffffff;\r\n  color: #333333;\n}\n.cu-chat .cu-item .date {\r\n  position: absolute;\r\n  font-size: 24upx;\r\n  color: #8799a3;\r\n  width: calc(100% - 320upx);\r\n  bottom: 20upx;\r\n  left: 160upx;\n}\n.cu-chat .cu-item .action {\r\n  padding: 0 30upx;\r\n  display: flex;\r\n  align-items: center;\n}\n.cu-chat .cu-item > .main .content::after {\r\n  content: \"\";\r\n  top: 27upx;\r\n  -webkit-transform: rotate(45deg);\r\n          transform: rotate(45deg);\r\n  position: absolute;\r\n  z-index: 100;\r\n  display: inline-block;\r\n  overflow: hidden;\r\n  width: 24upx;\r\n  height: 24upx;\r\n  left: -12upx;\r\n  right: initial;\r\n  background-color: inherit;\n}\n.cu-chat .cu-item.self > .main .content::after {\r\n  left: auto;\r\n  right: -12upx;\n}\n.cu-chat .cu-item > .main .content::before {\r\n  content: \"\";\r\n  top: 30upx;\r\n  -webkit-transform: rotate(45deg);\r\n          transform: rotate(45deg);\r\n  position: absolute;\r\n  z-index: -1;\r\n  display: inline-block;\r\n  overflow: hidden;\r\n  width: 24upx;\r\n  height: 24upx;\r\n  left: -12upx;\r\n  right: initial;\r\n  background-color: inherit;\r\n  -webkit-filter: blur(5upx);\r\n          filter: blur(5upx);\r\n  opacity: 0.3;\n}\n.cu-chat .cu-item > .main .content:not([class*=\"bg-\"])::before {\r\n  background-color: #333333;\r\n  opacity: 0.1;\n}\n.cu-chat .cu-item.self > .main .content::before {\r\n  left: auto;\r\n  right: -12upx;\n}\n.cu-chat .cu-item.self {\r\n  justify-content: flex-end;\r\n  text-align: right;\n}\n.cu-chat .cu-info {\r\n  display: inline-block;\r\n  margin: 20upx auto;\r\n  font-size: 24upx;\r\n  padding: 8upx 12upx;\r\n  background-color: rgba(0, 0, 0, 0.2);\r\n  border-radius: 6upx;\r\n  color: #ffffff;\r\n  max-width: 400upx;\r\n  line-height: 1.4;\n}\r\n/* ==================\r\n         卡片\r\n ==================== */\n.cu-card {\r\n  display: block;\r\n  overflow: hidden;\n}\n.cu-card > .cu-item {\r\n  display: block;\r\n  background-color: #ffffff;\r\n  overflow: hidden;\r\n  border-radius: 10upx;\r\n  margin: 30upx;\n}\n.cu-card > .cu-item.shadow-blur {\r\n  overflow: initial;\n}\n.cu-card.no-card > .cu-item {\r\n  margin: 0upx;\r\n  border-radius: 0upx;\n}\n.cu-card .grid.grid-square {\r\n  margin-bottom: -20upx;\n}\n.cu-card.case .image {\r\n  position: relative;\n}\n.cu-card.case .image uni-image {\r\n  width: 100%;\n}\n.cu-card.case .image .cu-tag {\r\n  position: absolute;\r\n  right: 0;\r\n  top: 0;\n}\n.cu-card.case .image .cu-bar {\r\n  position: absolute;\r\n  bottom: 0;\r\n  width: 100%;\r\n  background-color: transparent;\r\n  padding: 0upx 30upx;\n}\n.cu-card.case.no-card .image {\r\n  margin: 30upx 30upx 0;\r\n  overflow: hidden;\r\n  border-radius: 10upx;\n}\n.cu-card.dynamic {\r\n  display: block;\n}\n.cu-card.dynamic > .cu-item {\r\n  display: block;\r\n  background-color: #ffffff;\r\n  overflow: hidden;\n}\n.cu-card.dynamic > .cu-item > .text-content {\r\n  padding: 0 30upx 0;\r\n  max-height: 6.4em;\r\n  overflow: hidden;\r\n  font-size: 30upx;\r\n  margin-bottom: 20upx;\n}\n.cu-card.dynamic > .cu-item .square-img {\r\n  width: 100%;\r\n  height: 200upx;\r\n  border-radius: 6upx;\n}\n.cu-card.dynamic > .cu-item .only-img {\r\n  width: 100%;\r\n  height: 320upx;\r\n  border-radius: 6upx;\n}\r\n/* card.dynamic>.cu-item .comment {\r\n  padding: 20upx;\r\n  background-color: #f1f1f1;\r\n  margin: 0 30upx 30upx;\r\n  border-radius: 6upx;\r\n} */\n.cu-card.article {\r\n  display: block;\n}\n.cu-card.article > .cu-item {\r\n  padding-bottom: 30upx;\n}\n.cu-card.article > .cu-item .title {\r\n  font-size: 30upx;\r\n  font-weight: 900;\r\n  color: #333333;\r\n  line-height: 100upx;\r\n  padding: 0 30upx;\n}\n.cu-card.article > .cu-item .content {\r\n  display: flex;\r\n  padding: 0 30upx;\n}\n.cu-card.article > .cu-item .content > uni-image {\r\n  width: 240upx;\r\n  height: 6.4em;\r\n  margin-right: 20upx;\r\n  border-radius: 6upx;\n}\n.cu-card.article > .cu-item .content .desc {\r\n  flex: 1;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: space-between;\n}\n.cu-card.article > .cu-item .content .text-content {\r\n  font-size: 28upx;\r\n  color: #888;\r\n  height: 4.8em;\r\n  overflow: hidden;\n}\r\n/* ==================\r\n         表单\r\n ==================== */\n.cu-form-group {\r\n  background-color: #ffffff;\r\n  padding: 1upx 30upx;\r\n  display: flex;\r\n  align-items: center;\r\n  min-height: 100upx;\r\n  justify-content: space-between;\n}\n.cu-form-group + .cu-form-group {\r\n  border-top: 1upx solid #eee;\n}\n.cu-form-group .title {\r\n  text-align: justify;\r\n  padding-right: 30upx;\r\n  font-size: 30upx;\r\n  position: relative;\r\n  height: 60upx;\r\n  line-height: 60upx;\n}\n.cu-form-group uni-input {\r\n  flex: 1;\r\n  font-size: 30upx;\r\n  color: #555;\r\n  padding-right: 20upx;\n}\n.cu-form-group > uni-text[class*=\"cuIcon-\"] {\r\n  font-size: 36upx;\r\n  padding: 0;\r\n  box-sizing: border-box;\n}\n.cu-form-group uni-textarea {\r\n  margin: 32upx 0 30upx;\r\n  height: 4.6em;\r\n  width: 100%;\r\n  line-height: 1.2em;\r\n  flex: 1;\r\n  font-size: 28upx;\r\n  padding: 0;\n}\n.cu-form-group.align-start .title {\r\n  height: 1em;\r\n  margin-top: 32upx;\r\n  line-height: 1em;\n}\n.cu-form-group uni-picker {\r\n  flex: 1;\r\n  padding-right: 40upx;\r\n  overflow: hidden;\r\n  position: relative;\n}\n.cu-form-group uni-picker .picker {\r\n  line-height: 100upx;\r\n  font-size: 28upx;\r\n  text-overflow: ellipsis;\r\n  white-space: nowrap;\r\n  overflow: hidden;\r\n  width: 100%;\r\n  text-align: right;\n}\n.cu-form-group uni-picker::after {\r\n  font-family: cuIcon;\r\n  display: block;\r\n  content: \"\\e6a3\";\r\n  position: absolute;\r\n  font-size: 34upx;\r\n  color: #8799a3;\r\n  line-height: 100upx;\r\n  width: 60upx;\r\n  text-align: center;\r\n  top: 0;\r\n  bottom: 0;\r\n  right: -20upx;\r\n  margin: auto;\n}\n.cu-form-group uni-textarea[disabled],\r\n.cu-form-group uni-textarea[disabled] .placeholder {\r\n  color: transparent;\n}\r\n/* ==================\r\n         模态窗口\r\n ==================== */\n.cu-modal {\r\n  position: fixed;\r\n  top: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  left: 0;\r\n  z-index: 1110;\r\n  opacity: 0;\r\n  outline: 0;\r\n  text-align: center;\r\n  -webkit-transform: scale(1.185);\r\n          transform: scale(1.185);\r\n  -webkit-backface-visibility: hidden;\r\n          backface-visibility: hidden;\r\n  -webkit-perspective: 2000upx;\r\n          perspective: 2000upx;\r\n  background: rgba(0, 0, 0, 0.6);\r\n  transition: all 0.3s ease-in-out 0s;\r\n  pointer-events: none;\n}\n.cu-modal::before {\r\n  content: \"\\200B\";\r\n  display: inline-block;\r\n  height: 100%;\r\n  vertical-align: middle;\n}\n.cu-modal.show {\r\n  opacity: 1;\r\n  transition-duration: 0.3s;\r\n  -webkit-transform: scale(1);\r\n          transform: scale(1);\r\n  overflow-x: hidden;\r\n  overflow-y: auto;\r\n  pointer-events: auto;\n}\n.cu-dialog {\r\n  position: relative;\r\n  display: inline-block;\r\n  vertical-align: middle;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  width: 680upx;\r\n  max-width: 100%;\r\n  background-color: #f8f8f8;\r\n  border-radius: 10upx;\r\n  overflow: hidden;\n}\n.cu-modal.bottom-modal::before {\r\n  vertical-align: bottom;\n}\n.cu-modal.bottom-modal .cu-dialog {\r\n  width: 100%;\r\n  border-radius: 0;\n}\n.cu-modal.bottom-modal {\r\n  margin-bottom: -1000upx;\n}\n.cu-modal.bottom-modal.show {\r\n  margin-bottom: 0;\n}\n.cu-modal.drawer-modal {\r\n  -webkit-transform: scale(1);\r\n          transform: scale(1);\r\n  display: flex;\n}\n.cu-modal.drawer-modal .cu-dialog {\r\n  height: 100%;\r\n  min-width: 200upx;\r\n  border-radius: 0;\r\n  margin: initial;\r\n  transition-duration: 0.3s;\n}\n.cu-modal.drawer-modal.justify-start .cu-dialog {\r\n  -webkit-transform: translateX(-100%);\r\n          transform: translateX(-100%);\n}\n.cu-modal.drawer-modal.justify-end .cu-dialog {\r\n  -webkit-transform: translateX(100%);\r\n          transform: translateX(100%);\n}\n.cu-modal.drawer-modal.show .cu-dialog {\r\n  -webkit-transform: translateX(0%);\r\n          transform: translateX(0%);\n}\n.cu-modal .cu-dialog > .cu-bar:first-child .action {\r\n  min-width: 100rpx;\r\n  margin-right: 0;\r\n  min-height: 100rpx;\n}\r\n/* ==================\r\n         轮播\r\n ==================== */\nuni-swiper .a-swiper-dot {\r\n  display: inline-block;\r\n  width: 16upx;\r\n  height: 16upx;\r\n  background: rgba(0, 0, 0, 0.3);\r\n  border-radius: 50%;\r\n  vertical-align: middle;\n}\nuni-swiper[class*=\"-dot\"] .wx-swiper-dots,\r\nuni-swiper[class*=\"-dot\"] .a-swiper-dots,\r\nuni-swiper[class*=\"-dot\"] .uni-swiper-dots {\r\n  display: flex;\r\n  align-items: center;\r\n  width: 100%;\r\n  justify-content: center;\n}\nuni-swiper.square-dot .wx-swiper-dot,\r\nuni-swiper.square-dot .a-swiper-dot,\r\nuni-swiper.square-dot .uni-swiper-dot {\r\n  background-color: #ffffff;\r\n  opacity: 0.4;\r\n  width: 10upx;\r\n  height: 10upx;\r\n  border-radius: 20upx;\r\n  margin: 0 8upx !important;\n}\nuni-swiper.square-dot .wx-swiper-dot.wx-swiper-dot-active,\r\nuni-swiper.square-dot .a-swiper-dot.a-swiper-dot-active,\r\nuni-swiper.square-dot .uni-swiper-dot.uni-swiper-dot-active {\r\n  opacity: 1;\r\n  width: 30upx;\n}\nuni-swiper.round-dot .wx-swiper-dot,\r\nuni-swiper.round-dot .a-swiper-dot,\r\nuni-swiper.round-dot .uni-swiper-dot {\r\n  width: 10upx;\r\n  height: 10upx;\r\n  position: relative;\r\n  margin: 4upx 8upx !important;\n}\nuni-swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active::after,\r\nuni-swiper.round-dot .a-swiper-dot.a-swiper-dot-active::after,\r\nuni-swiper.round-dot .uni-swiper-dot.uni-swiper-dot-active::after {\r\n  content: \"\";\r\n  position: absolute;\r\n  width: 10upx;\r\n  height: 10upx;\r\n  top: 0upx;\r\n  left: 0upx;\r\n  right: 0;\r\n  bottom: 0;\r\n  margin: auto;\r\n  background-color: #ffffff;\r\n  border-radius: 20upx;\n}\nuni-swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active,\r\nuni-swiper.round-dot .a-swiper-dot.a-swiper-dot-active,\r\nuni-swiper.round-dot .uni-swiper-dot.uni-swiper-dot-active {\r\n  width: 18upx;\r\n  height: 18upx;\n}\n.screen-swiper {\r\n  min-height: 375upx;\n}\n.screen-swiper uni-image,\r\n.screen-swiper uni-video,\r\n.swiper-item uni-image,\r\n.swiper-item uni-video {\r\n  width: 100%;\r\n  display: block;\r\n  height: 100%;\r\n  margin: 0;\r\n  pointer-events: none;\n}\n.card-swiper {\r\n  height: 420upx !important;\n}\n.card-swiper uni-swiper-item {\r\n  width: 610upx !important;\r\n  left: 70upx;\r\n  box-sizing: border-box;\r\n  padding: 40upx 0upx 70upx;\r\n  overflow: initial;\n}\n.card-swiper uni-swiper-item .swiper-item {\r\n  width: 100%;\r\n  display: block;\r\n  height: 100%;\r\n  border-radius: 10upx;\r\n  -webkit-transform: scale(0.9);\r\n          transform: scale(0.9);\r\n  transition: all 0.2s ease-in 0s;\r\n  overflow: hidden;\n}\n.card-swiper uni-swiper-item.cur .swiper-item {\r\n  -webkit-transform: none;\r\n          transform: none;\r\n  transition: all 0.2s ease-in 0s;\n}\n.tower-swiper {\r\n  height: 420upx;\r\n  position: relative;\r\n  max-width: 750upx;\r\n  overflow: hidden;\n}\n.tower-swiper .tower-item {\r\n  position: absolute;\r\n  width: 300upx;\r\n  height: 380upx;\r\n  top: 0;\r\n  bottom: 0;\r\n  left: 50%;\r\n  margin: auto;\r\n  transition: all 0.2s ease-in 0s;\r\n  opacity: 1;\n}\n.tower-swiper .tower-item.none {\r\n  opacity: 0;\n}\n.tower-swiper .tower-item .swiper-item {\r\n  width: 100%;\r\n  height: 100%;\r\n  border-radius: 6upx;\r\n  overflow: hidden;\n}\r\n/* ==================\r\n          步骤条\r\n ==================== */\n.cu-steps {\r\n  display: flex;\n}\nuni-scroll-view.cu-steps {\r\n  display: block;\r\n  white-space: nowrap;\n}\nuni-scroll-view.cu-steps .cu-item {\r\n  display: inline-block;\n}\n.cu-steps .cu-item {\r\n  flex: 1;\r\n  text-align: center;\r\n  position: relative;\r\n  min-width: 100upx;\n}\n.cu-steps .cu-item:not([class*=\"text-\"]) {\r\n  color: #8799a3;\n}\n.cu-steps .cu-item [class*=\"cuIcon-\"],\r\n.cu-steps .cu-item .num {\r\n  display: block;\r\n  font-size: 40upx;\r\n  line-height: 80upx;\n}\n.cu-steps .cu-item::before,\r\n.cu-steps .cu-item::after,\r\n.cu-steps.steps-arrow .cu-item::before,\r\n.cu-steps.steps-arrow .cu-item::after {\r\n  content: \"\";\r\n  display: block;\r\n  position: absolute;\r\n  height: 0px;\r\n  width: calc(100% - 80upx);\r\n  border-bottom: 1px solid #ccc;\r\n  left: calc(0px - (100% - 80upx) / 2);\r\n  top: 40upx;\r\n  z-index: 0;\n}\n.cu-steps.steps-arrow .cu-item::before,\r\n.cu-steps.steps-arrow .cu-item::after {\r\n  content: \"\\e6a3\";\r\n  font-family: 'cuIcon';\r\n  height: 30upx;\r\n  border-bottom-width: 0px;\r\n  line-height: 30upx;\r\n  top: 0;\r\n  bottom: 0;\r\n  margin: auto;\r\n  color: #ccc;\n}\n.cu-steps.steps-bottom .cu-item::before,\r\n.cu-steps.steps-bottom .cu-item::after {\r\n  bottom: 40upx;\r\n  top: initial;\n}\n.cu-steps .cu-item::after {\r\n  border-bottom: 1px solid currentColor;\r\n  width: 0px;\r\n  transition: all 0.3s ease-in-out 0s;\n}\n.cu-steps .cu-item[class*=\"text-\"]::after {\r\n  width: calc(100% - 80upx);\r\n  color: currentColor;\n}\n.cu-steps .cu-item:first-child::before,\r\n.cu-steps .cu-item:first-child::after {\r\n  display: none;\n}\n.cu-steps .cu-item .num {\r\n  width: 40upx;\r\n  height: 40upx;\r\n  border-radius: 50%;\r\n  line-height: 40upx;\r\n  margin: 20upx auto;\r\n  font-size: 24upx;\r\n  border: 1px solid currentColor;\r\n  position: relative;\r\n  overflow: hidden;\n}\n.cu-steps .cu-item[class*=\"text-\"] .num {\r\n  background-color: currentColor;\n}\n.cu-steps .cu-item .num::before,\r\n.cu-steps .cu-item .num::after {\r\n  content: attr(data-index);\r\n  position: absolute;\r\n  left: 0;\r\n  right: 0;\r\n  top: 0;\r\n  bottom: 0;\r\n  margin: auto;\r\n  transition: all 0.3s ease-in-out 0s;\r\n  -webkit-transform: translateY(0upx);\r\n          transform: translateY(0upx);\n}\n.cu-steps .cu-item[class*=\"text-\"] .num::before {\r\n  -webkit-transform: translateY(-40upx);\r\n          transform: translateY(-40upx);\r\n  color: #ffffff;\n}\n.cu-steps .cu-item .num::after {\r\n  -webkit-transform: translateY(40upx);\r\n          transform: translateY(40upx);\r\n  color: #ffffff;\r\n  transition: all 0.3s ease-in-out 0s;\n}\n.cu-steps .cu-item[class*=\"text-\"] .num::after {\r\n  content: \"\\e645\";\r\n  font-family: 'cuIcon';\r\n  color: #ffffff;\r\n  -webkit-transform: translateY(0upx);\r\n          transform: translateY(0upx);\n}\n.cu-steps .cu-item[class*=\"text-\"] .num.err::after {\r\n  content: \"\\e646\";\n}\r\n/* ==================\r\n          布局\r\n ==================== */\r\n/*  -- flex弹性布局 -- */\n.flex {\r\n  display: flex;\n}\n.basis-xs {\r\n  flex-basis: 20%;\n}\n.basis-sm {\r\n  flex-basis: 40%;\n}\n.basis-df {\r\n  flex-basis: 50%;\n}\n.basis-lg {\r\n  flex-basis: 60%;\n}\n.basis-xl {\r\n  flex-basis: 80%;\n}\n.flex-sub {\r\n  flex: 1;\n}\n.flex-twice {\r\n  flex: 2;\n}\n.flex-treble {\r\n  flex: 3;\n}\n.flex-direction {\r\n  flex-direction: column;\n}\n.flex-wrap {\r\n  flex-wrap: wrap;\n}\n.align-start {\r\n  align-items: flex-start;\n}\n.align-end {\r\n  align-items: flex-end;\n}\n.align-center {\r\n  align-items: center;\n}\n.align-stretch {\r\n  align-items: stretch;\n}\n.self-start {\r\n  align-self: flex-start;\n}\n.self-center {\r\n  align-self: flex-center;\n}\n.self-end {\r\n  align-self: flex-end;\n}\n.self-stretch {\r\n  align-self: stretch;\n}\n.align-stretch {\r\n  align-items: stretch;\n}\n.justify-start {\r\n  justify-content: flex-start;\n}\n.justify-end {\r\n  justify-content: flex-end;\n}\n.justify-center {\r\n  justify-content: center;\n}\n.justify-between {\r\n  justify-content: space-between;\n}\n.justify-around {\r\n  justify-content: space-around;\n}\r\n/* grid布局 */\n.grid {\r\n  display: flex;\r\n  flex-wrap: wrap;\n}\n.grid.grid-square {\r\n  overflow: hidden;\n}\n.grid.grid-square .cu-tag {\r\n  position: absolute;\r\n  right: 0;\r\n  top: 0;\r\n  border-bottom-left-radius: 6upx;\r\n  padding: 6upx 12upx;\r\n  height: auto;\r\n  background-color: rgba(0, 0, 0, 0.5);\n}\n.grid.grid-square > uni-view > uni-text[class*=\"cuIcon-\"] {\r\n  font-size: 52upx;\r\n  position: absolute;\r\n  color: #8799a3;\r\n  margin: auto;\r\n  top: 0;\r\n  bottom: 0;\r\n  left: 0;\r\n  right: 0;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  flex-direction: column;\n}\n.grid.grid-square > uni-view {\r\n  margin-right: 20upx;\r\n  margin-bottom: 20upx;\r\n  border-radius: 6upx;\r\n  position: relative;\r\n  overflow: hidden;\n}\n.grid.grid-square > uni-view.bg-img uni-image {\r\n  width: 100%;\r\n  height: 100%;\r\n  position: absolute;\n}\n.grid.col-1.grid-square > uni-view {\r\n  padding-bottom: 100%;\r\n  height: 0;\r\n  margin-right: 0;\n}\n.grid.col-2.grid-square > uni-view {\r\n  padding-bottom: calc((100% - 20upx)/2);\r\n  height: 0;\r\n  width: calc((100% - 20upx)/2);\n}\n.grid.col-3.grid-square > uni-view {\r\n  padding-bottom: calc((100% - 40upx)/3);\r\n  height: 0;\r\n  width: calc((100% - 40upx)/3);\n}\n.grid.col-4.grid-square > uni-view {\r\n  padding-bottom: calc((100% - 60upx)/4);\r\n  height: 0;\r\n  width: calc((100% - 60upx)/4);\n}\n.grid.col-5.grid-square > uni-view {\r\n  padding-bottom: calc((100% - 80upx)/5);\r\n  height: 0;\r\n  width: calc((100% - 80upx)/5);\n}\n.grid.col-2.grid-square > uni-view:nth-child(2n),\r\n.grid.col-3.grid-square > uni-view:nth-child(3n),\r\n.grid.col-4.grid-square > uni-view:nth-child(4n),\r\n.grid.col-5.grid-square > uni-view:nth-child(5n) {\r\n  margin-right: 0;\n}\n.grid.col-1 > uni-view {\r\n  width: 100%;\n}\n.grid.col-2 > uni-view {\r\n  width: 50%;\n}\n.grid.col-3 > uni-view {\r\n  width: 33.33%;\n}\n.grid.col-4 > uni-view {\r\n  width: 25%;\n}\n.grid.col-5 > uni-view {\r\n  width: 20%;\n}\r\n/*  -- 内外边距 -- */\n.margin-0 {\r\n  margin: 0;\n}\n.margin-xs {\r\n  margin: 10upx;\n}\n.margin-sm {\r\n  margin: 20upx;\n}\n.margin {\r\n  margin: 30upx;\n}\n.margin-lg {\r\n  margin: 40upx;\n}\n.margin-xl {\r\n  margin: 50upx;\n}\n.margin-top-xs {\r\n  margin-top: 10upx;\n}\n.margin-top-sm {\r\n  margin-top: 20upx;\n}\n.margin-top {\r\n  margin-top: 30upx;\n}\n.margin-top-lg {\r\n  margin-top: 40upx;\n}\n.margin-top-xl {\r\n  margin-top: 50upx;\n}\n.margin-right-xs {\r\n  margin-right: 10upx;\n}\n.margin-right-sm {\r\n  margin-right: 20upx;\n}\n.margin-right {\r\n  margin-right: 30upx;\n}\n.margin-right-lg {\r\n  margin-right: 40upx;\n}\n.margin-right-xl {\r\n  margin-right: 50upx;\n}\n.margin-bottom-xs {\r\n  margin-bottom: 10upx;\n}\n.margin-bottom-sm {\r\n  margin-bottom: 20upx;\n}\n.margin-bottom {\r\n  margin-bottom: 30upx;\n}\n.margin-bottom-lg {\r\n  margin-bottom: 40upx;\n}\n.margin-bottom-xl {\r\n  margin-bottom: 50upx;\n}\n.margin-left-xs {\r\n  margin-left: 10upx;\n}\n.margin-left-sm {\r\n  margin-left: 20upx;\n}\n.margin-left {\r\n  margin-left: 30upx;\n}\n.margin-left-lg {\r\n  margin-left: 40upx;\n}\n.margin-left-xl {\r\n  margin-left: 50upx;\n}\n.margin-lr-xs {\r\n  margin-left: 10upx;\r\n  margin-right: 10upx;\n}\n.margin-lr-sm {\r\n  margin-left: 20upx;\r\n  margin-right: 20upx;\n}\n.margin-lr {\r\n  margin-left: 30upx;\r\n  margin-right: 30upx;\n}\n.margin-lr-lg {\r\n  margin-left: 40upx;\r\n  margin-right: 40upx;\n}\n.margin-lr-xl {\r\n  margin-left: 50upx;\r\n  margin-right: 50upx;\n}\n.margin-tb-xs {\r\n  margin-top: 10upx;\r\n  margin-bottom: 10upx;\n}\n.margin-tb-sm {\r\n  margin-top: 20upx;\r\n  margin-bottom: 20upx;\n}\n.margin-tb {\r\n  margin-top: 30upx;\r\n  margin-bottom: 30upx;\n}\n.margin-tb-lg {\r\n  margin-top: 40upx;\r\n  margin-bottom: 40upx;\n}\n.margin-tb-xl {\r\n  margin-top: 50upx;\r\n  margin-bottom: 50upx;\n}\n.padding-0 {\r\n  padding: 0;\n}\n.padding-xs {\r\n  padding: 10upx;\n}\n.padding-sm {\r\n  padding: 20upx;\n}\n.padding {\r\n  padding: 30upx;\n}\n.padding-lg {\r\n  padding: 40upx;\n}\n.padding-xl {\r\n  padding: 50upx;\n}\n.padding-top-xs {\r\n  padding-top: 10upx;\n}\n.padding-top-sm {\r\n  padding-top: 20upx;\n}\n.padding-top {\r\n  padding-top: 20upx;\n}\n.padding-top-lg {\r\n  padding-top: 40upx;\n}\n.padding-top-xl {\r\n  padding-top: 50upx;\n}\n.padding-right-xs {\r\n  padding-right: 10upx;\n}\n.padding-right-sm {\r\n  padding-right: 20upx;\n}\n.padding-right {\r\n  padding-right: 30upx;\n}\n.padding-right-lg {\r\n  padding-right: 40upx;\n}\n.padding-right-xl {\r\n  padding-right: 50upx;\n}\n.padding-bottom-xs {\r\n  padding-bottom: 10upx;\n}\n.padding-bottom-sm {\r\n  padding-bottom: 20upx;\n}\n.padding-bottom {\r\n  padding-bottom: 30upx;\n}\n.padding-bottom-lg {\r\n  padding-bottom: 40upx;\n}\n.padding-bottom-xl {\r\n  padding-bottom: 50upx;\n}\n.padding-left-xs {\r\n  padding-left: 10upx;\n}\n.padding-left-sm {\r\n  padding-left: 20upx;\n}\n.padding-left {\r\n  padding-left: 30upx;\n}\n.padding-left-lg {\r\n  padding-left: 40upx;\n}\n.padding-left-xl {\r\n  padding-left: 50upx;\n}\n.padding-lr-xs {\r\n  padding-left: 10upx;\r\n  padding-right: 10upx;\n}\n.padding-lr-sm {\r\n  padding-left: 20upx;\r\n  padding-right: 20upx;\n}\n.padding-lr {\r\n  padding-left: 30upx;\r\n  padding-right: 30upx;\n}\n.padding-lr-lg {\r\n  padding-left: 40upx;\r\n  padding-right: 40upx;\n}\n.padding-lr-xl {\r\n  padding-left: 50upx;\r\n  padding-right: 50upx;\n}\n.padding-tb-xs {\r\n  padding-top: 10upx;\r\n  padding-bottom: 10upx;\n}\n.padding-tb-sm {\r\n  padding-top: 20upx;\r\n  padding-bottom: 20upx;\n}\n.padding-tb {\r\n  padding-top: 30upx;\r\n  padding-bottom: 30upx;\n}\n.padding-tb-lg {\r\n  padding-top: 40upx;\r\n  padding-bottom: 40upx;\n}\n.padding-tb-xl {\r\n  padding-top: 50upx;\r\n  padding-bottom: 50upx;\n}\r\n/* -- 浮动 --  */\n.cf::after,\r\n.cf::before {\r\n  content: \" \";\r\n  display: table;\n}\n.cf::after {\r\n  clear: both;\n}\n.fl {\r\n  float: left;\n}\n.fr {\r\n  float: right;\n}\r\n/* ==================\r\n          背景\r\n ==================== */\n.line-red::after,\r\n.lines-red::after {\r\n  border-color: #e54d42;\n}\n.line-orange::after,\r\n.lines-orange::after {\r\n  border-color: #f37b1d;\n}\n.line-yellow::after,\r\n.lines-yellow::after {\r\n  border-color: #fbbd08;\n}\n.line-olive::after,\r\n.lines-olive::after {\r\n  border-color: #8dc63f;\n}\n.line-green::after,\r\n.lines-green::after {\r\n  border-color: #39b54a;\n}\n.line-cyan::after,\r\n.lines-cyan::after {\r\n  border-color: #1cbbb4;\n}\n.line-blue::after,\r\n.lines-blue::after {\r\n  border-color: #0081ff;\n}\n.line-purple::after,\r\n.lines-purple::after {\r\n  border-color: #6739b6;\n}\n.line-mauve::after,\r\n.lines-mauve::after {\r\n  border-color: #9c26b0;\n}\n.line-pink::after,\r\n.lines-pink::after {\r\n  border-color: #e03997;\n}\n.line-brown::after,\r\n.lines-brown::after {\r\n  border-color: #a5673f;\n}\n.line-grey::after,\r\n.lines-grey::after {\r\n  border-color: #8799a3;\n}\n.line-gray::after,\r\n.lines-gray::after {\r\n  border-color: #aaaaaa;\n}\n.line-black::after,\r\n.lines-black::after {\r\n  border-color: #333333;\n}\n.line-white::after,\r\n.lines-white::after {\r\n  border-color: #ffffff;\n}\n.bg-red {\r\n  background-color: #e54d42;\r\n  color: #ffffff;\n}\n.bg-orange {\r\n  background-color: #f37b1d;\r\n  color: #ffffff;\n}\n.bg-yellow {\r\n  background-color: #fbbd08;\r\n  color: #333333;\n}\n.bg-olive {\r\n  background-color: #8dc63f;\r\n  color: #ffffff;\n}\n.bg-green {\r\n  background-color: #39b54a;\r\n  color: #ffffff;\n}\n.bg-cyan {\r\n  background-color: #1cbbb4;\r\n  color: #ffffff;\n}\n.bg-blue {\r\n  background-color: #0081ff;\r\n  color: #ffffff;\n}\n.bg-purple {\r\n  background-color: #6739b6;\r\n  color: #ffffff;\n}\n.bg-mauve {\r\n  background-color: #9c26b0;\r\n  color: #ffffff;\n}\n.bg-pink {\r\n  background-color: #e03997;\r\n  color: #ffffff;\n}\n.bg-brown {\r\n  background-color: #a5673f;\r\n  color: #ffffff;\n}\n.bg-grey {\r\n  background-color: #8799a3;\r\n  color: #ffffff;\n}\n.bg-gray {\r\n  background-color: #f0f0f0;\r\n  color: #333333;\n}\n.bg-black {\r\n  background-color: #333333;\r\n  color: #ffffff;\n}\n.bg-white {\r\n  background-color: #ffffff;\r\n  color: #666666;\n}\n.bg-shadeTop {\r\n  background-image: linear-gradient(black, rgba(0, 0, 0, 0.01));\r\n  color: #ffffff;\n}\n.bg-shadeBottom {\r\n  background-image: linear-gradient(rgba(0, 0, 0, 0.01), black);\r\n  color: #ffffff;\n}\n.bg-red.light {\r\n  color: #e54d42;\r\n  background-color: #fadbd9;\n}\n.bg-orange.light {\r\n  color: #f37b1d;\r\n  background-color: #fde6d2;\n}\n.bg-yellow.light {\r\n  color: #fbbd08;\r\n  background-color: #fef2ced2;\n}\n.bg-olive.light {\r\n  color: #8dc63f;\r\n  background-color: #e8f4d9;\n}\n.bg-green.light {\r\n  color: #39b54a;\r\n  background-color: #d7f0dbff;\n}\n.bg-cyan.light {\r\n  color: #1cbbb4;\r\n  background-color: #d2f1f0;\n}\n.bg-blue.light {\r\n  color: #0081ff;\r\n  background-color: #cce6ff;\n}\n.bg-purple.light {\r\n  color: #6739b6;\r\n  background-color: #e1d7f0;\n}\n.bg-mauve.light {\r\n  color: #9c26b0;\r\n  background-color: #ebd4ef;\n}\n.bg-pink.light {\r\n  color: #e03997;\r\n  background-color: #f9d7ea;\n}\n.bg-brown.light {\r\n  color: #a5673f;\r\n  background-color: #ede1d9;\n}\n.bg-grey.light {\r\n  color: #8799a3;\r\n  background-color: #e7ebed;\n}\n.bg-gradual-red {\r\n  background-image: linear-gradient(45deg, #f43f3b, #ec008c);\r\n  color: #ffffff;\n}\n.bg-gradual-orange {\r\n  background-image: linear-gradient(45deg, #ff9700, #ed1c24);\r\n  color: #ffffff;\n}\n.bg-gradual-green {\r\n  background-image: linear-gradient(45deg, #39b54a, #8dc63f);\r\n  color: #ffffff;\n}\n.bg-gradual-purple {\r\n  background-image: linear-gradient(45deg, #9000ff, #5e00ff);\r\n  color: #ffffff;\n}\n.bg-gradual-pink {\r\n  background-image: linear-gradient(45deg, #ec008c, #6739b6);\r\n  color: #ffffff;\n}\n.bg-gradual-blue {\r\n  background-image: linear-gradient(45deg, #0081ff, #1cbbb4);\r\n  color: #ffffff;\n}\n.shadow[class*=\"-red\"] {\r\n  box-shadow: 6upx 6upx 8upx rgba(204, 69, 59, 0.2);\n}\n.shadow[class*=\"-orange\"] {\r\n  box-shadow: 6upx 6upx 8upx rgba(217, 109, 26, 0.2);\n}\n.shadow[class*=\"-yellow\"] {\r\n  box-shadow: 6upx 6upx 8upx rgba(224, 170, 7, 0.2);\n}\n.shadow[class*=\"-olive\"] {\r\n  box-shadow: 6upx 6upx 8upx rgba(124, 173, 55, 0.2);\n}\n.shadow[class*=\"-green\"] {\r\n  box-shadow: 6upx 6upx 8upx rgba(48, 156, 63, 0.2);\n}\n.shadow[class*=\"-cyan\"] {\r\n  box-shadow: 6upx 6upx 8upx rgba(28, 187, 180, 0.2);\n}\n.shadow[class*=\"-blue\"] {\r\n  box-shadow: 6upx 6upx 8upx rgba(0, 102, 204, 0.2);\n}\n.shadow[class*=\"-purple\"] {\r\n  box-shadow: 6upx 6upx 8upx rgba(88, 48, 156, 0.2);\n}\n.shadow[class*=\"-mauve\"] {\r\n  box-shadow: 6upx 6upx 8upx rgba(133, 33, 150, 0.2);\n}\n.shadow[class*=\"-pink\"] {\r\n  box-shadow: 6upx 6upx 8upx rgba(199, 50, 134, 0.2);\n}\n.shadow[class*=\"-brown\"] {\r\n  box-shadow: 6upx 6upx 8upx rgba(140, 88, 53, 0.2);\n}\n.shadow[class*=\"-grey\"] {\r\n  box-shadow: 6upx 6upx 8upx rgba(114, 130, 138, 0.2);\n}\n.shadow[class*=\"-gray\"] {\r\n  box-shadow: 6upx 6upx 8upx rgba(114, 130, 138, 0.2);\n}\n.shadow[class*=\"-black\"] {\r\n  box-shadow: 6upx 6upx 8upx rgba(26, 26, 26, 0.2);\n}\n.shadow[class*=\"-white\"] {\r\n  box-shadow: 6upx 6upx 8upx rgba(26, 26, 26, 0.2);\n}\n.text-shadow[class*=\"-red\"] {\r\n  text-shadow: 6upx 6upx 8upx rgba(204, 69, 59, 0.2);\n}\n.text-shadow[class*=\"-orange\"] {\r\n  text-shadow: 6upx 6upx 8upx rgba(217, 109, 26, 0.2);\n}\n.text-shadow[class*=\"-yellow\"] {\r\n  text-shadow: 6upx 6upx 8upx rgba(224, 170, 7, 0.2);\n}\n.text-shadow[class*=\"-olive\"] {\r\n  text-shadow: 6upx 6upx 8upx rgba(124, 173, 55, 0.2);\n}\n.text-shadow[class*=\"-green\"] {\r\n  text-shadow: 6upx 6upx 8upx rgba(48, 156, 63, 0.2);\n}\n.text-shadow[class*=\"-cyan\"] {\r\n  text-shadow: 6upx 6upx 8upx rgba(28, 187, 180, 0.2);\n}\n.text-shadow[class*=\"-blue\"] {\r\n  text-shadow: 6upx 6upx 8upx rgba(0, 102, 204, 0.2);\n}\n.text-shadow[class*=\"-purple\"] {\r\n  text-shadow: 6upx 6upx 8upx rgba(88, 48, 156, 0.2);\n}\n.text-shadow[class*=\"-mauve\"] {\r\n  text-shadow: 6upx 6upx 8upx rgba(133, 33, 150, 0.2);\n}\n.text-shadow[class*=\"-pink\"] {\r\n  text-shadow: 6upx 6upx 8upx rgba(199, 50, 134, 0.2);\n}\n.text-shadow[class*=\"-brown\"] {\r\n  text-shadow: 6upx 6upx 8upx rgba(140, 88, 53, 0.2);\n}\n.text-shadow[class*=\"-grey\"] {\r\n  text-shadow: 6upx 6upx 8upx rgba(114, 130, 138, 0.2);\n}\n.text-shadow[class*=\"-gray\"] {\r\n  text-shadow: 6upx 6upx 8upx rgba(114, 130, 138, 0.2);\n}\n.text-shadow[class*=\"-black\"] {\r\n  text-shadow: 6upx 6upx 8upx rgba(26, 26, 26, 0.2);\n}\n.bg-img {\r\n  background-size: cover;\r\n  background-position: center;\r\n  background-repeat: no-repeat;\n}\n.bg-mask {\r\n  background-color: #333333;\r\n  position: relative;\n}\n.bg-mask::after {\r\n  content: \"\";\r\n  border-radius: inherit;\r\n  width: 100%;\r\n  height: 100%;\r\n  display: block;\r\n  background-color: rgba(0, 0, 0, 0.4);\r\n  position: absolute;\r\n  left: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  top: 0;\n}\n.bg-mask uni-view,\r\n.bg-mask uni-cover-view {\r\n  z-index: 5;\r\n  position: relative;\n}\n.bg-video {\r\n  position: relative;\n}\n.bg-video uni-video {\r\n  display: block;\r\n  height: 100%;\r\n  width: 100%;\r\n  object-fit: cover;\r\n  position: absolute;\r\n  top: 0;\r\n  z-index: 0;\r\n  pointer-events: none;\n}\r\n/* ==================\r\n          文本\r\n ==================== */\n.text-xs {\r\n  font-size: 20upx;\n}\n.text-sm {\r\n  font-size: 24upx;\n}\n.text-df {\r\n  font-size: 28upx;\n}\n.text-lg {\r\n  font-size: 32upx;\n}\n.text-xl {\r\n  font-size: 36upx;\n}\n.text-xxl {\r\n  font-size: 44upx;\n}\n.text-sl {\r\n  font-size: 80upx;\n}\n.text-xsl {\r\n  font-size: 120upx;\n}\n.text-Abc {\r\n  text-transform: Capitalize;\n}\n.text-ABC {\r\n  text-transform: Uppercase;\n}\n.text-abc {\r\n  text-transform: Lowercase;\n}\n.text-price::before {\r\n  content: \"¥\";\r\n  font-size: 80%;\r\n  margin-right: 4upx;\n}\n.text-cut {\r\n  text-overflow: ellipsis;\r\n  white-space: nowrap;\r\n  overflow: hidden;\n}\n.text-bold {\r\n  font-weight: bold;\n}\n.text-center {\r\n  text-align: center;\n}\n.text-content {\r\n  line-height: 1.6;\n}\n.text-left {\r\n  text-align: left;\n}\n.text-right {\r\n  text-align: right;\n}\n.text-red,\r\n.line-red,\r\n.lines-red {\r\n  color: #e54d42;\n}\n.text-orange,\r\n.line-orange,\r\n.lines-orange {\r\n  color: #f37b1d;\n}\n.text-yellow,\r\n.line-yellow,\r\n.lines-yellow {\r\n  color: #fbbd08;\n}\n.text-olive,\r\n.line-olive,\r\n.lines-olive {\r\n  color: #8dc63f;\n}\n.text-green,\r\n.line-green,\r\n.lines-green {\r\n  color: #39b54a;\n}\n.text-cyan,\r\n.line-cyan,\r\n.lines-cyan {\r\n  color: #1cbbb4;\n}\n.text-blue,\r\n.line-blue,\r\n.lines-blue {\r\n  color: #0081ff;\n}\n.text-purple,\r\n.line-purple,\r\n.lines-purple {\r\n  color: #6739b6;\n}\n.text-mauve,\r\n.line-mauve,\r\n.lines-mauve {\r\n  color: #9c26b0;\n}\n.text-pink,\r\n.line-pink,\r\n.lines-pink {\r\n  color: #e03997;\n}\n.text-brown,\r\n.line-brown,\r\n.lines-brown {\r\n  color: #a5673f;\n}\n.text-grey,\r\n.line-grey,\r\n.lines-grey {\r\n  color: #8799a3;\n}\n.text-gray,\r\n.line-gray,\r\n.lines-gray {\r\n  color: #aaaaaa;\n}\n.text-black,\r\n.line-black,\r\n.lines-black {\r\n  color: #333333;\n}\n.text-white,\r\n.line-white,\r\n.lines-white {\r\n  color: #ffffff;\n}\n.status_bar2 {\r\n  bottom: 80upx;\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -5921,6 +6669,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return recyclableRender; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components
+try {
+  components = {
+    uniList: __webpack_require__(/*! @/uni_modules/uni-list/components/uni-list/uni-list.vue */ 78)
+      .default,
+    uniListItem: __webpack_require__(/*! @/uni_modules/uni-list/components/uni-list-item/uni-list-item.vue */ 86)
+      .default
+  }
+} catch (e) {
+  if (
+    e.message.indexOf("Cannot find module") !== -1 &&
+    e.message.indexOf(".vue") !== -1
+  ) {
+    console.error(e.message)
+    console.error("1. 排查组件名称拼写是否正确")
+    console.error(
+      "2. 排查组件是否符合 easycom 规范，文档：https://uniapp.dcloud.net.cn/collocation/pages?id=easycom"
+    )
+    console.error(
+      "3. 若组件不符合 easycom 规范，需手动引入，并在 components 中注册该组件"
+    )
+  } else {
+    throw e
+  }
+}
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -5928,7 +6700,252 @@ var render = function() {
   return _c(
     "v-uni-view",
     { attrs: { _i: 0 } },
-    [_c("v-uni-view", { staticClass: _vm._$g(1, "sc"), attrs: { _i: 1 } })],
+    [
+      _c(
+        "v-uni-view",
+        { staticClass: _vm._$g(1, "sc"), attrs: { _i: 1 } },
+        [
+          _c(
+            "v-uni-view",
+            { staticClass: _vm._$g(2, "sc"), attrs: { _i: 2 } },
+            [
+              _c("v-uni-image", {
+                staticClass: _vm._$g(3, "sc"),
+                attrs: { src: _vm._$g(3, "a-src"), _i: 3 }
+              }),
+              _c("v-uni-input", {
+                staticClass: _vm._$g(4, "sc"),
+                attrs: {
+                  type: "text",
+                  value: "",
+                  placeholder: "搜医院，医生，科室……",
+                  maxlength: "10",
+                  _i: 4
+                }
+              })
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _c(
+        "v-uni-view",
+        { staticClass: _vm._$g(5, "sc"), attrs: { _i: 5 } },
+        [
+          _c(
+            "v-uni-button",
+            {
+              staticClass: _vm._$g(6, "sc"),
+              attrs: { _i: 6 },
+              on: {
+                click: function($event) {
+                  return _vm.$handleViewEvent($event)
+                }
+              }
+            },
+            [_vm._v("历史报告")]
+          ),
+          _c(
+            "v-uni-button",
+            {
+              staticClass: _vm._$g(7, "sc"),
+              attrs: { _i: 7 },
+              on: {
+                click: function($event) {
+                  return _vm.$handleViewEvent($event)
+                }
+              }
+            },
+            [_vm._v("预约记录")]
+          )
+        ],
+        1
+      ),
+      _c(
+        "v-uni-view",
+        { staticClass: _vm._$g(8, "sc"), attrs: { _i: 8 } },
+        [
+          _c(
+            "v-uni-view",
+            { staticClass: _vm._$g(9, "sc"), attrs: { _i: 9 } },
+            [_vm._v("医院排行榜")]
+          ),
+          _c(
+            "v-uni-view",
+            { staticClass: _vm._$g(10, "sc"), attrs: { _i: 10 } },
+            [
+              _c(
+                "uni-list",
+                { attrs: { _i: 11 } },
+                _vm._l(_vm._$g(12, "f"), function(item, $10, $20, $30) {
+                  return _c(
+                    "uni-list-item",
+                    {
+                      key: item,
+                      staticClass: _vm._$g("12-" + $30, "sc"),
+                      attrs: { _i: "12-" + $30 },
+                      scopedSlots: _vm._u(
+                        [
+                          {
+                            key: "header",
+                            fn: function(_empty_, _svm, _si) {
+                              return [
+                                _c(
+                                  "v-uni-view",
+                                  {
+                                    staticClass: _svm._$g(
+                                      "14-" + $30 + "-" + _si,
+                                      "sc"
+                                    ),
+                                    attrs: { _i: "14-" + $30 + "-" + _si }
+                                  },
+                                  [
+                                    _c("v-uni-image", {
+                                      attrs: {
+                                        src:
+                                          "http://rbphewwot.hd-bkt.clouddn.com/jiyi%2Fhospital1.png",
+                                        mode: "aspectFill",
+                                        _i: "15-" + $30 + "-" + _si
+                                      }
+                                    })
+                                  ],
+                                  1
+                                )
+                              ]
+                            }
+                          }
+                        ],
+                        null,
+                        true
+                      )
+                    },
+                    [
+                      _c(
+                        "v-uni-view",
+                        {
+                          staticClass: _vm._$g("16-" + $30, "sc"),
+                          attrs: { slot: "body", _i: "16-" + $30 },
+                          slot: "body"
+                        },
+                        [
+                          _c(
+                            "v-uni-view",
+                            { attrs: { _i: "17-" + $30 } },
+                            [
+                              _c(
+                                "v-uni-view",
+                                {
+                                  staticClass: _vm._$g("18-" + $30, "sc"),
+                                  attrs: { _i: "18-" + $30 }
+                                },
+                                [
+                                  _c(
+                                    "v-uni-text",
+                                    {
+                                      staticClass: _vm._$g("19-" + $30, "sc"),
+                                      attrs: { _i: "19-" + $30 }
+                                    },
+                                    [_vm._v("同济大学附属医院")]
+                                  )
+                                ],
+                                1
+                              ),
+                              _c(
+                                "v-uni-view",
+                                { attrs: { _i: "20-" + $30 } },
+                                [
+                                  _c(
+                                    "v-uni-text",
+                                    {
+                                      staticClass: _vm._$g("21-" + $30, "sc"),
+                                      attrs: { _i: "21-" + $30 }
+                                    },
+                                    [_vm._v("三甲医院")]
+                                  )
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          ),
+                          _c(
+                            "v-uni-view",
+                            { attrs: { _i: "22-" + $30 } },
+                            [
+                              _c(
+                                "v-uni-view",
+                                {
+                                  staticClass: _vm._$g("23-" + $30, "sc"),
+                                  attrs: { _i: "23-" + $30 }
+                                },
+                                [
+                                  _c(
+                                    "v-uni-text",
+                                    { attrs: { _i: "24-" + $30 } },
+                                    [_vm._v("¥")]
+                                  ),
+                                  _c(
+                                    "v-uni-text",
+                                    {
+                                      staticClass: _vm._$g("25-" + $30, "sc"),
+                                      attrs: { _i: "25-" + $30 }
+                                    },
+                                    [_vm._v("价格")]
+                                  ),
+                                  _c(
+                                    "v-uni-text",
+                                    { attrs: { _i: "26-" + $30 } },
+                                    [_vm._v(".00")]
+                                  )
+                                ],
+                                1
+                              ),
+                              _c(
+                                "v-uni-view",
+                                {
+                                  staticClass: _vm._$g("27-" + $30, "sc"),
+                                  attrs: { _i: "27-" + $30 }
+                                },
+                                [
+                                  _c(
+                                    "v-uni-text",
+                                    {
+                                      staticClass: _vm._$g("28-" + $30, "sc"),
+                                      attrs: { _i: "28-" + $30 }
+                                    },
+                                    [_vm._v("测试")]
+                                  ),
+                                  _c(
+                                    "v-uni-text",
+                                    {
+                                      staticClass: _vm._$g("29-" + $30, "sc"),
+                                      attrs: { _i: "29-" + $30 }
+                                    },
+                                    [_vm._v("详情 >")]
+                                  )
+                                ],
+                                1
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                }),
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
     1
   )
 }
@@ -6020,7 +7037,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ./node_modules/css-loader/dist/runtime/api.js */ 16);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\n.status_bar {\r\n  height: var(--status-bar-height);\r\n  width: 100%;\r\n  background-color: #1058D1;\n}\r\n", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\n.uni-flex, .uni-flex-row, .uni-list-box, .uni-media-box, .uni-footer, .uni-flex-column, .uni-content {\r\n  display: flex;\n}\n.uni-flex-row, .uni-list-box, .uni-media-box, .uni-footer {\r\n  flex-direction: row;\r\n  box-sizing: border-box;\n}\n.uni-flex-column, .uni-content {\r\n  flex-direction: column;\n}\n.uni-color-gary {\r\n  color: #3b4144;\n}\r\n/* 标题 */\n.uni-title {\r\n  display: flex;\r\n  margin-bottom: 16upx;\r\n  font-size: 32upx;\r\n  font-weight: bold;\r\n  color: #3b4144;\n}\n.uni-title-sub {\r\n  display: flex;\r\n  font-size: 28upx;\r\n  font-weight: 500;\r\n  color: #3b4144;\n}\r\n/* 描述 额外文本 */\n.uni-note {\r\n  margin-top: 10px;\r\n  color: #999;\r\n  font-size: 24upx;\n}\r\n/* 列表内容 */\n.uni-list-box {\r\n  flex: 1;\r\n  margin-top: 10px;\n}\r\n/* 略缩图 */\n.uni-thumb {\r\n  flex-shrink: 0;\r\n  margin-right: 20upx;\r\n  width: 125px;\r\n  height: 75px;\r\n  border-radius: 12upx;\r\n  overflow: hidden;\r\n  border: 1px #f5f5f5 solid;\n}\n.uni-thumb uni-image {\r\n  width: 100%;\r\n  height: 100%;\n}\n.uni-media-box {\r\n  border-radius: 12upx;\r\n  overflow: hidden;\n}\n.uni-media-box .uni-thumb {\r\n  margin: 0;\r\n  margin-left: 4px;\r\n  flex-shrink: 1;\r\n  width: 33%;\r\n  border-radius: 0;\n}\n.uni-media-box .uni-thumb:first-child {\r\n  margin: 0;\n}\r\n/* 内容 */\n.uni-content {\r\n  justify-content: space-between;\n}\r\n/* 列表footer */\n.uni-footer {\r\n  justify-content: space-between;\r\n  margin-top: 24upx;\n}\n.uni-footer-text {\r\n  font-size: 24upx;\r\n  color: #999;\r\n  margin-left: 5px;\n}\r\n/* 标签 */\n.uni-tag {\r\n  flex-shrink: 0;\r\n  padding: 0 5px;\r\n  border: 1px #c8c7cc solid;\r\n  margin-right: 10px;\r\n  border-radius: 6upx;\r\n  background: #f8f8f8;\r\n  color: #333;\r\n  font-size: 24upx;\n}\r\n/* 链接 */\n.uni-link {\r\n  margin-left: 10px;\r\n  color: #333;\r\n  text-decoration: underline;\n}\n.search-bar {\r\n  width: 100%;\r\n  height: 120rpx;\r\n  margin-top: 5%;\n}\n.search-bar-box {\r\n  display: flex;\r\n  margin: 0 auto;\r\n  width: 670rpx;\r\n  height: 90rpx;\r\n  border: 2rpx solid #1058D1;\r\n  border-radius: 50rpx;\n}\n.search-span {\r\n  width: 65rpx;\r\n  height: 56rpx;\r\n  margin-top: 9px;\r\n  margin-left: 30rpx;\n}\n.search-text {\r\n  width: 100%;\r\n  margin-top: 10px;\r\n  margin-left: 20rpx;\r\n  font-size: 33rpx;\r\n  color: #c0c0c0;\n}\n.btn {\r\n  margin-top: 15px;\n}\n.btn .left-btn {\r\n  height: 90rpx;\r\n  width: 320rpx;\r\n  border: 5rpx solid #1058D1;\r\n  background-color: #eff4fc;\r\n  text-align: center;\r\n  font-size: 32rpx;\r\n  font-weight: 500;\r\n  position: absolute;\r\n  left: 20px;\n}\n.btn .right-btn {\r\n  height: 90rpx;\r\n  width: 320rpx;\r\n  border: 5rpx solid #1058D1;\r\n  background-color: #eff4fc;\r\n  text-align: center;\r\n  font-size: 32rpx;\r\n  font-weight: 500;\r\n  position: absolute;\r\n  right: 20px;\n}\n.hot_goods {\r\n  margin-top: 80px;\n}\n.hot_goods .tit {\r\n  color: #1058D1;\r\n  font-weight: 520;\r\n  letter-spacing: 1px;\r\n  font-size: 20px;\r\n  margin-left: 20px;\r\n  color: #1a1a1a;\n}\nbody {\r\n  display: flex;\r\n  flex-direction: column;\r\n  box-sizing: border-box;\r\n  min-height: 100%;\r\n  height: auto;\n}\n.tips {\r\n  color: #67c23a;\r\n  font-size: 14px;\r\n  line-height: 40px;\r\n  text-align: center;\r\n  background-color: #f0f9eb;\r\n  height: 0;\r\n  opacity: 0;\r\n  -webkit-transform: translateY(-100%);\r\n          transform: translateY(-100%);\r\n  transition: all 0.3s;\n}\n.tips-ani {\r\n  -webkit-transform: translateY(0);\r\n          transform: translateY(0);\r\n  height: 40px;\r\n  opacity: 1;\n}\n.shop {\r\n  flex: 1;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: space-between;\n}\n.shop-picture {\r\n  width: 110px;\r\n  height: 110px;\n}\n.shop-picture-column {\r\n  width: 100%;\r\n  height: 170px;\r\n  margin-bottom: 10px;\n}\n.shop-price {\r\n  margin-top: 5px;\r\n  font-size: 12px;\r\n  color: #ff5a5f;\n}\n.shop-price-text {\r\n  font-size: 16px;\n}\n.hot-tag {\r\n  background: #ff5a5f;\r\n  border: none;\r\n  color: #fff;\n}\n.button-box {\r\n  height: 30px;\r\n  line-height: 30px;\r\n  font-size: 12px;\r\n  background: #007AFF;\r\n  color: #fff;\n}\n.uni-link {\r\n  flex-shrink: 0;\n}\n.ellipsis {\r\n  display: flex;\r\n  overflow: hidden;\n}\n.uni-ellipsis-1 {\r\n  overflow: hidden;\r\n  white-space: nowrap;\r\n  text-overflow: ellipsis;\n}\n.uni-ellipsis-2 {\r\n  overflow: hidden;\r\n  text-overflow: ellipsis;\r\n  display: -webkit-box;\r\n  -webkit-line-clamp: 2;\r\n  -webkit-box-orient: vertical;\n}\n.list .uni-list--waterfall {\r\n  display: flex;\r\n  flex-direction: row;\r\n  flex-wrap: wrap;\r\n  padding: 5px;\r\n  box-sizing: border-box;\n}\n.list .uni-list--waterfall .uni-list-item--waterfall {\r\n  width: 50%;\r\n  box-sizing: border-box;\n}\n.list .uni-list--waterfall .uni-list-item--waterfall .uni-list-item__container {\r\n  padding: 5px;\r\n  flex-direction: column;\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 
