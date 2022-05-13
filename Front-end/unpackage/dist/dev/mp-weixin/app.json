@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/DrugStore/Homepage/Homepage",
+    "pages/DrugStore/ShoppingCart/ShoppingCart",
+    "pages/DrugStore/HistoryOrder/HistoryOrder",
+    "pages/loading/loading"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/DrugStore/HistoryOrder/HistoryOrder",
+        "text": "首页",
+        "iconPath": "static/tabbar/homepage.png",
+        "selectedIconPath": "static/tabbar/homepage-active.png"
+      },
+      {
+        "pagePath": "pages/DrugStore/Homepage/Homepage",
+        "text": "医院",
+        "iconPath": "static/tabbar/hospital.png",
+        "selectedIconPath": "static/tabbar/hospital-active.png"
+      },
+      {
+        "pagePath": "pages/DrugStore/ShoppingCart/ShoppingCart",
+        "text": "我的",
+        "iconPath": "static/tabbar/me.png",
+        "selectedIconPath": "static/tabbar/me-active.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

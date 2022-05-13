@@ -46,7 +46,7 @@
             "path" : "pages/DrugStore/Homepage/Homepage",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                "navigationBarTitleText": "购药商城",
                 "enablePullDownRefresh": false
             }
             
@@ -97,6 +97,42 @@
         }
         ,{
             "path" : "pages/Reservation/HospitalList/HospitalList",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/DrugStore/News/News",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+		,{
+		    "path" : "pages/DrugStore/Contact/Contact",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/Reservation/HospitalDetail/HospitalDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/DrugStore/GoodDetail/GoodDetail",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
