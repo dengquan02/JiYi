@@ -4,19 +4,19 @@
  		<uni-easyinput prefixIcon="search"  type="text" placeholder="搜医院,医生,科室..." v-model="formData.tel" />
  		<!-- 三个按钮 -->
  		<view class="button-box">
- 			<uni-card spacing="5px" padding="0 5px ">
+ 			<uni-card spacing="5px" padding="0 5px " @click="ToCovid()">
  				<image src="http://rbphewwot.hd-bkt.clouddn.com/jiyi%2Fyiqin.svg" style="height: 100rpx; width: 100rpx; margin: 0 auto;"></image>
  				<view style="text-align: center;">
  					疫情
  				</view>
  			</uni-card>
- 			<uni-card spacing="5px" padding="0 5px ">
+ 			<uni-card spacing="5px" padding="0 5px " @click="ToReservation()">
  				<image src="http://rbphewwot.hd-bkt.clouddn.com/jiyi%2Fyuyue.svg" style="height: 100rpx; width: 100rpx; margin: 0 auto;"></image>
  				<view style="text-align: center;">
  					预约
  				</view>
  			</uni-card>
- 			<uni-card spacing="5px" padding="0 5px ">
+ 			<uni-card spacing="5px" padding="0 5px " @click="ToDrug()">
  				<image src="http://rbphewwot.hd-bkt.clouddn.com/jiyi%2Fbuy.svg" style="height: 100rpx; width: 100rpx; margin: 0 auto;"></image>
  				<view style="text-align: center;">
  					购药
@@ -98,7 +98,22 @@
  				]
  			}
  		},
- 		methods:{
+ 		methods: {
+			ToCovid() {
+				uni.navigateTo({
+					url: '../../Covid/covid-19/covid-19'	
+				});
+			},
+			ToReservation() {
+				uni.navigateTo({
+					url: '../../Reservation/HospitalList/HospitalList'	
+				});
+			},
+			ToDrug() {
+				uni.navigateTo({
+					url: '../../DrugStore/Homepage/Homepage'	
+				});
+			},
  		}
  	}
  </script>

@@ -1,12 +1,15 @@
 <template>
 	<view>
+		<view class="status_bar">
+		    <!-- 这里是状态栏 -->
+	    </view>
 		<view class="home">
-			<!-- <swiper indicator-dots circular>
+			<swiper indicator-dots circular>
 				<swiper-item v-for="item in swipers" :key="item.id">
 					<image :src="item.img"></image>
 				</swiper-item>
-			</swiper> -->
-			<!-- <view class="nav">
+			</swiper>
+			<view class="nav">
 				<view
 					class="nav_item"
 					v-for="(item, index) in navs"
@@ -15,10 +18,10 @@
 					<view :class="item.icon"></view>
 					<text>{{item.title}}</text>
 				</view>
-			</view> -->
+			</view>
 			<view class="hot_goods">
 				<view class="tit">
-					热门商品
+					热&nbsp;&nbsp;&nbsp;&nbsp;门&nbsp;&nbsp;&nbsp;&nbsp;商&nbsp;&nbsp;&nbsp;&nbsp;品
 				</view>
 				<!-- <goodsList :goods="goods" @goodsItemClick="goodsItemClick"></goodsList> -->
 			</view>
@@ -31,34 +34,36 @@
 	export default {
 		data() {
 			return {
-				// swipers: [],
+				swipers: [],
 				// goods: [],
-				// navs: [
-				// 	{
-				// 		icon: 'iconfont icon-ziyuan',
-				// 		title: '热点新闻',
-				// 		path: '/pages/DrugStore/ShoppingCart/ShoppingCart'
-				// 	},
-				// 	{
-				// 		icon: 'iconfont icon-guanyuwomen',
-				// 		title: '购物车',
-				// 		path: '/pages/DrugStore/ShoppingCart/ShoppingCart'
-				// 	},
-				// 	{
-				// 		icon: 'iconfont icon-tupian',
-				// 		title: '我的订单',
-				// 		path: '/pages/DrugStore/HistoryOrder/HistoryOrder'
-				// 	},
-				// 	{
-				// 		icon: 'iconfont icon-shipin',
-				// 		title: '联系我们',
-				// 		path: '/pages/DrugStore/HistoryOrder/HistoryOrder'
-				// 	}
-				// ]
+				navs: [
+					{
+						icon: 'iconfont icon-news',
+						title: '热点资讯',
+						path: '/pages/DrugStore/News/News'
+					},
+					{
+						icon: 'iconfont icon-gouwuche',
+						title: '购物车',
+						path: '/pages/DrugStore/ShoppingCart/ShoppingCart'
+					},
+					{
+						icon: 'iconfont icon-shouye',
+						title: '我的订单',
+						path: '/pages/DrugStore/HistoryOrder/HistoryOrder'
+					},
+					{
+						icon: 'iconfont icon-lianxiwomen',
+						title: '联系我们',
+						path: '/pages/DrugStore/Contact/Contact'
+					}
+				]
 			}
 		},
 		onLoad() {
 			uni.hideTabBar()
+			this.setTitleText()
+			this.setTitleBackground()
 			// this.getSwipers()
 			// this.getHotGoods()
 		},
@@ -66,13 +71,30 @@
 		// 	goodsList
 		// },
 		methods: {
+			setTitleText() {
+				uni.setNavigationBarTitle({
+					title: "购药商城"
+				})
+			},
+			setTitleBackground() {
+				uni.setNavigationBarColor({
+					frontColor: "#ffffff", // 导航栏文字设置
+					backgroundColor: "#007AFF"// 导航栏背景色设置
+				})
+			},
 			// 获取轮播图数据
-			// async getSwipers() {
-			// 	const res = await this.$http({
-			// 		url: '/api/getlunbo'
-			// 	})
-			// 	this.swipers = res.data.message
-			// },
+			async getSwipers() {
+				// const res = await this.$http({
+				// 	url: '/api/getlunbo'
+				// })
+				// this.swipers = res.data.message
+				this.swipers = [
+					{
+						"id": 1,
+						"url": "https://img1.baidu.com/it/u=3757403282,3297426190&fm=253&fmt=auto&app=138&f=JPEG?w=1280&h=333"
+					}
+				]
+			},
 			// 获取热门商品列表数据
 			// async getHotGoods() {
 			// 	const res = await this.$http({
@@ -81,11 +103,11 @@
 			// 	this.goods = res.data.message
 			// },
 			// 导航点击的处理函数
-			// navItemClick (url) {
-			// 	uni.navigateTo({
-			// 		url
-			// 	})
-			// },
+			navItemClick (url) {
+				uni.navigateTo({
+					url
+				})
+			},
 			// // 导航到商品详情页
 			// goodsItemClick (id) {
 			// 	uni.navigateTo({
@@ -97,6 +119,12 @@
 </script>
 
 <style lang="scss">
+@import '@/static/iconfont/iconfont.css';
+.status_bar {
+	height: var(--status-bar-height);
+	width: 100%;
+    background-color: $shop-color;
+  }
 .home {
 	swiper {
 		width: 750rpx;
@@ -132,15 +160,15 @@
 	.hot_goods {
 		background: #eee;
 		overflow: hidden;
-		margin-top: 10rpx;
+		margin-top: 10px;
 		.tit {
 			height: 50px;
 			line-height: 50px;
-			// color: $shop-color;
+			color: $shop-color;
 			text-align: center;
-			letter-spacing: 20px;
+			font-weight: 500;
 			background: #fff;
-			margin: 6rpx 0;
+			margin: 10rpx 0;
 		}
 	}
 }
