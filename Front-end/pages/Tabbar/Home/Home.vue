@@ -1,80 +1,84 @@
  <template>
- 	<view class="login-form">
- 		<!-- 搜索框 -->
- 		<uni-easyinput prefixIcon="search"  type="text" placeholder="搜医院,医生,科室..." v-model="formData.tel" />
- 		<!-- 三个按钮 -->
- 		<view class="button-box">
- 			<uni-card spacing="5px" padding="0 5px " @click="ToCovid()">
- 				<image src="http://rbphewwot.hd-bkt.clouddn.com/jiyi%2Fyiqin.svg" style="height: 100rpx; width: 100rpx; margin: 0 auto;"></image>
- 				<view style="text-align: center;">
- 					疫情
- 				</view>
- 			</uni-card>
- 			<uni-card spacing="5px" padding="0 5px " @click="ToReservation()">
- 				<image src="http://rbphewwot.hd-bkt.clouddn.com/jiyi%2Fyuyue.svg" style="height: 100rpx; width: 100rpx; margin: 0 auto;"></image>
- 				<view style="text-align: center;">
- 					预约
- 				</view>
- 			</uni-card>
- 			<uni-card spacing="5px" padding="0 5px " @click="ToDrug()">
- 				<image src="http://rbphewwot.hd-bkt.clouddn.com/jiyi%2Fbuy.svg" style="height: 100rpx; width: 100rpx; margin: 0 auto;"></image>
- 				<view style="text-align: center;">
- 					购药
- 				</view>
- 			</uni-card>
- 		</view>
- 		<!-- 列表 -->
- 		<view class="list">
- 			<view style="background-color: #fff; padding: 20rpx 30rpx;">
- 				<text>
- 					精选医生
- 				</text>
- 			</view>
- 			<!-- 基于 uni-list 的页面布局 -->
- 			<uni-list class="uni-list--waterfall">
- 				<uni-list-item :border="false" class="uni-list-item--waterfall" title="自定义商品列表" v-for="item in listData" :key="item">
- 					<!-- 通过header插槽定义列表左侧图片 -->
- 					<template v-slot:header>
- 						<view class="uni-thumb shop-picture shop-picture-column">
- 							<!-- <image :src="item.pic_url" style="height: 100px; width: 100px; margin: 0 auto;" mode="aspectFill"></image> -->
- 							<image src="http://rbphewwot.hd-bkt.clouddn.com/jiyi%2Fdoctor1.svg" style="height: 100px; width: 100px; margin: 0 auto;" mode="aspectFill"></image>
- 						</view>
- 					</template>
- 					<!-- 通过body插槽定义商品布局 -->
- 					<template v-slot:body>
- 						<view class="shop">
- 							<view>
- 								<view class="uni-title">
- 									<!-- <text class="uni-ellipsis-2">{{ item.hospital }}</text> -->
- 									<text class="uni-ellipsis-2">同济大学附属医院</text>
- 								</view>
- 								<view>
- 									<!-- <text class="uni-tag hot-tag">{{ item.department }}</text> -->
- 									<text class="uni-tag hot-tag">肝脏科</text>
- 								</view>
- 							</view>
- 							<view>
- 								<view class="shop-price">
- 									<text>¥</text>
- 									<!-- <text class="shop-price-text">{{ item.price }}</text> -->
- 									<text class="shop-price-text">200</text>
- 									<text>.00</text>
- 								</view>
- 								
- 								<view class="uni-note ellipsis">
- 									<!-- <view class="uni-ellipsis-1" style="margin-right: 10rpx;">{{ item.name }}</view> -->
- 									<view class="uni-ellipsis-1" style="margin-right: 10rpx;">吴孟达</view>
- 									<!-- <view class="uni-ellipsis-1">{{ item.title }}</view> -->
- 									<view class="uni-ellipsis-1">主任医师</view>
- 								</view>
- 							</view>
- 						</view>
- 					</template>
- 				</uni-list-item>
- 			</uni-list>
- 		</view>
- 	</view>
- 	
+	 <view>
+		<view class="status_bar">
+		    <!-- 这里是状态栏 -->
+		</view>
+		<view class="login-form">
+			<!-- 搜索框 -->
+			<uni-easyinput prefixIcon="search"  type="text" placeholder="搜医院,医生,科室..." v-model="formData.tel" />
+			<!-- 三个按钮 -->
+			<view class="button-box">
+				<uni-card spacing="5px" padding="0 5px " @click="ToCovid()">
+					<image src="http://rbphewwot.hd-bkt.clouddn.com/jiyi%2Fyiqin.svg" style="height: 100rpx; width: 100rpx; margin: 0 auto;"></image>
+					<view style="text-align: center;">
+						疫情
+					</view>
+				</uni-card>
+				<uni-card spacing="5px" padding="0 5px " @click="ToReservation()">
+					<image src="http://rbphewwot.hd-bkt.clouddn.com/jiyi%2Fyuyue.svg" style="height: 100rpx; width: 100rpx; margin: 0 auto;"></image>
+					<view style="text-align: center;">
+						预约
+					</view>
+				</uni-card>
+				<uni-card spacing="5px" padding="0 5px " @click="ToDrug()">
+					<image src="http://rbphewwot.hd-bkt.clouddn.com/jiyi%2Fbuy.svg" style="height: 100rpx; width: 100rpx; margin: 0 auto;"></image>
+					<view style="text-align: center;">
+						购药
+					</view>
+				</uni-card>
+			</view>
+			<!-- 列表 -->
+			<view class="list">
+				<view style="background-color: #fff; padding: 20rpx 30rpx;">
+					<text>
+						精选医生
+					</text>
+				</view>
+				<!-- 基于 uni-list 的页面布局 -->
+				<uni-list class="uni-list--waterfall">
+					<uni-list-item :border="false" class="uni-list-item--waterfall" title="自定义商品列表" v-for="item in listData" :key="item">
+						<!-- 通过header插槽定义列表左侧图片 -->
+						<template v-slot:header>
+							<view class="uni-thumb shop-picture shop-picture-column">
+								<!-- <image :src="item.pic_url" style="height: 100px; width: 100px; margin: 0 auto;" mode="aspectFill"></image> -->
+								<image src="http://rbphewwot.hd-bkt.clouddn.com/jiyi%2Fdoctor1.svg" style="height: 100px; width: 100px; margin: 0 auto;" mode="aspectFill"></image>
+							</view>
+						</template>
+						<!-- 通过body插槽定义商品布局 -->
+						<template v-slot:body>
+							<view class="shop">
+								<view>
+									<view class="uni-title">
+										<!-- <text class="uni-ellipsis-2">{{ item.hospital }}</text> -->
+										<text class="uni-ellipsis-2">同济大学附属医院</text>
+									</view>
+									<view>
+										<!-- <text class="uni-tag hot-tag">{{ item.department }}</text> -->
+										<text class="uni-tag hot-tag">肝脏科</text>
+									</view>
+								</view>
+								<view>
+									<view class="shop-price">
+										<text>¥</text>
+										<!-- <text class="shop-price-text">{{ item.price }}</text> -->
+										<text class="shop-price-text">200</text>
+										<text>.00</text>
+									</view>
+									
+									<view class="uni-note ellipsis">
+										<!-- <view class="uni-ellipsis-1" style="margin-right: 10rpx;">{{ item.name }}</view> -->
+										<view class="uni-ellipsis-1" style="margin-right: 10rpx;">吴孟达</view>
+										<!-- <view class="uni-ellipsis-1">{{ item.title }}</view> -->
+										<view class="uni-ellipsis-1">主任医师</view>
+									</view>
+								</view>
+							</view>
+						</template>
+					</uni-list-item>
+				</uni-list>
+			</view>
+		</view>
+	 </view>
  </template>
  <script>
  	export default{
@@ -120,6 +124,11 @@
  
  <style lang="scss">
  	@import '@/common/uni-ui.scss';
+	.status_bar {
+		height: var(--status-bar-height);
+		width: 100%;
+	    background-color: $hospital-color;
+	}
  	.login-form{
  		padding: 60rpx 40rpx;
  	}
