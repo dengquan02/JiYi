@@ -114,16 +114,16 @@
 </script>
 
 <style lang="scss">
-	@import '@/static/iconfont-yyq/iconfont.css';
+@import '@/static/iconfont-yyq/iconfont.css';
 .status_bar {
 	height: var(--status-bar-height);
 	width: 100%;
-	background-color: $hospital-color;
+	background-color: #F4F4F4;
 }
 .wrapper {
 	position: absolute;
-	top: 0;
-	bottom: 0;
+	// top: 0;
+	// bottom: 0;
 
 	width: 100%;
 	height: 100%;
@@ -132,7 +132,7 @@
 .top {
 	width: 100%;
 	height: 130px;
-	background: $hospital-color;
+	// background: $hospital-color;
 	padding-top: 15px;
 	position: relative;
 }
