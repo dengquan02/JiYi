@@ -196,8 +196,11 @@
             "path" : "pages/DrugStore/CreateOrder/CreateOrder",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "enablePullDownRefresh": false,
+				"navigationStyle": "default",
+				"navigationBarTitleText": "订单",
+				"navigationBarBackgroundColor": "#b50e03",//顶部背景色
+				"navigationBarTextStyle": "white"
             }
         }
 
@@ -246,6 +249,19 @@
                 "enablePullDownRefresh": false,
                 "navigationBarBackgroundColor": "#1058D1",//顶部背景色
                 "navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/DrugStore/Payment/Payment",
+            "style" :                                                                                    
+            {
+                "enablePullDownRefresh": false,
+				"navigationStyle": "default",
+				"navigationBarTitleText": "支付",
+				"navigationBarBackgroundColor": "#b50e03",//顶部背景色
+				"navigationBarTextStyle": "white"
+
             }
             
         }
