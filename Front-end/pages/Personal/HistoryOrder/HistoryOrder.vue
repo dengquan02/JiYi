@@ -81,9 +81,9 @@
 	}
 </script>
 
-<style>
+<style lang="scss" scoped>
 .head-nav {
-		margin: 35rpx 35rpx 35rpx 35rpx;
+		margin: 20rpx 35rpx 35rpx 35rpx;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -125,15 +125,15 @@
 		}
 		
 		.text-title {
-			height: 90rpx;
-			font-size: 40rpx;
+			height: 75rpx;
+			font-size: 35rpx;
 			font-weight: 600;
 			color: #55aaff;
 			overflow: hidden;
 		}
 		 
 		.uni-media-list-text-top {
-			height: 74rpx;
+			height: 75rpx;
 			font-size: 35rpx;
 			font-weight: 500;
 			color: #1a1a1a;
