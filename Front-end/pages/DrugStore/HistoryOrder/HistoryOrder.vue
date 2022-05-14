@@ -34,7 +34,8 @@
 						
 					</view>
 					<view class="detail">
-						<view class="number">共{{row.numner}}件商品</view><view class="sum">合计￥<view class="price">{{row.payment}}</view></view><view class="nominal">(含运费 ￥{{row.freight}})</view>
+						<view class="number">共{{row.numner}}件商品</view><view class="sum">合计￥<view class="price">{{row.payment}}</view></view>
+						<!-- <view class="nominal">(含运费 ￥{{row.freight}})</view> -->
 					</view>
 					<!-- <view class="btns">
 						<block v-if="row.type=='unpaid'"><view class="default" @tap="cancelOrder(row)">取消订单</view><view class="pay" @tap="toPayment(row)">付款</view></block>
