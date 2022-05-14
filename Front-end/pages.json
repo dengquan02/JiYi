@@ -174,15 +174,6 @@
             
         }
         ,{
-            "path" : "pages/Personal/HistoryOrder/HistoryOrder",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
             "path" : "pages/Personal/FeedBack/FeedBack",
             "style" :                                                                                    
             {
@@ -262,6 +253,18 @@
 				"navigationBarBackgroundColor": "#b50e03",//顶部背景色
 				"navigationBarTextStyle": "white"
 
+            }
+            
+        }
+        ,{
+            "path" : "pages/Personal/IDConfirm/IDConfirm",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "default",
+                "navigationBarTitleText": "实名认证",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#1058D1",//顶部背景色
+                "navigationBarTextStyle": "white"
             }
             
         }

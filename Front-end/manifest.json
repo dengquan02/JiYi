@@ -44,6 +44,22 @@
             "ios" : {},
             /* SDK配置 */
             "sdkConfigs" : {}
+        },
+        "nativePlugins" : {
+            "IdentityPlatformUniPlugin" : {
+                "__plugin_info__" : {
+                    "name" : "IdentityPlatformUniPlugin",
+                    "description" : "智能核身SDK Uniapp插件",
+                    "platforms" : "Android,iOS",
+                    "url" : "",
+                    "android_package_name" : "",
+                    "ios_bundle_id" : "",
+                    "isCloud" : false,
+                    "bought" : -1,
+                    "pid" : "",
+                    "parameters" : {}
+                }
+            }
         }
     },
     /* 快应用特有相关 */

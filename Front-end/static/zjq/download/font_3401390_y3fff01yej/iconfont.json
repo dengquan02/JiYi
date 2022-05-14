@@ -1,0 +1,30 @@
+{
+  "id": "3401390",
+  "name": "no name",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5199425",
+      "name": "预约",
+      "font_class": "yuyue",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "6517445",
+      "name": "文件-就诊报告",
+      "font_class": "wj-jzbg",
+      "unicode": "e70c",
+      "unicode_decimal": 59148
+    },
+    {
+      "icon_id": "29717090",
+      "name": "反馈",
+      "font_class": "fankui-copy",
+      "unicode": "e70d",
+      "unicode_decimal": 59149
+    }
+  ]
+}
