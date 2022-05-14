@@ -70,8 +70,11 @@
             "path" : "pages/DrugStore/HistoryOrder/HistoryOrder",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+				"enablePullDownRefresh": false,
+				"navigationStyle": "default",
+				"navigationBarTitleText": "历史订单",
+				"navigationBarBackgroundColor": "#b50e03",//顶部背景色
+				"navigationBarTextStyle": "white"
             }
             
         }

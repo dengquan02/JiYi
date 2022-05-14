@@ -5196,7 +5196,229 @@ var render = function() {
   return _c(
     "v-uni-view",
     { attrs: { _i: 0 } },
-    [_c("v-uni-view", { staticClass: _vm._$g(1, "sc"), attrs: { _i: 1 } })],
+    [
+      _c(
+        "v-uni-view",
+        {
+          staticClass: _vm._$g(1, "sc"),
+          style: _vm._$g(1, "s"),
+          attrs: { _i: 1 }
+        },
+        _vm._l(_vm._$g(2, "f"), function(grid, tbIndex, $20, $30) {
+          return _c(
+            "v-uni-view",
+            {
+              key: grid,
+              staticClass: _vm._$g("2-" + $30, "sc"),
+              attrs: { _i: "2-" + $30 },
+              on: {
+                click: function($event) {
+                  return _vm.$handleViewEvent($event)
+                }
+              }
+            },
+            [
+              _c(
+                "v-uni-view",
+                {
+                  staticClass: _vm._$g("3-" + $30, "sc"),
+                  class: _vm._$g("3-" + $30, "c"),
+                  attrs: { _i: "3-" + $30 }
+                },
+                [_vm._v(_vm._$g("3-" + $30, "t0-0"))]
+              )
+            ],
+            1
+          )
+        }),
+        1
+      ),
+      _c(
+        "v-uni-view",
+        { staticClass: _vm._$g(4, "sc"), attrs: { _i: 4 } },
+        [
+          _c(
+            "v-uni-view",
+            { staticClass: _vm._$g(5, "sc"), attrs: { _i: 5 } },
+            [
+              _vm._$g(6, "i")
+                ? _c(
+                    "v-uni-view",
+                    { staticClass: _vm._$g(6, "sc"), attrs: { _i: 6 } },
+                    [
+                      _c("v-uni-image", {
+                        attrs: { src: "/static/imgs/noorder.png", _i: 7 }
+                      }),
+                      _c(
+                        "v-uni-view",
+                        { staticClass: _vm._$g(8, "sc"), attrs: { _i: 8 } },
+                        [_vm._v("没有相关订单")]
+                      )
+                    ],
+                    1
+                  )
+                : _vm._e(),
+              _vm._l(_vm._$g(9, "f"), function(row, index, $21, $31) {
+                return _c(
+                  "v-uni-view",
+                  {
+                    key: row,
+                    staticClass: _vm._$g("9-" + $31, "sc"),
+                    attrs: { _i: "9-" + $31 }
+                  },
+                  [
+                    _c(
+                      "v-uni-view",
+                      {
+                        staticClass: _vm._$g("10-" + $31, "sc"),
+                        attrs: { _i: "10-" + $31 }
+                      },
+                      [_vm._v(_vm._$g("10-" + $31, "t0-0"))]
+                    ),
+                    _c(
+                      "v-uni-view",
+                      {
+                        staticClass: _vm._$g("11-" + $31, "sc"),
+                        attrs: { _i: "11-" + $31 }
+                      },
+                      [
+                        _c(
+                          "v-uni-view",
+                          {
+                            staticClass: _vm._$g("12-" + $31, "sc"),
+                            attrs: { _i: "12-" + $31 }
+                          },
+                          [
+                            _c("v-uni-image", {
+                              attrs: {
+                                src: _vm._$g("13-" + $31, "a-src"),
+                                _i: "13-" + $31
+                              }
+                            })
+                          ],
+                          1
+                        ),
+                        _c(
+                          "v-uni-view",
+                          {
+                            staticClass: _vm._$g("14-" + $31, "sc"),
+                            attrs: { _i: "14-" + $31 }
+                          },
+                          [
+                            _c(
+                              "v-uni-view",
+                              {
+                                staticClass: _vm._$g("15-" + $31, "sc"),
+                                attrs: { _i: "15-" + $31 }
+                              },
+                              [_vm._v(_vm._$g("15-" + $31, "t0-0"))]
+                            ),
+                            _c(
+                              "v-uni-view",
+                              {
+                                staticClass: _vm._$g("16-" + $31, "sc"),
+                                attrs: { _i: "16-" + $31 }
+                              },
+                              [_vm._v(_vm._$g("16-" + $31, "t0-0"))]
+                            ),
+                            _c(
+                              "v-uni-view",
+                              {
+                                staticClass: _vm._$g("17-" + $31, "sc"),
+                                attrs: { _i: "17-" + $31 }
+                              },
+                              [
+                                _vm._v("￥"),
+                                _c(
+                                  "v-uni-view",
+                                  {
+                                    staticClass: _vm._$g("18-" + $31, "sc"),
+                                    attrs: { _i: "18-" + $31 }
+                                  },
+                                  [_vm._v(_vm._$g("18-" + $31, "t0-0"))]
+                                ),
+                                _vm._v("x"),
+                                _c(
+                                  "v-uni-view",
+                                  {
+                                    staticClass: _vm._$g("19-" + $31, "sc"),
+                                    attrs: { _i: "19-" + $31 }
+                                  },
+                                  [_vm._v(_vm._$g("19-" + $31, "t0-0"))]
+                                )
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    ),
+                    _c(
+                      "v-uni-view",
+                      {
+                        staticClass: _vm._$g("20-" + $31, "sc"),
+                        attrs: { _i: "20-" + $31 }
+                      },
+                      [
+                        _c(
+                          "v-uni-view",
+                          {
+                            staticClass: _vm._$g("21-" + $31, "sc"),
+                            attrs: { _i: "21-" + $31 }
+                          },
+                          [
+                            _vm._v(
+                              "共" + _vm._$g("21-" + $31, "t0-0") + "件商品"
+                            )
+                          ]
+                        ),
+                        _c(
+                          "v-uni-view",
+                          {
+                            staticClass: _vm._$g("22-" + $31, "sc"),
+                            attrs: { _i: "22-" + $31 }
+                          },
+                          [
+                            _vm._v("合计￥"),
+                            _c(
+                              "v-uni-view",
+                              {
+                                staticClass: _vm._$g("23-" + $31, "sc"),
+                                attrs: { _i: "23-" + $31 }
+                              },
+                              [_vm._v(_vm._$g("23-" + $31, "t0-0"))]
+                            )
+                          ],
+                          1
+                        ),
+                        _c(
+                          "v-uni-view",
+                          {
+                            staticClass: _vm._$g("24-" + $31, "sc"),
+                            attrs: { _i: "24-" + $31 }
+                          },
+                          [
+                            _vm._v(
+                              "(含运费 ￥" + _vm._$g("24-" + $31, "t0-0") + ")"
+                            )
+                          ]
+                        )
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                )
+              })
+            ],
+            2
+          )
+        ],
+        1
+      )
+    ],
     1
   )
 }
@@ -5288,7 +5510,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ./node_modules/css-loader/dist/runtime/api.js */ 16);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 图片加载中颜色 */\r\n/* 边框颜色 */\r\n/* 页面左右间距 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\n.status_bar {\r\n  height: var(--status-bar-height);\r\n  width: 100%;\r\n  background-color: #b50e03;\n}\r\n", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置的常用样式变量\r\n *\r\n * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量\r\n * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App\r\n *\r\n */\r\n/**\r\n * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能\r\n *\r\n * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件\r\n */\r\n/* 颜色变量 */\r\n/* 行为相关颜色 */\r\n/* 图片加载中颜色 */\r\n/* 边框颜色 */\r\n/* 页面左右间距 */\r\n/* 文字基本颜色 */\r\n/* 背景颜色 */\r\n/* 边框颜色 */\r\n/* 尺寸变量 */\r\n/* 文字尺寸 */\r\n/* 图片尺寸 */\r\n/* Border Radius */\r\n/* 水平间距 */\r\n/* 垂直间距 */\r\n/* 透明度 */\r\n/* 文章场景相关 */\nbody {\r\n  background-color: #f3f3f3;\n}\n.topTabBar {\r\n  width: 100%;\r\n  position: fixed;\r\n  top: 0;\r\n  z-index: 10;\r\n  background-color: #f8f8f8;\r\n  height: 80upx;\r\n  display: flex;\r\n  justify-content: space-around;\n}\n.topTabBar .grid {\r\n  width: 20%;\r\n  height: 80upx;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  color: #444;\r\n  font-size: 28upx;\n}\n.topTabBar .grid .text {\r\n  height: 76upx;\r\n  display: flex;\r\n  align-items: center;\n}\n.topTabBar .grid .text.on {\r\n  color: #f06c7a;\r\n  border-bottom: solid 4upx #f06c7a;\n}\n.order-list {\r\n  margin-top: 80upx;\r\n  padding-top: 20upx;\r\n  width: 100%;\n}\n.order-list .list {\r\n  width: 94%;\r\n  margin: 0 auto;\n}\n.order-list .list .onorder {\r\n  width: 100%;\r\n  height: 50vw;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-content: center;\r\n  flex-wrap: wrap;\n}\n.order-list .list .onorder uni-image {\r\n  width: 20vw;\r\n  height: 20vw;\r\n  border-radius: 100%;\n}\n.order-list .list .onorder .text {\r\n  width: 100%;\r\n  height: 60upx;\r\n  font-size: 28upx;\r\n  color: #444;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\n}\n.order-list .list .row {\r\n  width: calc(100% - 40upx);\r\n  padding: 10upx 20upx;\r\n  border-radius: 10upx;\r\n  background-color: #fff;\r\n  margin-bottom: 20upx;\n}\n.order-list .list .row .type {\r\n  font-size: 26upx;\r\n  color: #ec652f;\r\n  height: 50upx;\r\n  display: flex;\r\n  align-items: center;\n}\n.order-list .list .row .order-info {\r\n  width: 100%;\r\n  display: flex;\n}\n.order-list .list .row .order-info .left {\r\n  flex-shrink: 0;\r\n  width: 25vw;\r\n  height: 25vw;\n}\n.order-list .list .row .order-info .left uni-image {\r\n  width: 25vw;\r\n  height: 25vw;\r\n  border-radius: 10upx;\n}\n.order-list .list .row .order-info .right {\r\n  width: 100%;\r\n  margin-left: 10upx;\r\n  position: relative;\n}\n.order-list .list .row .order-info .right .name {\r\n  width: 100%;\r\n  font-size: 28upx;\r\n  display: -webkit-box;\r\n  -webkit-box-orient: vertical;\r\n  -webkit-line-clamp: 2;\r\n  overflow: hidden;\n}\n.order-list .list .row .order-info .right .spec {\r\n  color: #a7a7a7;\r\n  font-size: 22upx;\n}\n.order-list .list .row .order-info .right .price-number {\r\n  position: absolute;\r\n  bottom: 0;\r\n  width: 100%;\r\n  display: flex;\r\n  justify-content: flex-end;\r\n  font-size: 22upx;\r\n  color: #333;\r\n  display: flex;\r\n  align-items: flex-end;\n}\n.order-list .list .row .order-info .right .price-number .price {\r\n  font-size: 24upx;\r\n  margin-right: 5upx;\n}\n.order-list .list .row .detail {\r\n  display: flex;\r\n  justify-content: flex-end;\r\n  align-items: flex-end;\r\n  height: 60upx;\r\n  font-size: 26upx;\n}\n.order-list .list .row .detail .sum {\r\n  padding: 0 8upx;\r\n  display: flex;\r\n  align-items: flex-end;\n}\n.order-list .list .row .detail .sum .price {\r\n  font-size: 30upx;\n}\n.order-list .list .row .btns {\r\n  height: 80upx;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: flex-end;\n}\n.order-list .list .row .btns uni-view {\r\n  min-width: 120upx;\r\n  height: 50upx;\r\n  padding: 0 20upx;\r\n  border-radius: 50upx;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  font-size: 28upx;\r\n  margin-left: 20upx;\n}\n.order-list .list .row .btns .default {\r\n  border: solid 1upx #ccc;\r\n  color: #666;\n}\n.order-list .list .row .btns .pay {\r\n  border: solid 1upx #ec652f;\r\n  color: #ec652f;\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 
