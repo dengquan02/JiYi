@@ -15,7 +15,7 @@
 								<view class="uni-media-list-status">{{ value.status }}</view>
 							</view> -->
 						</view>
-						<text>{{ value.author_name }}</text>
+						<text style="margin-left: 32rpx;">{{ value.author_name }}</text>
 						<text style="margin-left: 30rpx;margin-top: 6rpx;">{{ value.published_at }}</text>
 						<u-button style="margin-top: 10px;" type="primary" :plain="true" text="查看详情"></u-button>
 						<u-line style="margin-top: 10px;"></u-line>
@@ -81,9 +81,9 @@
 	}
 </script>
 
-<style>
+<style lang="scss" scoped>
 .head-nav {
-		margin: 35rpx 35rpx 35rpx 35rpx;
+		margin: 20rpx 35rpx 35rpx 35rpx;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -125,15 +125,15 @@
 		}
 		
 		.text-title {
-			height: 90rpx;
-			font-size: 40rpx;
+			height: 75rpx;
+			font-size: 35rpx;
 			font-weight: 600;
 			color: #55aaff;
 			overflow: hidden;
 		}
 		 
 		.uni-media-list-text-top {
-			height: 74rpx;
+			height: 75rpx;
 			font-size: 35rpx;
 			font-weight: 500;
 			color: #1a1a1a;
