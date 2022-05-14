@@ -58,8 +58,11 @@
             "path" : "pages/DrugStore/ShoppingCart/ShoppingCart",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "navigationBarTitleText": "购物车",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "default",
+				"navigationBarBackgroundColor": "#b50e03",//顶部背景色
+				"navigationBarTextStyle": "white"
             }
             
         }
@@ -177,6 +180,15 @@
             
         }
         
+        ,{
+            "path" : "pages/DrugStore/CreateOrder/CreateOrder",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationStyle": "custom",

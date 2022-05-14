@@ -17,6 +17,8 @@
 	@import '@/uni_modules/uni-scss/index.scss';
 	/* #ifndef APP-NVUE */
 	@import '@/static/customicons.css';
+	
+	@import "@/static/iconfont1/font.scss";
 
 	/* #endif */
 	.example-info {
@@ -24,4 +26,5 @@
 		color: #333;
 		padding: 10px;
 	}
+	
 </style>
