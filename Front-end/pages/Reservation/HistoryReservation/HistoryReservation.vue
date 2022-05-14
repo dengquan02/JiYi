@@ -148,7 +148,7 @@
 		.uni-media-list-logo {
 			width: 180rpx;
 			height: 180rpx;
-			border-radius: 50%;
+			border-radius: 10%;
 		}
 		
 		.uni-media-list-body {

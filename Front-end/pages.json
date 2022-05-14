@@ -271,6 +271,18 @@
             }
             
         }
+        ,{
+            "path" : "pages/Personal/IDConfirm/IDConfirm",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "default",
+                "navigationBarTitleText": "实名认证",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#1058D1",//顶部背景色
+                "navigationBarTextStyle": "white"
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationStyle": "custom",

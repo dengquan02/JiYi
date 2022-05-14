@@ -37,7 +37,7 @@
 			</view>
 			
 			<view class="orders">
-				<view class="title">我的订单</view>
+				<view class="title">订单管理</view>
 				<view class="sorts">
 					<view class="nav">
 						<view
@@ -57,11 +57,12 @@
 			<!-- 其它 -->
 				<view class="extra">
 					<view @click="gotoPersonal" class="item icon-arrow">我的信息</view>
-					<button open-type="feedback" class="item icon-arrow">意见反馈</button>	
+					<button @click="toID()" class="item icon-arrow">实名认证</button>
+					<button open-type="feedback" class="item icon-arrow">意见反馈</button>
 				</view>
 				
 				<view class="extra2" @click="toLogout">
-					<view class="list-cell log-out-btn" @click="toLogout">
+					<view class="list-cell log-out-btn" @click="toLogout()">
 							<text class="cell-tit">退出登录</text>
 					</view>		
 				</view>
@@ -80,19 +81,19 @@
 			return {
 				navs: [
 						{
-							icon: 'iconfont icon-dingdan',
-							title: '反馈记录',
+							icon: 'iconfont icon-fankui-copy',
+							title: '我的反馈',
 							path: '/pages/Personal/FeedBack/FeedBack'
 						},
 						{
-							icon: 'iconfont icon-dingdanyichenggong',
-							title: '历史订单',
-							path: '/pages/Personal/HistoryOrder/HistoryOrder'
+							icon: 'iconfont icon-yuyue',
+							title: '我的预约',
+							path: '/pages/Reservation/HistoryReservation/HistoryReservation'
 						},
 						{
-							icon: 'iconfont icon-yuyuedingdan',
-							title: '全部订单',
-							path: '/pages/Personal/HistoryOrder/HistoryOrder'
+							icon: 'iconfont icon-wj-jzbg',
+							title: '我的报告',
+							path: '/pages/Personal/HistoryDiagnose/HistoryDiagnose'
 						}
 					]
 			}
@@ -109,12 +110,22 @@
 					url
 				})
 			},
+			toLogout() {
+				uni.redirectTo({
+					url:'../../Initial/login/login'
+				})
+			},
+			toID() {
+				uni.navigateTo({
+					url:'../../Personal/IDConfirm/IDConfirm'
+				})
+			}
 		}
 	}
 </script>
 
 <style lang="scss">
-@import '@/static/iconfont-yyq/iconfont.css';
+@import '@/static/iconfont-my/iconfont.css';
 .status_bar {
 	height: var(--status-bar-height);
 	width: 100%;
@@ -272,7 +283,7 @@
 				display: block;
 				font-size: 48rpx;
 				margin-bottom: 8rpx;
-				color: #ea4451;
+				color: #fff;
 			}
 		}
 	}
