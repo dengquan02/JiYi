@@ -283,6 +283,24 @@
             }
             
         }
+        ,{
+            "path" : "pages/Tabbar/Home1/Home1",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/Tabbar/HospitalList1/HospitalList1",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationStyle": "custom",
@@ -294,13 +312,13 @@
 	"tabBar": {
 		"list": [
 			{
-				"pagePath":"pages/Tabbar/Home/Home",
+				"pagePath":"pages/Tabbar/Home1/Home1",
 				"text":"首页",
 				"iconPath":"static/tabbar/homepage.png",
 				"selectedIconPath":"static/tabbar/homepage-active.png"
 			},
 			{
-				"pagePath":"pages/Tabbar/HospitalList/HospitalList",
+				"pagePath":"pages/Tabbar/HospitalList1/HospitalList1",
 				"text":"医院",
 				"iconPath":"static/tabbar/hospital.png",
 				"selectedIconPath":"static/tabbar/hospital-active.png"

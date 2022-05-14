@@ -46,7 +46,7 @@
 					duration: 2000
 				});
 				uni.switchTab({
-					url:'../../Tabbar/Home/Home'
+					url:'../../Tabbar/Home1/Home1'
 				})
 			}
 		}
