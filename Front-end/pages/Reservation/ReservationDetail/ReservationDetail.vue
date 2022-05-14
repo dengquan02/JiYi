@@ -42,7 +42,7 @@
 			<u-cell icon="clock-fill" title="就诊时间段" value="16:00~16:30"></u-cell>
 		</u-cell-group>
 		<view style="padding: 10px;margin-top: 30px;">
-			<u-button text="提交预约" shape="circle" color="linear-gradient(to right, rgb(16, 88, 209), rgb(84, 150, 255))"></u-button>
+			<u-button text="提交预约" shape="circle" color="linear-gradient(to right, rgb(16, 88, 209), rgb(84, 150, 255))" @click="ToConfirm()"></u-button>
 		</view>
 	</view>
 </template>
@@ -55,7 +55,11 @@
 			}
 		},
 		methods: {
-			
+			ToConfirm() {
+				uni.navigateTo({
+					url: '../ReservationConfirm/ReservationConfirm'	
+				});
+			}
 		}
 	}
 </script>
