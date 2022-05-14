@@ -129,8 +129,11 @@
             "path" : "pages/DrugStore/News/News",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+                "navigationBarTitleText": "热点资讯",
+                "enablePullDownRefresh": false,
+                "navigationStyle": "default",
+                "navigationBarBackgroundColor": "#b50e03",//顶部背景色
+                "navigationBarTextStyle": "white"
             }
             
         }
