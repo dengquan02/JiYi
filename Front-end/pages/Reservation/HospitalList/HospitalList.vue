@@ -48,7 +48,7 @@
 								<!-- <view class="uni-note">{{ item.comment_count }}条评论 月销量 {{ item.month_sell_count }}</view> -->
 								<view class="uni-note ellipsis">
 									<text class="uni-ellipsis-1">测试</text>
-									<text class="uni-link">详情 ></text>
+									<text class="uni-link" @click="ToDetail()">详情 ></text>
 								</view>
 							</view>
 						</view>
@@ -78,6 +78,11 @@
 			ToRecord() {
 				uni.navigateTo({
 					url: '../HistoryReservation/HistoryReservation'	
+				});
+			},
+			ToDetail() {
+				uni.navigateTo({
+					url: '../ReservationDetail/ReservationDetail'	
 				});
 			}
 		}

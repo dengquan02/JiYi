@@ -210,6 +210,28 @@
             }
             
         }
+        ,{
+            "path" : "pages/Reservation/ReservationDetail/ReservationDetail",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "default",
+                "navigationBarTitleText": "预约详情",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#1058D1",//顶部背景色
+                "navigationBarTextStyle": "white"
+				
+            }
+            
+        }
+        ,{
+            "path" : "pages/Reservation/ReservationConfirm/ReservationConfirm",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationStyle": "custom",
