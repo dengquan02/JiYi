@@ -180,8 +180,11 @@
             "path" : "pages/Personal/HistoryOrder/HistoryOrder",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+				"navigationStyle": "default",
+				"navigationBarTitleText": "历史记录",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#1058D1",//顶部背景色
+				"navigationBarTextStyle": "white"
             }
             
         }
