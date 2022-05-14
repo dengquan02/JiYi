@@ -93,7 +93,7 @@
 						{
 							icon: 'iconfont icon-wj-jzbg',
 							title: '我的报告',
-							path: '/pages/Personal/HistoryDiagnose/HistoryDiagnose'
+							path: '/pages/Personal/HistoryOrder/HistoryOrder'
 						}
 					]
 			}

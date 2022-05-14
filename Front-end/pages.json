@@ -181,7 +181,7 @@
             "style" :                                                                                    
             {
 				"navigationStyle": "default",
-				"navigationBarTitleText": "历史记录",
+				"navigationBarTitleText": "历史报告",
 				"enablePullDownRefresh": false,
 				"navigationBarBackgroundColor": "#1058D1",//顶部背景色
 				"navigationBarTextStyle": "white"
