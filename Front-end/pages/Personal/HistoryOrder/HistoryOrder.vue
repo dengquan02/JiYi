@@ -15,7 +15,7 @@
 								<view class="uni-media-list-status">{{ value.status }}</view>
 							</view> -->
 						</view>
-						<text>{{ value.author_name }}</text>
+						<text style="margin-left: 32rpx;">{{ value.author_name }}</text>
 						<text style="margin-left: 30rpx;margin-top: 6rpx;">{{ value.published_at }}</text>
 						<u-button style="margin-top: 10px;" type="primary" :plain="true" text="查看详情"></u-button>
 						<u-line style="margin-top: 10px;"></u-line>

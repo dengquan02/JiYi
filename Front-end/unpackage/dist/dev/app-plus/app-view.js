@@ -8993,9 +8993,14 @@ var render = function() {
                     ],
                     1
                   ),
-                  _c("v-uni-text", { attrs: { _i: "10-" + $30 } }, [
-                    _vm._v(_vm._$g("10-" + $30, "t0-0"))
-                  ]),
+                  _c(
+                    "v-uni-text",
+                    {
+                      staticStyle: { "margin-left": "32rpx" },
+                      attrs: { _i: "10-" + $30 }
+                    },
+                    [_vm._v(_vm._$g("10-" + $30, "t0-0"))]
+                  ),
                   _c(
                     "v-uni-text",
                     {
