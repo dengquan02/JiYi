@@ -70,7 +70,16 @@
 			
 		},
 		methods: {
-			
+			ToDiagnose() {
+				uni.navigateTo({
+					url: '../HistoryDiagnose/HistoryDiagnose'	
+				});
+			},
+			ToRecord() {
+				uni.navigateTo({
+					url: '../HistoryReservation/HistoryReservation'	
+				});
+			}
 		}
 	}
 </script>

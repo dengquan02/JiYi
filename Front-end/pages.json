@@ -104,6 +104,15 @@
             }
             
         }
+		,{
+		    "path" : "pages/Tabbar/AI/AI",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
         ,{
             "path" : "pages/Reservation/HospitalList/HospitalList",
             "style" :                                                                                    
@@ -187,7 +196,30 @@
                 "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }
+        }
+
+        ,{
+            "path" : "pages/Reservation/HistoryDiagnose/HistoryDiagnose",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "default",
+                "navigationBarTitleText": "历史报告",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#1058D1",//顶部背景色
+                "navigationBarTextStyle": "white"
+            }
             
+        },
+        {
+            "path" : "pages/Reservation/HistoryReservation/HistoryReservation",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "default",
+                "navigationBarTitleText": "预约记录",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#1058D1",//顶部背景色
+                "navigationBarTextStyle": "white"
+            }
         }
     ],
 	"globalStyle": {
@@ -210,6 +242,12 @@
 				"text":"医院",
 				"iconPath":"static/tabbar/hospital.png",
 				"selectedIconPath":"static/tabbar/hospital-active.png"
+			},
+			{
+				"pagePath":"pages/Tabbar/AI/AI",
+				"text":"智能问诊",
+				"iconPath":"./static/tabbar/doctor-active.png",
+				"selectedIconPath":"static/tabbar/doctor.png"
 			},
 			{
 				"pagePath":"pages/Tabbar/My/My",

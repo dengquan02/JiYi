@@ -39,6 +39,8 @@ Vue.prototype.$api = {msg, json, prePage};
 import Vue from 'vue'
 import { myRequest } from './util/api.js'
 Vue.prototype.$myRequest = myRequest
+import uView from '@/uni_modules/uview-ui'
+Vue.use(uView)
 Vue.config.productionTip = false
 App.mpType = 'app'
 const app = new Vue({
