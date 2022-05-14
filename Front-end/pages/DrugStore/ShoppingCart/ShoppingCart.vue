@@ -217,7 +217,7 @@
 					data:tmpList,
 					success: () => {
 						uni.navigateTo({
-							url:'../../order/confirmation'
+							url:'/pages/DrugStore/CreateOrder/CreateOrder'
 						})
 					}
 				})
