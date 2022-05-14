@@ -1,0 +1,341 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+		    "path" : "pages/Initial/init/init",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+		,{
+		    "path" : "pages/Initial/loading/loading",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+		,{
+		    "path" : "pages/Initial/login/login",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+		,{
+		    "path" : "pages/Initial/register/register",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+		,{
+			"path": "pages/Tabbar/Home/Home",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		}
+        ,{
+            "path" : "pages/DrugStore/Homepage/Homepage",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "default",
+                "navigationBarTitleText": "购药商城",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#b50e03",//顶部背景色
+                "navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/DrugStore/ShoppingCart/ShoppingCart",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "购物车",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "default",
+				"navigationBarBackgroundColor": "#b50e03",//顶部背景色
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/DrugStore/HistoryOrder/HistoryOrder",
+            "style" :                                                                                    
+            {
+				"enablePullDownRefresh": false,
+				"navigationStyle": "default",
+				"navigationBarTitleText": "历史订单",
+				"navigationBarBackgroundColor": "#b50e03",//顶部背景色
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/Covid/covid-19/covid-19",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "default",
+                "navigationBarTitleText": "疫情实时",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#1058D1",//顶部背景色
+                "navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/Tabbar/HospitalList/HospitalList",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+        }
+	    ,{
+            "path" : "pages/Tabbar/My/My",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+		,{
+		    "path" : "pages/Tabbar/AI/AI",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/Reservation/HospitalList/HospitalList",
+            "style" :                                                                                    
+            {
+				"navigationStyle": "default",
+                "navigationBarTitleText": "预约挂号",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#1058D1",//顶部背景色
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/DrugStore/News/News",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "热点资讯",
+                "enablePullDownRefresh": false,
+                "navigationStyle": "default",
+                "navigationBarBackgroundColor": "#b50e03",//顶部背景色
+                "navigationBarTextStyle": "white"
+            }
+            
+        }
+		,{
+		    "path" : "pages/DrugStore/Contact/Contact",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/Reservation/HospitalDetail/HospitalDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/DrugStore/GoodDetail/GoodDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/Personal/PersonalInfo/PersonalInfo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/Personal/HistoryOrder/HistoryOrder",
+            "style" :                                                                                    
+            {
+				"navigationStyle": "default",
+				"navigationBarTitleText": "历史报告",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#1058D1",//顶部背景色
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/Personal/FeedBack/FeedBack",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        
+        ,{
+            "path" : "pages/DrugStore/CreateOrder/CreateOrder",
+            "style" :                                                                                    
+            {
+                "enablePullDownRefresh": false,
+				"navigationStyle": "default",
+				"navigationBarTitleText": "订单",
+				"navigationBarBackgroundColor": "#b50e03",//顶部背景色
+				"navigationBarTextStyle": "white"
+            }
+        }
+
+        ,{
+            "path" : "pages/Reservation/HistoryDiagnose/HistoryDiagnose",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "default",
+                "navigationBarTitleText": "历史报告",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#1058D1",//顶部背景色
+                "navigationBarTextStyle": "white"
+            }
+            
+        },
+        {
+            "path" : "pages/Reservation/HistoryReservation/HistoryReservation",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "default",
+                "navigationBarTitleText": "预约记录",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#1058D1",//顶部背景色
+                "navigationBarTextStyle": "white"
+            }
+        }
+        ,{
+            "path" : "pages/Reservation/ReservationDetail/ReservationDetail",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "default",
+                "navigationBarTitleText": "预约详情",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#1058D1",//顶部背景色
+                "navigationBarTextStyle": "white"
+				
+            }
+            
+        }
+        ,{
+            "path" : "pages/Reservation/ReservationConfirm/ReservationConfirm",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "default",
+                "navigationBarTitleText": "预约单详情",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#1058D1",//顶部背景色
+                "navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/DrugStore/Payment/Payment",
+            "style" :                                                                                    
+            {
+                "enablePullDownRefresh": false,
+				"navigationStyle": "default",
+				"navigationBarTitleText": "支付",
+				"navigationBarBackgroundColor": "#b50e03",//顶部背景色
+				"navigationBarTextStyle": "white"
+
+            }
+            
+        }
+        ,{
+            "path" : "pages/Personal/IDConfirm/IDConfirm",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "default",
+                "navigationBarTitleText": "实名认证",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#1058D1",//顶部背景色
+                "navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/Tabbar/Home1/Home1",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/Tabbar/HospitalList1/HospitalList1",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"list": [
+			{
+				"pagePath":"pages/Tabbar/Home1/Home1",
+				"text":"首页",
+				"iconPath":"static/tabbar/homepage.png",
+				"selectedIconPath":"static/tabbar/homepage-active.png"
+			},
+			{
+				"pagePath":"pages/Tabbar/HospitalList1/HospitalList1",
+				"text":"医院",
+				"iconPath":"static/tabbar/hospital.png",
+				"selectedIconPath":"static/tabbar/hospital-active.png"
+			},
+			{
+				"pagePath":"pages/Tabbar/AI/AI",
+				"text":"智能问诊",
+				"iconPath":"./static/tabbar/doctor-active.png",
+				"selectedIconPath":"static/tabbar/doctor.png"
+			},
+			{
+				"pagePath":"pages/Tabbar/My/My",
+				"text":"我的",
+				"iconPath":"static/tabbar/me.png",
+				"selectedIconPath":"static/tabbar/me-active.png"
+			}
+		]
+	}
+
+}

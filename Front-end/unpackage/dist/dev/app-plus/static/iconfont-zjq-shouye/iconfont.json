@@ -1,0 +1,30 @@
+{
+  "id": "3401652",
+  "name": "shouy",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "974950",
+      "name": "一键预约",
+      "font_class": "yijianyuyue",
+      "unicode": "e6d9",
+      "unicode_decimal": 59097
+    },
+    {
+      "icon_id": "10268858",
+      "name": "购药记录",
+      "font_class": "gouyaojilu",
+      "unicode": "e690",
+      "unicode_decimal": 59024
+    },
+    {
+      "icon_id": "14698923",
+      "name": "新冠疫情",
+      "font_class": "xgyq",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    }
+  ]
+}
