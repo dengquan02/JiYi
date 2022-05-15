@@ -1,6 +1,6 @@
 <template>
 	<view>
-	
+		
 	</view>
 </template>
 
@@ -10,12 +10,6 @@
 			return {
 				
 			}
-		},
-		onLoad() {
-			uni.hideTabBar();
-			uni.redirectTo({
-				url: '../loading/loading'
-			})
 		},
 		methods: {
 			

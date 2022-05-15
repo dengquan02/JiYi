@@ -320,6 +320,18 @@
             "path" : "pages/Reservation/DepartmentDetail/DepartmentDetail",
             "style" :                                                                                    
             {
+                "navigationStyle": "default",
+                "navigationBarTitleText": "科室详情",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "#1058D1",//顶部背景色
+                "navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/Reservation/DoctorDetail/DoctorDetail",
+            "style" :                                                                                    
+            {
                 "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }
