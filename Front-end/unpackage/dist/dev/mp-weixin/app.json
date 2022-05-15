@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/Reservation/DepartmentDetail/DepartmentDetail",
     "pages/Initial/init/init",
     "pages/Initial/loading/loading",
     "pages/Initial/login/login",
@@ -63,6 +64,5 @@
       }
     ]
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap.json"
+  "usingComponents": {}
 }

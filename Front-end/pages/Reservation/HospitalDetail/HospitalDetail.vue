@@ -1,8 +1,6 @@
 <template>
 	<view>
-		<view class="status_bar">
-		    <!-- 这里是状态栏 -->
-		</view>
+		<!-- 医院详情界面 -->
 	</view>
 </template>
 
