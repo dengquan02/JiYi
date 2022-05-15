@@ -1,5 +1,8 @@
 <template>
 	<view>
+		<view >
+			<u-modal :show="show" :title="title" :content='content' @confirm="confirm"></u-modal>
+		</view>
 		<view class="head-nav">
 			<view :class="navIndex==0?'activite':''" @click="checkIndex(0)">全部</view>
 			<view :class="navIndex==1?'activite':''" @click="checkIndex(1)">待就诊</view>
@@ -32,7 +35,7 @@
 						</view>
 						<text>{{ value.author_name }}</text>
 						<text style="margin-left: 30rpx;margin-top: 6rpx;">{{ value.published_at }}</text>
-						<u-button style="margin-top: 10px;" type="primary" :plain="true" text="删除订单"></u-button>
+						<u-button style="margin-top: 10px;" type="primary" :plain="true" text="删除订单" @click="show = true"></u-button>
 						<u-line style="margin-top: 10px;"></u-line>
 					</view>
 				</uni-list>
@@ -61,44 +64,47 @@
 		data() {
 			return {
 				navIndex: 0,
+				show:false,
+				title:'确认删除',
+				content:'确认删除订单记录吗？',
 				listData: [{
-						id: "109121",                       
-						doctor_name: "接诊人：吴先正",
-						title: "急诊科",
+						id: "1",                       
+						doctor_name: "接诊人：王志荣",
+						title: "消化内科",
 						hospital: "同济大学附属医院",
-						author_name: "就诊人：徐子",
-						cover: "https://img.36krcdn.com/20191230/v2_37635ef22df24e96aa7f26e192036c2b_img_png",
-						published_at: "2019-12-30 15:20:00",
+						author_name: "就诊人：YOYO",
+						cover: "https://www.tongjihospital.com.cn/upload/image/190228/15513191814200.jpg",
+						published_at: "2022年5月15日 9:00~9:40",
+						status: "wait"
+					},
+					{
+						id: "2",                       
+						doctor_name: "接诊人：杨长青",
+						title: "消化内科",
+						hospital: "同济大学附属医院",
+						author_name: "就诊人：YOYO",
+						cover: "https://www.tongjihospital.com.cn/upload/image/190227/15512527395725.jpg",
+						published_at: "2022年5月14日 19:00~19:40",
 						status: "cancel"
 					},
 					{
-						id: "109121",                       
+						id: "3",
 						doctor_name: "接诊人：吴先正",
 						title: "急诊科",
 						hospital: "同济大学附属医院",
-						author_name: "就诊人：半佛仙人",
-						cover: "https://img.36krcdn.com/20191230/v2_02c342a62f91498b99c7f2b5aa22ff1c_img_png",
-						published_at: "2019-12-30 15:22:00",
-						status: "cancel"
-					},
-					{
-						id: "109121",
-						doctor_name: "接诊人：吴先正",
-						title: "急诊科",
-						hospital: "同济大学附属医院",
-						author_name: "就诊人：燃财经",
+						author_name: "就诊人：YOYO",
 						cover: "https://img.36krcdn.com/20191230/v2_43cbd298bed24a18bd023802258f20c8_img_png",
-						published_at: "2019-12-30 15:26:00",
-						status: "cancel"
+						published_at: "2022年5月13日 19:00~19:40",
+						status: "finish"
 					},
 					{
-						id: "109121",
+						id: "4",
 						doctor_name: "接诊人：吴先正",
 						title: "急诊科",
 						hospital: "同济大学附属医院",
-						author_name: "就诊人：朋友们",
+						author_name: "就诊人：YOYO",
 						cover: "https://img.36krcdn.com/20191230/v2_037f7f799f504a60a848b52fa913ab65_img_png",
-						published_at: "2019-12-30 15:29:00",
+						published_at: "2022年5月13日 9:00~9:40",
 						status: "cancel"
 					}
 				],
@@ -112,6 +118,9 @@
 			goDetail: function(e) {
 			                
 			},
+			confirm() {
+				this.show = false;
+			}
 		}
 	}
 </script>
@@ -146,7 +155,7 @@
 		margin-bottom: 10px;
 		
 		.uni-media-list-logo {
-			width: 180rpx;
+			width: 150rpx;
 			height: 180rpx;
 			border-radius: 10%;
 		}
