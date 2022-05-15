@@ -112,7 +112,22 @@
 				]
  			}
  		},
+		onLoad() {
+			this.getDocList()
+		},
  		methods: {
+			getDocList(){
+				uni.request({
+					url:'http://100.80.61.47:8008/api/v1/doctor/list',
+					method:'GET',	
+					header: {
+						'content-type': 'application/x-www-form-urlencoded'
+					},
+					success: (res) => {
+						this.docs = res.data.doctor_list;
+					}
+				})				
+			},
 			ToCovid() {
 				uni.navigateTo({
 					url: '../../Covid/covid-19/covid-19'	

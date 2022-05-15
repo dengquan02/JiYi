@@ -119,7 +119,22 @@
 		created() {
 			
 		},
+		onLoad() {
+			this.getHospitalList()
+		},
 		methods: {
+			getHospitalList(){
+				uni.request({
+					url:'http://100.80.61.47:8008/api/v1/hospital/list',
+					method:'GET',	
+					header: {
+						'content-type': 'application/x-www-form-urlencoded'
+					},
+					success: (res) => {
+						this.hos = res.data.hospital_list;
+					}
+				})		
+			},
 			ToDiagnose() {
 				uni.navigateTo({
 					url: '../HistoryDiagnose/HistoryDiagnose'	

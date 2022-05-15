@@ -123,6 +123,7 @@
 			uni.hideTabBar()
 			this.setTitleText()
 			this.setTitleBackground()
+			this.getGoodList()
 			// this.getSwipers()
 			// this.getHotGoods()
 		},
@@ -130,6 +131,18 @@
 		// 	goodsList
 		// },
 		methods: {
+			getGoodList(){
+				uni.request({
+					url:'http://100.80.61.47:8008/api/v1/good/list',
+					method:'GET',	
+					header: {
+						'content-type': 'application/x-www-form-urlencoded'
+					},
+					success: (res) => {
+						this.goods = res.data.good_list;
+					}
+				})	
+			},
 			setTitleText() {
 				uni.setNavigationBarTitle({
 					title: "购药商城"
