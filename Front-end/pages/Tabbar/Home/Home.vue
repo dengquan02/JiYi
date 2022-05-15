@@ -5,7 +5,8 @@
 		</view>
 		<view class="login-form">
 			<!-- 搜索框 -->
-			<uni-easyinput prefixIcon="search"  type="text" placeholder="搜医院,医生,科室..." v-model="formData.tel" />
+			<!-- <uni-easyinput prefixIcon="search"  type="text" placeholder="搜医院,医生,科室..."" /> -->
+			<u-search v-model="searchText" borderColor="#65a0ff" bgColor="#fff" searchIconColor="#65a0ff" :show-action="false" shape="round"></u-search>
 			<!-- 三个按钮 -->
 			<view class="button-box">
 				<uni-card spacing="5px" padding="0 5px " @click="ToCovid()">
@@ -84,10 +85,7 @@
  	export default{
  		data(){
  			return{
- 				formData:{
- 					tel:'',
- 					passwd:''
- 				},
+				searchText:'',
  				listData:[
  					// {
  					// 	_id:1,
@@ -137,9 +135,6 @@
  		justify-content: center;
  		align-items: center;
  		margin-bottom: 10rpx;
- 	}
- 	.login-card{
- 		
  	}
  	.login-img1{
  		width: 450rpx;

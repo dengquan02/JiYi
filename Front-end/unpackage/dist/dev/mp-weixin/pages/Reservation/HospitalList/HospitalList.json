@@ -1,0 +1,11 @@
+{
+  "navigationStyle": "default",
+  "navigationBarTitleText": "预约挂号",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#1058D1",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "uni-list": "/uni_modules/uni-list/components/uni-list/uni-list",
+    "uni-list-item": "/uni_modules/uni-list/components/uni-list-item/uni-list-item"
+  }
+}

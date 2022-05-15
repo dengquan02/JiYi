@@ -54,6 +54,7 @@
 </script>
 <style>
 	.login-form{
+		margin-top: 120rpx;
 		padding: 30rpx 100rpx;
 	}
 	.img-box {

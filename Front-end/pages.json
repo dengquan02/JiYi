@@ -246,6 +246,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/Reservation/DoctorDetail/DoctorDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationStyle": "custom",

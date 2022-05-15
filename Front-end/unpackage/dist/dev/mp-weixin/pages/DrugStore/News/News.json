@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "热点资讯",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "default",
+  "navigationBarBackgroundColor": "#b50e03",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "uni-list": "/uni_modules/uni-list/components/uni-list/uni-list"
+  }
+}

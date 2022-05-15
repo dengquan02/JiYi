@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "default",
+  "navigationBarTitleText": "疫情实时",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#1058D1",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {}
+}
