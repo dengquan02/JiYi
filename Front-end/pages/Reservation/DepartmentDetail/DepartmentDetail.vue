@@ -168,6 +168,11 @@
 			confirm(e) {
 				console.log(e);
 				this.show = false;
+			},
+			hosItemClick() {
+				uni.navigateTo({
+					url: '../DoctorDetail/DoctorDetail'	
+				});
 			}
 		}
 	}
