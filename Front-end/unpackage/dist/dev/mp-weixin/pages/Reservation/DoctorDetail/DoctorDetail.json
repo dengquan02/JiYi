@@ -2,6 +2,11 @@
   "navigationBarTitleText": "",
   "enablePullDownRefresh": false,
   "usingComponents": {
-    "u-avatar": "/uni_modules/uview-ui/components/u-avatar/u-avatar"
+    "uni-card": "/uni_modules/uni-card/components/uni-card/uni-card",
+    "uni-tag": "/uni_modules/uni-tag/components/uni-tag/uni-tag",
+    "u-cell-group": "/uni_modules/uview-ui/components/u-cell-group/u-cell-group",
+    "u-cell": "/uni_modules/uview-ui/components/u-cell/u-cell",
+    "u-calendar": "/uni_modules/uview-ui/components/u-calendar/u-calendar",
+    "u-button": "/uni_modules/uview-ui/components/u-button/u-button"
   }
 }

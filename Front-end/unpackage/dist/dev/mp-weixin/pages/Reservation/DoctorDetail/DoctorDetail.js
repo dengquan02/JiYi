@@ -95,8 +95,23 @@ __webpack_require__.r(__webpack_exports__);
 var components
 try {
   components = {
-    uAvatar: function() {
-      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-avatar/u-avatar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-avatar/u-avatar")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-avatar/u-avatar.vue */ 494))
+    uniCard: function() {
+      return __webpack_require__.e(/*! import() | uni_modules/uni-card/components/uni-card/uni-card */ "uni_modules/uni-card/components/uni-card/uni-card").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-card/components/uni-card/uni-card.vue */ 340))
+    },
+    uniTag: function() {
+      return __webpack_require__.e(/*! import() | uni_modules/uni-tag/components/uni-tag/uni-tag */ "uni_modules/uni-tag/components/uni-tag/uni-tag").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-tag/components/uni-tag/uni-tag.vue */ 376))
+    },
+    uCellGroup: function() {
+      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-cell-group/u-cell-group */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-cell-group/u-cell-group")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-cell-group/u-cell-group.vue */ 383))
+    },
+    uCell: function() {
+      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-cell/u-cell */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-cell/u-cell")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-cell/u-cell.vue */ 391))
+    },
+    uCalendar: function() {
+      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-calendar/u-calendar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-calendar/u-calendar")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-calendar/u-calendar.vue */ 399))
+    },
+    uButton: function() {
+      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-button/u-button */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-button/u-button")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-button/u-button.vue */ 448))
     }
   }
 } catch (e) {
@@ -157,34 +172,97 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
+    var d = new Date();
+    var year = d.getFullYear();
+    //月份的获取需要注意
+    var month = d.getMonth() + 1;
+    month = month < 10 ? "0".concat(month) : month;
+    var day = d.getDate();
+    var value = year.toString() + '-' + month.toString() + '-' + day.toString();
     return {
-      src1: 'https://cdn.uviewui.com/uview/album/1.jpg',
-      src2: 'https://cdn.uviewui.com/uview/album/2.jpg',
-      src3: 'https://cdn.uviewui.com/uview/album/3.jpg',
-      src4: 'https://cdn.uviewui.com/uview/album/4.jpg',
-      src5: 'https://cdn.uviewui.com/uview/album/5.jpg',
-      src6: 'https://cdn.uviewui.com/uview/album/6.jpg',
-      src7: 'https://cdn.uviewui.com/uview/album/noExist.jpg',
-      urls: [
-      'https://cdn.uviewui.com/uview/album/1.jpg',
-      'https://cdn.uviewui.com/uview/album/2.jpg',
-      'https://cdn.uviewui.com/uview/album/3.jpg',
-      'https://cdn.uviewui.com/uview/album/4.jpg',
-      'https://cdn.uviewui.com/uview/album/7.jpg',
-      'https://cdn.uviewui.com/uview/album/6.jpg',
-      'https://cdn.uviewui.com/uview/album/5.jpg'] };
-
-
-  },
-  onLoad: function onLoad() {
+      dateValue: value, //日期
+      show: false, //日历是否弹出time
+      doctorName: '吴孟达',
+      departmentName: '急诊科',
+      hospitalName: '同济大学附属医院',
+      timeList: [1] };
 
   },
   methods: {
-    click: function click(name) {
-      console.log('click', name);
+    showCalendar: function showCalendar() {
+      this.show = true;
+    },
+    confirm: function confirm(e) {
+      this.show = false;
+      console.log(e);
+      this.dateValue = e[0] + '~' + e[e.length - 1];
+    },
+    close: function close() {
+      this.show = false;
     } } };exports.default = _default;
 
 /***/ }),

@@ -27,12 +27,24 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.u-demo-block__content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.u-page {
+  padding: 0;
 }
-.u-avatar-item {
-  margin-right: 30px;
+.status_bar {
+  height: 25px;
+  width: 100%;
+  background-color: #1058D1;
+}
+.myform {
+  padding: 20rpx 30rpx;
+}
+.title {
+  text-align: center;
+}
+.card-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rpx;
 }
 
