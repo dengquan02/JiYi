@@ -165,8 +165,11 @@
             "path" : "pages/DrugStore/GoodDetail/GoodDetail",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+				"navigationStyle": "default",
+				"navigationBarTitleText": "商品详情",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#1058D1",//顶部背景色
+				"navigationBarTextStyle": "white"
             }
             
         }

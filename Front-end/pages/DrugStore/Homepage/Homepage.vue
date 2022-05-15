@@ -25,7 +25,7 @@
 						class="goods_item"
 						v-for="item in goods"
 						:key="item.id"
-						@click="navigator(item.id)">
+						@click="navigateToDetail()">
 						<image :src="item.img_url" mode=""></image>
 						<view class="price">
 							<text>￥{{item.sell_price}}</text>
@@ -165,6 +165,11 @@
 			navItemClick (url) {
 				uni.navigateTo({
 					url
+				})
+			},
+			navigateToDetail(){
+				uni.navigateTo({
+					url:"/pages/DrugStore/GoodDetail/GoodDetail"
 				})
 			},
 			// // 导航到商品详情页
