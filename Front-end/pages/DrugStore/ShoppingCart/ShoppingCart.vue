@@ -79,11 +79,11 @@
 				selectedList:[],
 				isAllselected:false,
 				goodsList:[
-					{id:1,img:'/static/imgs/kouzhao.png',name:'医用外科口罩',spec:'15个/袋',price:15.00,number:1,selected:false},
-					{id:2,img:'/static/imgs/jiujing.png',name:'免洗手消毒凝胶',spec:'100ml',price:19.90,number:1,selected:false},
-					{id:3,img:'/static/imgs/mianqian.png',name:'消毒棉签',spec:'100个/袋',price:7.00,number:1,selected:false},
-					{id:4,img:'/static/imgs/chouzhi.png',name:'抽纸',spec:'300抽/包',price:3.50,number:1,selected:false},
-					{id:5,img:'/static/imgs/liushen.png',name:'花露水',spec:'180ml',price:12.90,number:1,selected:false}
+					{id:1,img:'/static/imgs/kouzhao.png',name:'【H901】医用外科口罩',spec:'15个/袋',price:14.99,number:1,selected:false},
+					{id:2,img:'/static/imgs/jiujing.png',name:'免洗消毒凝胶 75%酒精',spec:'100ml',price:19.90,number:1,selected:false},
+					{id:3,img:'/static/imgs/mianqian.png',name:'家用消毒棉签',spec:'100个/袋',price:5.5,number:1,selected:false},
+					{id:4,img:'/static/imgs/chouzhi.png',name:'【原木纯品】清风抽纸',spec:'300抽/包',price:3.50,number:1,selected:false},
+					{id:5,img:'/static/imgs/liushen.png',name:'六神花露水 三合一',spec:'180ml',price:12.90,number:1,selected:false}
 				],
 				//控制滑动效果
 				theIndex:null,

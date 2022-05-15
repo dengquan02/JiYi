@@ -20,7 +20,22 @@
 				<view class="tit">
 					热&nbsp;&nbsp;&nbsp;&nbsp;门&nbsp;&nbsp;&nbsp;&nbsp;商&nbsp;&nbsp;&nbsp;&nbsp;品
 				</view>
-				<!-- <goodsList :goods="goods" @goodsItemClick="goodsItemClick"></goodsList> -->
+				<view class="goods_list">
+					<view
+						class="goods_item"
+						v-for="item in goods"
+						:key="item.id"
+						@click="navigator(item.id)">
+						<image :src="item.img_url" mode=""></image>
+						<view class="price">
+							<text>￥{{item.sell_price}}</text>
+							<text>市场价￥{{item.market_price}}</text>
+						</view>
+						<view class="name">
+							{{item.title}}
+						</view>
+					</view>
+				</view>
 			</view>
 		</view>
 	</view>
@@ -31,7 +46,24 @@
 	export default {
 		data() {
 			return {
-				swipers: [],
+				swipers: [
+					{
+						'id': 1,
+						'img': 'http://kano.guahao.cn/S3i434966678?token=MWNiODRjMzZmYjllM2I3MzM1ZTkzYTNlMzJkOTZlZTJfTUQ1COUSTOM&v=1.0'
+					},
+					{
+						'id': 2,
+						'img': 'https://img0.baidu.com/it/u=1288210293,3278583697&fm=253&fmt=auto&app=138&f=JPEG?w=1500&h=500'
+					},
+					{
+						'id': 3,
+						'img': 'https://img2.baidu.com/it/u=2432013445,2051009811&fm=253&fmt=auto&app=138&f=JPEG?w=1280&h=460'
+					},
+					{
+						'id': 4,
+						'img': 'https://img2.baidu.com/it/u=178642286,892712417&fm=253&fmt=auto&app=138&f=JPEG?w=900&h=300'
+					}
+				],
 				// goods: [],
 				navs: [
 					{
@@ -54,7 +86,37 @@
 						title: '联系我们',
 						path: '/pages/DrugStore/Contact/Contact'
 					}
-				]
+				],
+				goods: [
+					{
+						'id': 1,
+						'img_url': '/static/imgs/kouzhao.png',
+						'sell_price': '14.99',
+						'title': '【H901】医用外科口罩',
+						'market_price': '20'
+					},
+					{
+						'id': 2,
+						'img_url': '/static/imgs/jiujing.png',
+						'sell_price': '19.9',
+						'title': '免洗消毒凝胶 75%酒精',
+						'market_price': '25'
+					},
+					{
+						'id': 3,
+						'img_url': '/static/imgs/mianqian.png',
+						'sell_price': '5.5',
+						'title': '家用消毒棉签',
+						'market_price': '8.8'
+					},
+					{
+						'id': 4,
+						'img_url': '/static/imgs/chouzhi.png',
+						'sell_price': '3.5',
+						'title': '【原木纯品】清风抽纸',
+						'market_price': '3.85'
+					},
+				],
 			}
 		},
 		onLoad() {
@@ -161,6 +223,43 @@
 			font-weight: 500;
 			background: #fff;
 			margin: 10rpx 0;
+		}
+	}
+}
+.goods_list {
+	padding: 0 15rpx;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	.goods_item {
+		background: #fff;
+		border-radius: 5%;
+		margin: 10rpx 0;
+		padding: 15rpx;
+		width: 355rpx;
+		box-sizing: border-box;
+		image {
+			border-radius: 5%;
+			width: 100%;
+			height: 180px;
+			display: block;
+			margin: 0 auto;
+		}
+		.price {
+			color: $shop-color;
+			font-size: 36rpx;
+			margin: 20rpx 0 5rpx 0;
+			text:nth-child(2) {
+				color: #ccc;
+				font-size: 28rpx;
+				margin-left: 10rpx;
+				text-decoration: line-through;
+			}
+		}
+		.name {
+			font-size: 30rpx;
+			line-height: 50rpx;
+			padding: 10rpx 0 15rpx 0;
 		}
 	}
 }
