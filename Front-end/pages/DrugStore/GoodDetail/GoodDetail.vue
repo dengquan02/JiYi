@@ -2,24 +2,11 @@
 	<view>
 		<view class="status" :style="{ opacity: afterHeaderOpacity }"></view>
 		<view class="header">
-			<!-- 头部-默认显示 -->
-			<view class="before" :style="{ opacity: 1 - afterHeaderOpacity, zIndex: beforeHeaderzIndex }">
-				<view class="back"><view class="icon xiangqian" @tap="back" v-if="showBack"></view></view> 
-				<view class="middle"></view>
-				<view class="icon-btn">
-					<view class="icon tongzhi" @tap="toMsg"></view>
-					<view class="icon cart" @tap="joinCart"></view>
-				</view>
-			</view>
 			<!-- 头部-滚动渐变显示 -->
 			<view class="after" :style="{ opacity: afterHeaderOpacity, zIndex: afterHeaderzIndex }">
 				<view class="back" ><view class="icon xiangqian" @tap="back" v-if="showBack"></view></view>
 				<view class="middle">
 					<view v-for="(anchor,index) in anchorlist" :class="[selectAnchor==index ?'on':'']" :key="index" @tap="toAnchor(index)">{{anchor.name}}</view>
-				</view>
-				<view class="icon-btn">
-					<view class="icon tongzhi" @tap="toMsg"></view>
-					<view class="icon cart" @tap="joinCart"></view>
 				</view>
 			</view>
 		</view>
@@ -108,27 +95,6 @@
 				<view class="arrow"><view class="icon xiangyou"></view></view>
 			</view>
 		</view>
-		<!-- 评价 -->
-		<view class="info-box comments" id="comments">
-			<view class="row">
-				<view class="text">商品评价({{goodsData.comment.number}})</view>
-				<view class="arrow" @tap="toRatings">
-					<view class="show" @tap="showComments(goodsData.id)">
-						查看全部
-						<view class="icon xiangyou"></view>
-					</view>
-				</view>
-			</view>
-			<view class="comment" @tap="toRatings">
-				<view class="user-info">
-					<view class="face"><image :src="goodsData.comment.userface"></image></view>
-					<view class="username">{{goodsData.comment.username}}</view>
-				</view>
-				<view class="content">
-					{{goodsData.comment.content}}
-				</view>
-			</view>
-		</view>
 		<!-- 详情 -->
 		<view class="description">
 			<view class="title">———— 商品详情 ————</view>
@@ -152,10 +118,8 @@ export default {
 			// #endif
 			//轮播主图数据
 			swiperList: [
-				{ id: 1, img: 'https://ae01.alicdn.com/kf/HTB1Mj7iTmzqK1RjSZFjq6zlCFXaP.jpg' },
-				{ id: 2, img: 'https://ae01.alicdn.com/kf/HTB1fbseTmzqK1RjSZFLq6An2XXaL.jpg' },
-				{ id: 3, img: 'https://ae01.alicdn.com/kf/HTB1dPUMThnaK1RjSZFtq6zC2VXa0.jpg' },
-				{ id: 4, img: 'https://ae01.alicdn.com/kf/HTB1OHZrTXzqK1RjSZFvq6AB7VXaw.jpg' }
+				{ id: 1, img: '/static/imgs/kouzhao.png' },
+				{ id: 2, img: '/static/imgs/kouzhao2.png' },
 			],
 			//轮播图下标
 			currentSwiper: 0,
@@ -167,26 +131,20 @@ export default {
 			// 商品信息
 			goodsData:{
 				id:1,
-				name:"商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题",
-				price:"127.00",
+				name:"【H901】医用外科口罩",
+				price:"14.99",
 				number:1,
 				service:[
 					{name:"正品保证",description:"此商品官方保证为正品"},
 					{name:"极速退款",description:"此商品享受退货极速退款服务"},
 					{name:"7天退换",description:"此商品享受7天无理由退换服务"}
 				],
-				spec:["XS","S","M","L","XL","XXL"],
-				comment:{
-					number:102,
-					userface:'../../static/img/face.jpg',
-					username:'大黑哥',
-					content:'很不错，之前买了很多次了，很好看，能放很久，和图片色差不大，值得购买！'
-				}
+				spec:["5个装"],
 			},
 			selectSpec:null,//选中规格
 			isKeep:false,//收藏
 			//商品描述html
-			descriptionStr:'<div style="text-align:center;"><img width="100%" src="https://ae01.alicdn.com/kf/HTB1t0fUl_Zmx1VjSZFGq6yx2XXa5.jpg"/><img width="100%" src="https://ae01.alicdn.com/kf/HTB1LzkjThTpK1RjSZFKq6y2wXXaT.jpg"/><img width="100%" src="https://ae01.alicdn.com/kf/HTB18dkiTbvpK1RjSZPiq6zmwXXa8.jpg"/></div>'
+			descriptionStr:'<div style="text-align:center;"><img width="100%" src="/static/imgs/kouzhao.png"/><img width="100%" src="/static/imgs/kouzhao2.png"/></div>'
 		};
 	},
 	onLoad(option) {
@@ -224,32 +182,6 @@ export default {
 		swiperChange(event) {
 			this.currentSwiper = event.detail.current;
 		},
-		//消息列表
-		toMsg(){
-			uni.navigateTo({
-				url:'../msg/msg'
-			})
-		},
-		// 客服
-		toChat(){
-			uni.navigateTo({
-				url:"../msg/chat/chat?name=客服008"
-			})
-		},
-		// 分享
-		share(){
-			this.shareClass = 'show';
-		},
-		hideShare(){
-			this.shareClass = 'hide';
-			setTimeout(() => {
-				this.shareClass = 'none';
-			}, 150);
-		},
-		//收藏
-		keep(){
-			this.isKeep = this.isKeep?false:true;
-		},
 		// 加入购物车
 		joinCart(){
 			if(this.selectSpec==null){
@@ -268,12 +200,6 @@ export default {
 			}
 			this.toConfirmation();
 		},
-		//商品评论
-		toRatings(){
-			uni.navigateTo({
-				url:'ratings/ratings'
-			})
-		},
 		//跳转确认订单页面
 		toConfirmation(){
 			let tmpList=[];
@@ -288,10 +214,6 @@ export default {
 					})
 				}
 			})
-		},
-		//跳转评论列表
-		showComments(goodsid){
-			
 		},
 		//选择规格
 		setSelectSpec(index){
@@ -317,21 +239,8 @@ export default {
 		calcAnchor(){
 			this.anchorlist=[
 				{name:'主图',top:0},
-				{name:'评价',top:0},
 				{name:'详情',top:0}
 			]
-			let commentsView = uni.createSelectorQuery().select("#comments");
-			commentsView.boundingClientRect((data) => {
-				let statusbarHeight = 0;
-				//APP内还要计算状态栏高度
-				// #ifdef APP-PLUS
-					statusbarHeight = plus.navigator.getStatusbarHeight()
-				// #endif
-				let headerHeight = uni.upx2px(100);
-				this.anchorlist[1].top = data.top - headerHeight - statusbarHeight;
-				this.anchorlist[2].top = data.bottom - headerHeight - statusbarHeight;
-				
-			}).exec();
 		},
 		//返回上一页
 		back() {
@@ -630,58 +539,6 @@ page {
 		}
 	}
 }
-.comments {
-	.row {
-		width: 100%;
-		height: 40upx;
-		display: flex;
-		align-items: center;
-		margin: 0 0 30upx 0;
-		.text {
-			font-size: 30upx;
-		}
-		.arrow {
-			font-size: 28upx;
-			position: absolute;
-			right: 4%;
-			color: #17e6a1;
-			.show {
-				display: flex;
-				align-items: center;
-				.icon {
-					color: #17e6a1;
-				}
-			}
-		}
-	}
-	.comment {
-		width: 100%;
-		.user-info {
-			width: 100%;
-			height: 40upx;
-			display: flex;
-			align-items: center;
-			.face {
-				width: 40upx;
-				height: 40upx;
-				margin-right: 8upx;
-				image {
-					width: 40upx;
-					height: 40upx;
-					border-radius: 100%;
-				}
-			}
-			.username {
-				font-size: 24upx;
-				color: #999;
-			}
-		}
-		.content {
-			margin-top: 10upx;
-			font-size: 26upx;
-		}
-	}
-}
 .description {
 	.title {
 		width: 100%;
@@ -703,37 +560,14 @@ page {
 	background-color: #fff;
 	z-index: 2;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-	.icons {
-		display: flex;
-		height: 80upx;
-		margin-left: -4%;
-		.box {
-			width: 80upx;
-			height: 80upx;
-			display: flex;
-			justify-content: center;
-			flex-wrap: wrap;
-			.icon {
-				font-size: 40upx;
-				color: #828282;
-			}
-			.text {
-				display: flex;
-				justify-content: center;
-				width: 100%;
-				font-size: 22upx;
-				color: #666;
-			}
-		}
-	}
+	justify-content: end;
+	
 	.btn {
 		height: 80upx;
 		border-radius: 40upx;
 		overflow: hidden;
 		display: flex;
-		margin-right: -2%;
 		.joinCart,
 		.buy {
 			height: 80upx;
