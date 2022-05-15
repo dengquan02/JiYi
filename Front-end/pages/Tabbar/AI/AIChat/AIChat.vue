@@ -172,11 +172,13 @@
 			getMsgList(){
 				// 消息列表
 				let list = [
-					{id:0,uid:0,username:"大黑哥",face:"/static/imgs/snoopy.png",time:"12:56",type:"text",msg:{content:"我今天有点打喷嚏，请问什么情况"}},
-					{id:1,uid:1,username:"问诊助手",face:"/static/imgs/AI.png",time:"12:57",type:"text",msg:{content:"您体温正常吗？"}},
-					{id:2,uid:0,username:"大黑哥",face:"/static/imgs/snoopy.png",time:"13:05",type:"text",msg:{content:"我体温正常"}},
-					{id:3,uid:0,username:"大黑哥",face:"/static/imgs/snoopy.png",time:"13:05",type:"text",msg:{content:"有点流鼻涕、打喷嚏，头有点晕"}},
-					{id:4,uid:1,username:"问诊助手",face:"/static/imgs/AI.png",time:"13:06",type:"text",msg:{content:"诊断结果为：感冒。建议您注意保暖，服用连花清瘟。"}}
+					{id:0,uid:0,username:"大黑哥",face:"/static/imgs/snoopy.png",time:"9:40",type:"text",msg:{content:"云南白药的功效是？"}},
+					{id:1,uid:1,username:"问诊助手",face:"/static/imgs/AI.png",time:"9:40",type:"text",msg:{content:"云南白药是我国著名的中药,用名贵的药材组成,具有化瘀止血、活血止痛、解毒消肿的功效。"}},
+					{id:2,uid:0,username:"大黑哥",face:"/static/imgs/snoopy.png",time:"12:56",type:"text",msg:{content:"我今天有点打喷嚏，请问什么情况"}},
+					{id:3,uid:1,username:"问诊助手",face:"/static/imgs/AI.png",time:"12:56",type:"text",msg:{content:"您体温正常吗？"}},
+					{id:4,uid:0,username:"大黑哥",face:"/static/imgs/snoopy.png",time:"13:05",type:"text",msg:{content:"我体温正常"}},
+					{id:5,uid:0,username:"大黑哥",face:"/static/imgs/snoopy.png",time:"13:05",type:"text",msg:{content:"有点流鼻涕、打喷嚏，头有点晕"}},
+					{id:6,uid:1,username:"问诊助手",face:"/static/imgs/AI.png",time:"13:05",type:"text",msg:{content:"诊断结果为：感冒。建议您注意保暖，服用连花清瘟。"}}
 				]
 				// 获取消息中的图片,并处理显示尺寸
 				for(let i=0;i<list.length;i++){
@@ -519,7 +521,7 @@ page{
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			background:linear-gradient(to right,#f09b37,#eb632c);
+			background:linear-gradient(to right,$hospital-color,#55aaff);
 			color: #fff;
 			border-radius: 6upx;
 			font-size: 24upx;
