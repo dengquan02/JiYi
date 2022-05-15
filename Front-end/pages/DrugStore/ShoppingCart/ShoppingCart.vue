@@ -170,7 +170,6 @@
 				}
 				let moveX = event.touches[0].pageX - this.initXY[0];
 				let moveY = event.touches[0].pageY - this.initXY[1];
-				
 				if(this.isStop||Math.abs(moveX)<5){
 					return ;
 				}
@@ -179,7 +178,6 @@
 					this.isStop = true;
 					return;
 				}
-				
 				if(moveX<0){
 					this.theIndex = index;
 					this.isStop = true;
