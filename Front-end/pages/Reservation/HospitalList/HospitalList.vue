@@ -17,18 +17,17 @@
 			<view class="tit">
 				医院排行榜
 			</view>
-			<view class="hot_docs">
-				<view class="docs_list">
+			<view class="hot_hos">
+				<view class="hos_list" @click="hosItemClick()">
 					<view
-						class="docs_item"
-						v-for="item in docs"
+						class="hos_item"
+						v-for="item in hos"
 						:key="item.id"
 						@click="navigator(item.id)">
 						<image :src="item.img_url" mode=""></image>
 						<view class="right">
 							<view class="price">
 							<text>{{item.name}}</text>
-							<!-- <text>￥{{item.market_price}}</text> -->
 							</view>
 							<view class="name">
 								<text>{{item.title}}</text>
@@ -38,7 +37,6 @@
 								<text>{{item.location}}</text>
 							</view>
 						</view>
-						
 					</view>
 				</view>
 			</view>
@@ -50,7 +48,7 @@
 	export default {
 		data() {
 			return {
-				docs: [
+				hos: [
 					{
 						'id': 1,
 						'img_url': 'https://img1.baidu.com/it/u=3798921190,477604720&fm=253&fmt=auto&app=120&f=JPEG?w=547&h=500',
@@ -135,6 +133,11 @@
 			ToDetail() {
 				uni.navigateTo({
 					url: '../ReservationDetail/ReservationDetail'	
+				});
+			},
+			hosItemClick() {
+				uni.navigateTo({
+					url: '../HospitalDetail/HospitalDetail'	
 				});
 			}
 		}
@@ -332,7 +335,7 @@ page {
 		/* #endif */
 	}
 }
-.hot_docs {
+.hot_hos {
 	background: #eee;
 	overflow: hidden;
 	margin-top: 10px;
@@ -346,12 +349,12 @@ page {
 		font-weight:500;
 	}
 }
-.docs_list {
+.hos_list {
 	// margin-left: 10px;
 	margin-right: 13px;
 	flex-wrap: wrap;
 	// justify-content: space-between;
-	.docs_item {
+	.hos_item {
 		background: #fff;
 		width: 100%;
 		border-radius: 10px;
