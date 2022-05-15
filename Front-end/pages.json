@@ -301,6 +301,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/Tabbar/AI/AIChat/AIChat",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationStyle": "custom",
@@ -324,7 +333,7 @@
 				"selectedIconPath":"static/tabbar/hospital-active.png"
 			},
 			{
-				"pagePath":"pages/Tabbar/AI/AI",
+				"pagePath":"pages/Tabbar/AI/AIChat/AIChat",
 				"text":"智能问诊",
 				"iconPath":"./static/tabbar/doctor-active.png",
 				"selectedIconPath":"static/tabbar/doctor.png"
