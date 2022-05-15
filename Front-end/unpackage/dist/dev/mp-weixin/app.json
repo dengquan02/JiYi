@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/Reservation/DoctorDetail/DoctorDetail",
+    "pages/Reservation/HospitalDetail/HospitalDetail",
     "pages/Reservation/DepartmentDetail/DepartmentDetail",
     "pages/Initial/init/init",
     "pages/Initial/loading/loading",
@@ -16,7 +18,6 @@
     "pages/Reservation/HospitalList/HospitalList",
     "pages/DrugStore/News/News",
     "pages/DrugStore/Contact/Contact",
-    "pages/Reservation/HospitalDetail/HospitalDetail",
     "pages/DrugStore/GoodDetail/GoodDetail",
     "pages/Personal/PersonalInfo/PersonalInfo",
     "pages/Personal/HistoryOrder/HistoryOrder",
@@ -25,8 +26,7 @@
     "pages/Reservation/HistoryDiagnose/HistoryDiagnose",
     "pages/Reservation/HistoryReservation/HistoryReservation",
     "pages/Reservation/ReservationDetail/ReservationDetail",
-    "pages/Reservation/ReservationConfirm/ReservationConfirm",
-    "pages/Reservation/DoctorDetail/DoctorDetail"
+    "pages/Reservation/ReservationConfirm/ReservationConfirm"
   ],
   "subPackages": [],
   "window": {

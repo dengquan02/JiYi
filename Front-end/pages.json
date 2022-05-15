@@ -1,6 +1,24 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+		    "path" : "pages/Reservation/DoctorDetail/DoctorDetail",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+		    "path" : "pages/Reservation/HospitalDetail/HospitalDetail",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
 		    "path" : "pages/Reservation/DepartmentDetail/DepartmentDetail",
 		    "style" :                                                                                    
 		    {
@@ -156,15 +174,6 @@
 		    
 		}
         ,{
-            "path" : "pages/Reservation/HospitalDetail/HospitalDetail",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
             "path" : "pages/DrugStore/GoodDetail/GoodDetail",
             "style" :                                                                                    
             {
@@ -248,15 +257,6 @@
         }
         ,{
             "path" : "pages/Reservation/ReservationConfirm/ReservationConfirm",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/Reservation/DoctorDetail/DoctorDetail",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",

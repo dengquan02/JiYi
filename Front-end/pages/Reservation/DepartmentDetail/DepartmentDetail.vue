@@ -33,7 +33,7 @@
 		<!-- 医生卡片列表 -->
 		<view style="background-color: #fff; padding: 20rpx 30rpx;">
 			<text>
-				精选医生
+				医生列表
 			</text>
 		</view>
 		<view v-for="(item, index) in doctorList">

@@ -27,9 +27,38 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+.album {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.album__avatar {
+  background-color: #1058D1;
+  padding: 5px;
+  border-radius: 3px;
+}
+.album__content {
+  margin-left: 10px;
+  flex: 1;
+}
+.u-page {
+  padding: 0;
+}
 .status_bar {
   height: 25px;
   width: 100%;
   background-color: #1058D1;
+}
+.myform {
+  padding: 20rpx 30rpx;
+}
+.title {
+  text-align: center;
+}
+.card-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rpx;
 }
 
