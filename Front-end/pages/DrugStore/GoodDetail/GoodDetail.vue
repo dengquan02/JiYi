@@ -154,6 +154,8 @@ export default {
 		// #endif
 		//option为object类型，会序列化上个页面传递的参数
 		console.log(option.cid); //打印出上个页面传递的参数。
+		this.getGoodsDetail(option.cid)
+		
 	},
 	onReady(){
 		this.calcAnchor();//计算锚点高度，页面数据是ajax加载时，请把此行放在数据渲染完成事件中执行以保证高度计算正确
@@ -178,6 +180,20 @@ export default {
 		
 	},
 	methods: {
+		getGoodsDetail(cid){
+			uni.request({
+				url:'http://100.80.61.47:8008/api/v1/good/detail',
+				method:'GET',	
+				data: { id: cid },
+				header: {
+					'content-type': 'application/x-www-form-urlencoded'
+				},
+				success: (res) => {
+					this.goodsData = res.data;
+				}
+			})
+			
+		},
 		//轮播图指示器
 		swiperChange(event) {
 			this.currentSwiper = event.detail.current;
@@ -185,6 +201,17 @@ export default {
 		// 加入购物车
 		joinCart(){
 			if(this.selectSpec==null){
+				uni.request({
+					url:'http://100.80.61.47:8008/api/v1/good/cart',
+					data: { good_id: this.goodsData.id },
+					method:'POST',	
+					header: {
+						'content-type': 'application/x-www-form-urlencoded'
+					},
+					success: (res) => {
+						uni.showToast({title: "已加入购物车"});
+					}
+				})	
 				return this.showSpec(()=>{
 					uni.showToast({title: "已加入购物车"});
 				});
@@ -210,7 +237,7 @@ export default {
 				data:tmpList,
 				success: () => {
 					uni.navigateTo({
-						url:'../order/confirmation'
+						url:'/pages/DrugStore/CreateOrder/CreateOrder'
 					})
 				}
 			})
@@ -561,8 +588,7 @@ page {
 	z-index: 2;
 	display: flex;
 	align-items: center;
-	justify-content: end;
-	
+	justify-content: end;	
 	.btn {
 		height: 80upx;
 		border-radius: 40upx;

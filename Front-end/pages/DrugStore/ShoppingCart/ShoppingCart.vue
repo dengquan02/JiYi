@@ -114,6 +114,19 @@
 			// #endif
 		},
 		methods: {
+			getCartList(){
+				uni.request({
+					url:'http://100.80.61.47:8008/api/v1/cart/list',
+					method:'GET',	
+					header: {
+						'content-type': 'application/x-www-form-urlencoded'
+					},
+					success: (res) => {
+						this.goodsList = res.data.cart_list;
+					}
+				})	
+				goodsList
+			},
 			//加入商品 参数 goods:商品数据
 			joinGoods(goods){
 				/*
