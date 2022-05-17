@@ -1,0 +1,14 @@
+{
+  "navigationStyle": "default",
+  "navigationBarTitleText": "预约记录",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#1058D1",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "u-modal": "/uni_modules/uview-ui/components/u-modal/u-modal",
+    "u-line": "/uni_modules/uview-ui/components/u-line/u-line",
+    "uni-card": "/uni_modules/uni-card/components/uni-card/uni-card",
+    "uni-list": "/uni_modules/uni-list/components/uni-list/uni-list",
+    "u-button": "/uni_modules/uview-ui/components/u-button/u-button"
+  }
+}

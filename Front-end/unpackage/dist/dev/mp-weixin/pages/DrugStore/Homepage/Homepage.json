@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "default",
+  "navigationBarTitleText": "购药商城",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#b50e03",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {}
+}

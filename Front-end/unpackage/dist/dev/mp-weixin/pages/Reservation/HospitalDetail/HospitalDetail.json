@@ -1,0 +1,11 @@
+{
+  "enablePullDownRefresh": false,
+  "navigationStyle": "default",
+  "navigationBarTitleText": "医院详情",
+  "navigationBarBackgroundColor": "#1058D1",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "u-tag": "/uni_modules/uview-ui/components/u-tag/u-tag",
+    "u-gap": "/uni_modules/uview-ui/components/u-gap/u-gap"
+  }
+}

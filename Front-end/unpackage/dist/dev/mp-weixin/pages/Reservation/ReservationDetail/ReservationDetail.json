@@ -1,0 +1,18 @@
+{
+  "navigationStyle": "default",
+  "navigationBarTitleText": "预约详情",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#1058D1",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "u-row": "/uni_modules/uview-ui/components/u-row/u-row",
+    "u-col": "/uni_modules/uview-ui/components/u-col/u-col",
+    "u--image": "/uni_modules/uview-ui/components/u--image/u--image",
+    "u-gap": "/uni_modules/uview-ui/components/u-gap/u-gap",
+    "u-cell-group": "/uni_modules/uview-ui/components/u-cell-group/u-cell-group",
+    "u-cell": "/uni_modules/uview-ui/components/u-cell/u-cell",
+    "u-line": "/uni_modules/uview-ui/components/u-line/u-line",
+    "u--text": "/uni_modules/uview-ui/components/u--text/u--text",
+    "u-button": "/uni_modules/uview-ui/components/u-button/u-button"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "navigationStyle": "default",
+  "navigationBarTitleText": "医生详情",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#1058D1",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "u-tag": "/uni_modules/uview-ui/components/u-tag/u-tag",
+    "u-gap": "/uni_modules/uview-ui/components/u-gap/u-gap",
+    "u-calendar": "/uni_modules/uview-ui/components/u-calendar/u-calendar",
+    "u-button": "/uni_modules/uview-ui/components/u-button/u-button",
+    "uni-list": "/uni_modules/uni-list/components/uni-list/uni-list",
+    "u-line": "/uni_modules/uview-ui/components/u-line/u-line"
+  }
+}

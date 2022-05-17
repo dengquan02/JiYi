@@ -1,10 +1,37 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/Initial/init/init",
+    "pages/Initial/loading/loading",
+    "pages/Initial/login/login",
+    "pages/Initial/register/register",
+    "pages/Tabbar/Home/Home",
     "pages/DrugStore/Homepage/Homepage",
     "pages/DrugStore/ShoppingCart/ShoppingCart",
     "pages/DrugStore/HistoryOrder/HistoryOrder",
-    "pages/loading/loading"
+    "pages/Covid/covid-19/covid-19",
+    "pages/Tabbar/HospitalList/HospitalList",
+    "pages/Tabbar/My/My",
+    "pages/Tabbar/AI/AI",
+    "pages/Reservation/HospitalList/HospitalList",
+    "pages/DrugStore/News/News",
+    "pages/DrugStore/Contact/Contact",
+    "pages/Reservation/HospitalDetail/HospitalDetail",
+    "pages/DrugStore/GoodDetail/GoodDetail",
+    "pages/Personal/PersonalInfo/PersonalInfo",
+    "pages/Personal/HistoryOrder/HistoryOrder",
+    "pages/Personal/FeedBack/FeedBack",
+    "pages/DrugStore/CreateOrder/CreateOrder",
+    "pages/Reservation/HistoryDiagnose/HistoryDiagnose",
+    "pages/Reservation/HistoryReservation/HistoryReservation",
+    "pages/Reservation/ReservationDetail/ReservationDetail",
+    "pages/Reservation/ReservationConfirm/ReservationConfirm",
+    "pages/DrugStore/Payment/Payment",
+    "pages/Personal/IDConfirm/IDConfirm",
+    "pages/Tabbar/Home1/Home1",
+    "pages/Tabbar/HospitalList1/HospitalList1",
+    "pages/Tabbar/AI/AIChat/AIChat",
+    "pages/Reservation/DepartmentDetail/DepartmentDetail",
+    "pages/Reservation/DoctorDetail/DoctorDetail"
   ],
   "subPackages": [],
   "window": {
@@ -17,24 +44,31 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/DrugStore/HistoryOrder/HistoryOrder",
+        "pagePath": "pages/Tabbar/Home1/Home1",
         "text": "首页",
         "iconPath": "static/tabbar/homepage.png",
         "selectedIconPath": "static/tabbar/homepage-active.png"
       },
       {
-        "pagePath": "pages/DrugStore/Homepage/Homepage",
+        "pagePath": "pages/Tabbar/HospitalList1/HospitalList1",
         "text": "医院",
         "iconPath": "static/tabbar/hospital.png",
         "selectedIconPath": "static/tabbar/hospital-active.png"
       },
       {
-        "pagePath": "pages/DrugStore/ShoppingCart/ShoppingCart",
+        "pagePath": "pages/Tabbar/AI/AIChat/AIChat",
+        "text": "智能问诊",
+        "iconPath": "./static/tabbar/doctor-active.png",
+        "selectedIconPath": "static/tabbar/doctor.png"
+      },
+      {
+        "pagePath": "pages/Tabbar/My/My",
         "text": "我的",
         "iconPath": "static/tabbar/me.png",
         "selectedIconPath": "static/tabbar/me-active.png"
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
 }
