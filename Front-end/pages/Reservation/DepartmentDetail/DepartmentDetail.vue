@@ -168,6 +168,17 @@
 			confirm(e) {
 				console.log(e);
 				this.show = false;
+				uni.request({
+					url:'http://100.80.61.47:8008/api/v1/doctor/date',
+					method:'GET',	
+					data: { data: e.data },
+					header: {
+						'content-type': 'application/x-www-form-urlencoded'
+					},
+					success: (res) => {
+						this.docs = res.data.doctor_list;
+					}
+				})		
 			},
 			hosItemClick() {
 				uni.navigateTo({

@@ -50,9 +50,25 @@
 <script>
 	export default {
 		data() {
+			
 			return {
 				src: 'https://cdn.uviewui.com/uview/album/1.jpg',
 			}
+		},
+		onLoad(option){
+			uni.request({
+				url:'http://100.80.61.47:8008/api/v1/doctor',
+				method:'GET',	
+				data: { id:option.doc_id},
+				header: {
+					'content-type': 'application/x-www-form-urlencoded'
+				},
+				success: (res) => {
+					this.doctor_name = res.data.doctor_name;
+					this.department_name = res.data.department_name;
+					this.time = option.time;
+				}
+			})	
 		},
 		methods: {
 			ToConfirm() {

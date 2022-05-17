@@ -85,17 +85,45 @@
 				uni.showLoading({
 					title:'支付中...'
 				});
-				setTimeout(()=>{
-					uni.hideLoading();
-					uni.showToast({
-						title:'支付成功'
+				if(this.paytype=='alipay')
+				{
+					uni.requestPayment({
+					    provider: 'alipay',
+					    orderInfo: this.amount, //支付宝订单数据
+					    success: function (res) {
+					        uni.showToast({
+					            title: '支付成功',
+					            icon: 'none'
+					        })
+					    },
+					    fail: function (err) {
+					        this.flag_submit=true
+					        uni.showToast({
+					            title: '支付失败',
+					            icon: 'none'
+					        })
+					    }
 					});
-					setTimeout(()=>{
-						uni.redirectTo({
-							url:'../../pay/success/success?amount='+this.amount
-						});
-					},300);
-				},700)
+				}
+				else{
+					uni.requestPayment({
+					    provider: 'wxpay',    //支付类型-固定值
+					    orderInfo: this.amount, 
+					    success: function (res) {
+					       uni.showToast({
+					           title: '支付成功',
+					           icon: 'none'
+					       })
+					    },
+					    fail: function (err) {
+					       this.flag_submit=true
+					       uni.showToast({
+					           title: '支付失败',
+					           icon: 'none'
+					       })
+					    }
+					});
+				}
 			}
 		}
 	}

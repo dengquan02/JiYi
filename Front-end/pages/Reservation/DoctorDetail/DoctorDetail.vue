@@ -36,7 +36,7 @@
 								</view>
 							</view>
 							<view class="uni-media-list-logo">
-								<button class="left-btn" @click="ToDetail()">预约</button>
+								<button class="left-btn" @click="ToDetail(value.id)">预约</button>
 							</view>
 						</view>
 						<u-line></u-line>
@@ -99,9 +99,9 @@
 				console.log(e);
 				this.show = false;
 			},
-			ToDetail() {
+			ToDetail(id) {
 				uni.navigateTo({
-					url: '../ReservationDetail/ReservationDetail'	
+					url: '../ReservationDetail/ReservationDetail?doc_id='+this.department.name+'&time='+id
 				});
 			}
 		}
