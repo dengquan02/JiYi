@@ -1,20 +1,60 @@
-package com.example.manageuser.Dao;
+package com.example.manageuser.dao;
 
-import com.example.manageuser.Entity.Doctor;
-import com.example.manageuser.Entity.Patient;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Modifying;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
-import org.springframework.stereotype.Repository;
+import com.example.manageuser.entity.Patient;
+import org.apache.ibatis.annotations.Param;
+import java.util.List;
 
-@Repository
-public interface PatientDao extends JpaRepository<Patient, String>
-{
-    @Modifying
-    @Query("delete from Patient d where d.patient_id=:patinet_id")
-    Integer deleteByPatient_id(@Param("patinet_id") String patinet_id);
+/**
+ * (Patient)表数据库访问层
+ *
+ * @author makejava
+ * @since 2022-05-13 19:36:33
+ */
+public interface PatientDao {
 
-    @Query(value = "from Patient where patient_id = ?1")
-    Patient findPatientByPatient_id(String Id);
+    /**
+     * 通过ID查询单条数据
+     *
+     * @param patientId 主键
+     * @return 实例对象
+     */
+    Patient queryById(String patientId);
+
+    /**
+     * 查询指定行数据
+     *
+     * @param offset 查询起始位置
+     * @param limit 查询条数
+     * @return 对象列表
+     */
+    List<Patient> queryAllByLimit(@Param("offset") int offset, @Param("limit") int limit);
+
+
+
+    List<Patient> queryAll();
+
+    /**
+     * 新增数据
+     *
+     * @param patient 实例对象
+     * @return 影响行数
+     */
+    int insert(Patient patient);
+
+    /**
+     * 修改数据
+     *
+     * @param patient 实例对象
+     * @return 影响行数
+     */
+    int update(Patient patient);
+
+    /**
+     * 通过主键删除数据
+     *
+     * @param patientId 主键
+     * @return 影响行数
+     */
+    int deleteById(String patientId);
+
 }

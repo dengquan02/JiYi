@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ghz.diagnosis.dao.DrugTotalDao">
+
+    <resultMap id="BaseResultMap" type="com.ghz.diagnosis.entity.DrugTotal">
+        <!--@Table drug_total-->
+        <result property="drugName" column="drug_name" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="query" resultMap="BaseResultMap">
+        select
+          drug_name
+        from web_and_soa.drug_total
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert">
+        insert into web_and_soa.drug_total(drug_name)
+        values (#{drugName})
+    </insert>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from web_and_soa.drug_total where drug_name = #{drugName}
+    </delete>
+
+</mapper>

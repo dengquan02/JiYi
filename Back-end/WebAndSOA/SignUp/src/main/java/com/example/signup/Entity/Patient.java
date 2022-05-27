@@ -1,89 +1,36 @@
-package com.example.signup.Entity;
+package com.example.signup.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Entity
-@Table(name = "patient")
-public class Patient
-{
-    @Id
-    @Column(name = "patient_id")
-    String patient_id;
+import java.io.Serializable;
 
-    @Column(name = "password")
-    String password;
+/**
+ * (Patient)实体类
+ *
+ * @author makejava
+ * @since 2022-05-13 07:09:22
+ */
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Patient implements Serializable {
 
-    @Column(name = "name")
-    String name;
+    private String patientId;
 
-    @Column(name = "email")
-    String email;
+    private String name;
 
-    @Column(name = "sex")
-    String sex;
+    private Integer age;
 
-    @Column(name = "idcard")
-    String idcard;
+    private String sex;
 
-    @Column(name = "age")
-    Integer age;
+    private String password;
 
-    public String getPatient_id() {
-        return patient_id;
-    }
+    private String email;
 
-    public void setPatient_id(String patient_id) {
-        this.patient_id = patient_id;
-    }
+    private String idcard;
 
-    public String getPassword() {
-        return password;
-    }
+    private byte[] pic;
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
-
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
-    }
-
-    public String getIdcard() {
-        return idcard;
-    }
-
-    public void setIdcard(String idcard) {
-        this.idcard = idcard;
-    }
 }

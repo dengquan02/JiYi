@@ -1,100 +1,40 @@
-package com.example.login.Entity;
+package com.example.login.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Entity
-@Table(name = "doctor")
-public class Doctor
-{
-    @Id
-    @Column(name = "doctor_id")
-    String doctor_id;
+import java.io.Serializable;
 
-    @Column(name = "password")
-    String password;
+/**
+ * (Doctor)实体类
+ *
+ * @author makejava
+ * @since 2022-05-12 08:52:52
+ */
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Doctor implements Serializable {
 
-    @Column(name = "name")
-    String name;
+    private String doctorId;
 
-    @Column(name = "email")
-    String email;
+    private String name;
 
-    @Column(name = "sex")
-    String sex;
+    private String password;
 
-    @Column(name = "title")
-    String title;
+    private String sex;
 
-    @Column(name = "department_id")
-    Integer department_id;
+    private String title;
 
-    @Column(name = "hospital_id")
-    Integer hospital_id;
+    private Integer departmentId;
 
-    public String getDoctor_id() {
-        return doctor_id;
-    }
+    private String email;
 
-    public void setDoctor_id(String doctor_id) {
-        this.doctor_id = doctor_id;
-    }
+    private Integer hospitalId;
 
-    public String getPassword() {
-        return password;
-    }
+    private Integer reserveCtn;
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
+    private byte[] pic;
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public Integer getDepartment_id() {
-        return department_id;
-    }
-
-    public void setDepartment_id(Integer department_id) {
-        this.department_id = department_id;
-    }
-
-    public Integer getHospital_id() {
-        return hospital_id;
-    }
-
-    public void setHospital_id(Integer hospital_id) {
-        this.hospital_id = hospital_id;
-    }
 }

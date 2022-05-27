@@ -1,0 +1,152 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1048576 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=35264, tid=0x000000000000658c
+#
+# JRE version:  (8.0_141-b15) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.141-b15 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000003078800):  JavaThread "Unknown thread" [_thread_in_vm, id=25996, stack(0x0000000002f20000,0x0000000003020000)]
+
+Stack: [0x0000000002f20000,0x0000000003020000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000003078800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=25996, stack(0x0000000002f20000,0x0000000003020000)]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 73728K, used 1269K [0x000000076e000000, 0x0000000773200000, 0x00000007c0000000)
+  eden space 63488K, 2% used [0x000000076e000000,0x000000076e13d718,0x0000000771e00000)
+  from space 10240K, 0% used [0x0000000772800000,0x0000000772800000,0x0000000773200000)
+  to   space 10240K, 0% used [0x0000000771e00000,0x0000000771e00000,0x0000000772800000)
+ ParOldGen       total 167936K, used 0K [0x00000006ca000000, 0x00000006d4400000, 0x000000076e000000)
+  object space 167936K, 0% used [0x00000006ca000000,0x00000006ca000000,0x00000006d4400000)
+ Metaspace       used 770K, capacity 4480K, committed 4480K, reserved 1056768K
+  class space    used 75K, capacity 384K, committed 384K, reserved 1048576K
+
+Card table byte_map: [0x0000000012700000,0x0000000012ec0000] byte_map_base: 0x000000000f0b0000
+
+Marking Bits: (ParMarkBitMap*) 0x0000000053d3d850
+ Begin Bits: [0x00000000140e0000, 0x0000000017e60000)
+ End Bits:   [0x0000000017e60000, 0x000000001bbe0000)
+
+Polling page: 0x0000000001240000
+
+CodeCache: size=245760Kb used=327Kb max_used=327Kb free=245432Kb
+ bounds [0x0000000003340000, 0x00000000035b0000, 0x0000000012340000]
+ total_blobs=57 nmethods=0 adapters=38
+ compilation: enabled
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.020 loading class java/lang/Short
+Event: 0.020 loading class java/lang/Short done
+Event: 0.020 loading class java/lang/Integer
+Event: 0.021 loading class java/lang/Integer done
+Event: 0.021 loading class java/lang/Long
+Event: 0.021 loading class java/lang/Long done
+Event: 0.021 loading class java/lang/NullPointerException
+Event: 0.021 loading class java/lang/NullPointerException done
+Event: 0.021 loading class java/lang/ArithmeticException
+Event: 0.021 loading class java/lang/ArithmeticException done
+
+
+Dynamic libraries:
+0x00007ff6a6bb0000 - 0x00007ff6a6be7000 	C:\JDK1.8\jdk8\bin\java.exe
+0x00007ffed2270000 - 0x00007ffed2482000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffed1820000 - 0x00007ffed18e2000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffecf800000 - 0x00007ffecfb9b000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffed16c0000 - 0x00007ffed176e000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffed1f20000 - 0x00007ffed1fc5000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffed1e70000 - 0x00007ffed1f14000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffed1590000 - 0x00007ffed16a5000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffed0bb0000 - 0x00007ffed0d5b000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffecfff0000 - 0x00007ffed0016000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffed0d60000 - 0x00007ffed0d89000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffecfed0000 - 0x00007ffecffe8000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffecfba0000 - 0x00007ffecfc3a000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffecfdb0000 - 0x00007ffecfec1000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffea9550000 - 0x00007ffea97de000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.22598.1_none_5f058c2d9dc925ef\COMCTL32.dll
+0x00007ffed1aa0000 - 0x00007ffed1ad1000 	C:\WINDOWS\System32\IMM32.DLL
+0x0000000053dc0000 - 0x0000000053e92000 	C:\JDK1.8\jdk8\jre\bin\msvcr100.dll
+0x0000000053520000 - 0x0000000053dbd000 	C:\JDK1.8\jdk8\jre\bin\server\jvm.dll
+0x00007ffed0270000 - 0x00007ffed0278000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffecb940000 - 0x00007ffecb974000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffea8bd0000 - 0x00007ffea8bd9000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffec3780000 - 0x00007ffec378a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffed09a0000 - 0x00007ffed0a11000 	C:\WINDOWS\System32\WS2_32.dll
+0x0000000053510000 - 0x000000005351f000 	C:\JDK1.8\jdk8\jre\bin\verify.dll
+0x00000000534e0000 - 0x0000000053509000 	C:\JDK1.8\jdk8\jre\bin\java.dll
+0x0000000053450000 - 0x0000000053473000 	C:\JDK1.8\jdk8\jre\bin\instrument.dll
+0x00000000534c0000 - 0x00000000534d6000 	C:\JDK1.8\jdk8\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -javaagent:E:\IntelliJ IDEA 2021.2.1\lib\idea_rt.jar=57972:E:\IntelliJ IDEA 2021.2.1\bin -Dfile.encoding=UTF-8 
+java_command: com.example.reservation.controller.qq
+java_class_path (initial): C:\JDK1.8\jdk8\jre\lib\charsets.jar;C:\JDK1.8\jdk8\jre\lib\deploy.jar;C:\JDK1.8\jdk8\jre\lib\ext\access-bridge-64.jar;C:\JDK1.8\jdk8\jre\lib\ext\cldrdata.jar;C:\JDK1.8\jdk8\jre\lib\ext\dnsns.jar;C:\JDK1.8\jdk8\jre\lib\ext\jaccess.jar;C:\JDK1.8\jdk8\jre\lib\ext\jfxrt.jar;C:\JDK1.8\jdk8\jre\lib\ext\localedata.jar;C:\JDK1.8\jdk8\jre\lib\ext\nashorn.jar;C:\JDK1.8\jdk8\jre\lib\ext\sunec.jar;C:\JDK1.8\jdk8\jre\lib\ext\sunjce_provider.jar;C:\JDK1.8\jdk8\jre\lib\ext\sunmscapi.jar;C:\JDK1.8\jdk8\jre\lib\ext\sunpkcs11.jar;C:\JDK1.8\jdk8\jre\lib\ext\zipfs.jar;C:\JDK1.8\jdk8\jre\lib\javaws.jar;C:\JDK1.8\jdk8\jre\lib\jce.jar;C:\JDK1.8\jdk8\jre\lib\jfr.jar;C:\JDK1.8\jdk8\jre\lib\jfxswt.jar;C:\JDK1.8\jdk8\jre\lib\jsse.jar;C:\JDK1.8\jdk8\jre\lib\management-agent.jar;C:\JDK1.8\jdk8\jre\lib\plugin.jar;C:\JDK1.8\jdk8\jre\lib\resources.jar;C:\JDK1.8\jdk8\jre\lib\rt.jar;Z:\123\JiYi\Back-end\WebAndSOA\Reservation\target\classes;C:\Users\Gu HungJou\.m2\repository\org\springframework\boot\spring-boot-starter-mail\2.3.11.RELEASE\spring-boot-starter-mail-2.3.11.RELEASE.jar;C:\Users\Gu HungJou\.m2\repository\org\springframework\spring-context-support\5.2.15.RELEASE\spring-context-support-5.2.15.RELEASE.jar;C:\Users\Gu HungJou\.m2\repository\org\springframework\spring-beans\5.2.15.RELEASE\spring-beans-5.2.15.RELEASE.jar;C:\Users\Gu HungJou\.m2\repository\org\springframework\spring-context\5.2.15.RELEASE\spring-context-5.2.15.RELEASE.jar;C:\Users\Gu HungJou\.m2\repository\com\sun\mail\jakarta.mail\1.6.7\jakarta.mail-1.6.7.jar;C:\Users\Gu HungJou\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Gu HungJou\.m2\repository\com\alibaba\cloud\spring-cloud-starter-alibaba-nacos-discovery\2.2.3.RELEASE\spring-cloud-starter-alibaba-nacos-discovery-2.2.3.RELEASE.jar;C:\Users\Gu HungJou\.m2\repository\com\alibaba\nacos\nacos-client\1.3.3\nacos-client-1.3.3.jar;C:\Users\Gu HungJou\.m2\repository\com\alibaba\nacos\nacos-common\1.3.
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\JDK1.8\jdk8
+CLASSPATH=.;C:\PROGRA~1\IBM\SQLLIB\java\db2java.zip;C:\PROGRA~1\IBM\SQLLIB\java\db2jcc.jar;C:\PROGRA~1\IBM\SQLLIB\java\sqlj.zip;C:\PROGRA~1\IBM\SQLLIB\java\DB2JCC~1.JAR;C:\PROGRA~1\IBM\SQLLIB\java\db2jcc_license_cu.jar;C:\PROGRA~1\IBM\SQLLIB\bin;C:\PROGRA~1\IBM\SQLLIB\java\common.jar;
+PATH=c:\python38\scripts\;c:\python38\;c:\python37\scripts\;c:\python37\;c:\python39\scripts\;c:\python39\;c:\jdk1.8\jdk8\bin;c:\jdk1.8\jdk8\jre\bin;c:\programdata\oracle\java\javapath;e:\program files (x86)\vmware\vmware workstation\bin\;c:\program files\common files\oracle\java\javapath;c:\program files (x86)\common files\oracle\java\javapath;c:\program files (x86)\nvidia corporation\physx\common;c:\oracle19\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32\wbem;C:\WINDOWS\system32\windowspowershell\v1.0\;C:\WINDOWS\system32\openssh\;c:\program files\dotnet\;c:\program files\microsoft sql server\130\tools\binn\;c:\program files\microsoft sql server\client sdk\odbc\170\tools\binn\;c:\plsqldeveloper14\instantclient_11_2;z:\git\cmd;x:\java\bin;c:\program files (x86)\devart\entitydeveloper\console;c:\mingw-w64-v8.0.2;z:\;E:\IntelliJ IDEA 2021.2.1\plugins\maven\lib\maven3\bin;c:\program files (x86)\tencent\微信web开发者工具\dll;c:\program files (x86)\netsarang\xshell 7\;c:\program files (x86)\netsarang\xftp 7\;c:\program files\docker\docker\resources\bin;c:\programdata\dockerdesktop\version-bin;z:\matlab\bin;c:\program files\ibm\spss\statistics\24\jre\bin;c:\program files\ibm\gsk8\lib64;c:\program files (x86)\ibm\gsk8\lib;C:\PROGRA~1\IBM\SQLLIB\BIN;C:\PROGRA~1\IBM\SQLLIB\FUNCTION;C:\PROGRA~1\IBM\SQLLIB\SAMPLES\REPL;C:\JDK1.8\jdk8\lib\tools.jar;C:\Program Files (x86)\NetSarang\Xmanager 7\;C:\python37\Scripts\;C:\python37\;Z:\Scripts\;Z:\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Gu HungJou\AppData\Local\Microsoft\WindowsApps;C:\Users\Gu HungJou\.dotnet\tools;C:\Program Files (x86)\Devart\EntityDeveloper\Console;E:\Microsoft VS Code\bin;E:\mingw-w64-v8.0.2;C:\MinGW\bin;E:\;C:\ProgramData\Gu HungJou\GitHubDesktop\bin;C:\Users\Gu HungJou\AppData\Local\GitHubDesktop\bin;C:\Users\Gu HungJou\AppData\Roaming\npm;;E:\PyCharm 2021.3.1\bin;
+USERNAME=Gu HungJou
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 22598 (10.0.22598.1)
+
+CPU:total 16 (initial active 16) (16 cores per cpu, 1 threads per core) family 23 model 96 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, mmxext, 3dnowpref, lzcnt, sse4a, tsc, tscinvbit, tscinv, bmi1
+
+Memory: 4k page, physical 16119108k(2002600k free), swap 32502848k(5208k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.141-b15) for windows-amd64 JRE (1.8.0_141-b15), built on Jul 12 2017 04:25:12 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Sun May 15 09:55:49 2022
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

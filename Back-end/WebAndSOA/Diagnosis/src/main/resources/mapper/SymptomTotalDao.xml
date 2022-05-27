@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ghz.diagnosis.dao.SymptomTotalDao">
+
+    <resultMap id="BaseResultMap" type="com.ghz.diagnosis.entity.SymptomTotal">
+        <!--@Table symptom_total-->
+        <result property="symptomName" column="symptom_name" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="BaseResultMap">
+        select
+          symptom_name
+        from web_and_soa.symptom_total
+        where  = #{}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="BaseResultMap">
+        select
+          symptom_name
+        from web_and_soa.symptom_total
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="BaseResultMap">
+        select
+          symptom_name
+        from web_and_soa.symptom_total
+        <where>
+            <if test="symptomName != null and symptomName != ''">
+                and symptom_name = #{symptomName}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="" useGeneratedKeys="true">
+        insert into web_and_soa.symptom_total(symptom_name)
+        values (#{symptomName})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update web_and_soa.symptom_total
+        <set>
+            <if test="symptomName != null and symptomName != ''">
+                symptom_name = #{symptomName},
+            </if>
+        </set>
+        where  = #{}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from web_and_soa.symptom_total where  = #{}
+    </delete>
+
+</mapper>

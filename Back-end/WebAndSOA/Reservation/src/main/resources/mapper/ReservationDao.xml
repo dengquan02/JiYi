@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.reservation.dao.ReservationDao">
+
+    <resultMap id="BaseResultMap" type="com.example.reservation.entity.Reservation">
+        <!--@Table reservation-->
+        <result property="reservationId" column="reservation_id" jdbcType="INTEGER"/>
+        <result property="patientId" column="patient_id" jdbcType="VARCHAR"/>
+        <result property="doctorId" column="doctor_id" jdbcType="VARCHAR"/>
+        <result property="rState" column="r_state" jdbcType="INTEGER"/>
+        <result property="sysTime" column="sys_time" jdbcType="TIMESTAMP"/>
+        <result property="hospitalId" column="hospital_id" jdbcType="INTEGER"/>
+        <result property="departmentId" column="department_id" jdbcType="INTEGER"/>
+        <result property="rYear" column="r_year" jdbcType="INTEGER"/>
+        <result property="rMonth" column="r_month" jdbcType="INTEGER"/>
+        <result property="rDay" column="r_day" jdbcType="INTEGER"/>
+        <result property="rHour" column="r_hour" jdbcType="INTEGER"/>
+        <result property="rMinute" column="r_minute" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="BaseResultMap">
+        select reservation_id,
+               patient_id,
+               doctor_id,
+               r_state,
+               sys_time,
+               hospital_id,
+               department_id,
+               r_year,
+               r_month,
+               r_day,
+               r_hour,
+               r_minute
+        from web_and_soa.reservation
+        where reservation_id = #{reservationId}
+    </select>
+
+    <select id="queryFreeByPatient" resultMap="BaseResultMap">
+        select reservation_id,
+               patient_id,
+               doctor_id,
+               r_state,
+               sys_time,
+               hospital_id,
+               department_id,
+               r_year,
+               r_month,
+               r_day,
+               r_hour,
+               r_minute
+        from web_and_soa.reservation
+        where r_state = #{rState}
+    </select>
+
+    <select id="queryBusyByPatient" resultMap="BaseResultMap">
+        select reservation_id,
+               patient_id,
+               doctor_id,
+               r_state,
+               sys_time,
+               hospital_id,
+               department_id,
+               r_year,
+               r_month,
+               r_day,
+               r_hour,
+               r_minute
+        from web_and_soa.reservation
+        where patient_id = #{patientId}
+    </select>
+
+    <select id="queryByDoctor" resultMap="BaseResultMap">
+        select reservation_id,
+               patient_id,
+               doctor_id,
+               r_state,
+               sys_time,
+               hospital_id,
+               department_id,
+               r_year,
+               r_month,
+               r_day,
+               r_hour,
+               r_minute
+        from web_and_soa.reservation
+        where doctor_id = #{doctorId}
+          and r_state = #{rState}
+    </select>
+
+    <!--    &lt;!&ndash;查询指定行数据&ndash;&gt;-->
+    <!--    <select id="queryBusyByDoctor" resultMap="BaseResultMap">-->
+    <!--        select-->
+    <!--          reservation_id, patient_id, doctor_id, r_state, sys_time, hospital_id, department_id, r_year, r_month, r_day, r_hour, r_minute-->
+    <!--        from web_and_soa.reservation-->
+    <!--    </select>-->
+
+    <select id="queryByHospital" resultMap="BaseResultMap">
+        select reservation_id,
+               patient_id,
+               doctor_id,
+               r_state,
+               sys_time,
+               hospital_id,
+               department_id,
+               r_year,
+               r_month,
+               r_day,
+               r_hour,
+               r_minute
+        from web_and_soa.reservation
+        where hospital_id = #{hospitalId} and r_state = #{rState}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="BaseResultMap">
+        select
+        reservation_id, patient_id, doctor_id, r_state, sys_time, hospital_id, department_id, r_year, r_month, r_day,
+        r_hour, r_minute
+        from web_and_soa.reservation
+        <where>
+            <if test="reservationId != null">
+                and reservation_id = #{reservationId}
+            </if>
+            <if test="patientId != null and patientId != ''">
+                and patient_id = #{patientId}
+            </if>
+            <if test="doctorId != null and doctorId != ''">
+                and doctor_id = #{doctorId}
+            </if>
+            <if test="rState != null">
+                and r_state = #{rState}
+            </if>
+            <if test="sysTime != null">
+                and sys_time = #{sysTime}
+            </if>
+            <if test="hospitalId != null">
+                and hospital_id = #{hospitalId}
+            </if>
+            <if test="departmentId != null">
+                and department_id = #{departmentId}
+            </if>
+            <if test="rYear != null">
+                and r_year = #{rYear}
+            </if>
+            <if test="rMonth != null">
+                and r_month = #{rMonth}
+            </if>
+            <if test="rDay != null">
+                and r_day = #{rDay}
+            </if>
+            <if test="rHour != null">
+                and r_hour = #{rHour}
+            </if>
+            <if test="rMinute != null">
+                and r_minute = #{rMinute}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="reservationId" useGeneratedKeys="true">
+        insert into web_and_soa.reservation(patient_id, doctor_id, r_state, sys_time, hospital_id, department_id,
+                                            r_year, r_month, r_day, r_hour, r_minute)
+        values (#{patientId}, #{doctorId}, #{rState}, #{sysTime}, #{hospitalId}, #{departmentId}, #{rYear}, #{rMonth},
+                #{rDay}, #{rHour}, #{rMinute})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update web_and_soa.reservation
+        <set>
+            <if test="patientId != null and patientId != ''">
+                patient_id = #{patientId},
+            </if>
+            <if test="doctorId != null and doctorId != ''">
+                doctor_id = #{doctorId},
+            </if>
+            <if test="rState != null">
+                r_state = #{rState},
+            </if>
+            <if test="sysTime != null">
+                sys_time = #{sysTime},
+            </if>
+            <if test="hospitalId != null">
+                hospital_id = #{hospitalId},
+            </if>
+            <if test="departmentId != null">
+                department_id = #{departmentId},
+            </if>
+            <if test="rYear != null">
+                r_year = #{rYear},
+            </if>
+            <if test="rMonth != null">
+                r_month = #{rMonth},
+            </if>
+            <if test="rDay != null">
+                r_day = #{rDay},
+            </if>
+            <if test="rHour != null">
+                r_hour = #{rHour},
+            </if>
+            <if test="rMinute != null">
+                r_minute = #{rMinute},
+            </if>
+        </set>
+        where reservation_id = #{reservationId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete
+        from web_and_soa.reservation
+        where reservation_id = #{reservationId}
+    </delete>
+
+</mapper>

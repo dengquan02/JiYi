@@ -1,65 +1,95 @@
-package com.example.manageuser.Service.Impl;
+package com.example.manageuser.service.impl;
 
-import com.example.manageuser.Dao.DoctorDao;
-import com.example.manageuser.Dto.DoctorDto;
-import com.example.manageuser.Entity.Doctor;
-import com.example.manageuser.Service.DoctorService;
-import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.example.manageuser.entity.Department;
+import com.example.manageuser.entity.Doctor;
+import com.example.manageuser.dao.DoctorDao;
+import com.example.manageuser.service.DoctorService;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
+import javax.annotation.Resource;
+import java.util.List;
 
-@Transactional
-@Service
-public class DoctorServiceImpl implements DoctorService
-{
-    final DoctorDao doctorDao;
+/**
+ * (Doctor)表服务实现类
+ *
+ * @author makejava
+ * @since 2022-05-13 19:35:51
+ */
+@Service("doctorService")
+public class DoctorServiceImpl implements DoctorService {
+    @Resource
+    private DoctorDao doctorDao;
 
-    @Autowired
-    public DoctorServiceImpl(DoctorDao doctorDao) {
-        this.doctorDao = doctorDao;
+    /**
+     * 通过ID查询单条数据
+     *
+     * @param doctorId 主键
+     * @return 实例对象
+     */
+    @Override
+    public Doctor queryById(String doctorId) {
+        return this.doctorDao.queryById(doctorId);
+    }
+
+    /**
+     * 查询多条数据
+     *
+     * @param offset 查询起始位置
+     * @param limit 查询条数
+     * @return 对象列表
+     */
+    @Override
+    public List<Doctor> queryAllByLimit(int offset, int limit) {
+        return this.doctorDao.queryAllByLimit(offset, limit);
+    }
+
+    /**
+     * 新增数据
+     *
+     * @param doctor 实例对象
+     * @return 实例对象
+     */
+    @Override
+    public Doctor insert(Doctor doctor) {
+        this.doctorDao.insert(doctor);
+        return doctor;
     }
 
     @Override
-    public DoctorDto delete(DoctorDto dto)
-    {
-        Integer result = doctorDao.deleteByDoctor_id( dto.getDoctor_id() );
-        dto.setIsDeleted( result );
-        return dto;
+    public List<Doctor> queryAll() {
+        return this.doctorDao.queryAll();
+    }
+
+    /**
+     * 修改数据
+     *
+     * @param doctor 实例对象
+     * @return 实例对象
+     */
+    @Override
+    public Doctor update(Doctor doctor) {
+        this.doctorDao.update(doctor);
+        return this.queryById(doctor.getDoctorId());
+    }
+
+    /**
+     * 通过主键删除数据
+     *
+     * @param doctorId 主键
+     * @return 是否成功
+     */
+    @Override
+    public boolean deleteById(String doctorId) {
+        return this.doctorDao.deleteById(doctorId) > 0;
     }
 
     @Override
-    public DoctorDto deletebyone(DoctorDto dto)
-    {
-        Integer result = doctorDao.deleteByHospital_id( dto.getHospital_id() );
-        dto.setIsDeleted( result );
-        return dto;
+    public List<Department> queryByDepartmentId(Integer departmentId) {
+        return this.doctorDao.queryByDepartmentId(departmentId);
     }
 
     @Override
-    public DoctorDto edit(DoctorDto dto)
-    {
-        Doctor doctor = doctorDao.findDoctorByDoctor_id( dto.getDoctor_id() );
-        dto.setDepartment_id( doctor.getDepartment_id() );
-        dto.setEmail( doctor.getEmail() );
-        dto.setHospital_id( doctor.getHospital_id() );
-        if ( dto.getPassword() == null ) {
-            dto.setPassword ( doctor.getPassword() );
-        }
-        if ( dto.getSex() == null ) {
-            dto.setSex ( doctor.getSex() );
-        }
-        if ( dto.getTitle() == null ) {
-            dto.setTitle ( doctor.getTitle() );
-        }
-        if ( dto.getName() == null ) {
-            dto.setName ( doctor.getName() );
-        }
-
-        ModelMapper modelMapper = new ModelMapper ();
-        Doctor report = modelMapper.map( dto, Doctor.class );
-        DoctorDto ret = modelMapper.map ( doctorDao.save ( report ), DoctorDto.class );
-        return ret;
+    public List<Department> queryByHospitalId(Integer hospitalId) {
+        return this.doctorDao.queryByHospitalId(hospitalId);
     }
 }

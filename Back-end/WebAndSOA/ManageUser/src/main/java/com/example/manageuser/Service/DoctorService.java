@@ -1,15 +1,59 @@
-package com.example.manageuser.Service;
+package com.example.manageuser.service;
 
-import com.example.manageuser.Dto.DoctorDto;
+import com.example.manageuser.entity.Department;
+import com.example.manageuser.entity.Doctor;
+import java.util.List;
 
-public interface DoctorService
-{
-    // 删除
-    DoctorDto delete(DoctorDto dto);
+/**
+ * (Doctor)表服务接口
+ *
+ * @author makejava
+ * @since 2022-05-13 19:35:51
+ */
+public interface DoctorService {
 
-    // 通过医院删除
-    DoctorDto deletebyone(DoctorDto dto);
+    /**
+     * 通过ID查询单条数据
+     *
+     * @param doctorId 主键
+     * @return 实例对象
+     */
+    Doctor queryById(String doctorId);
 
-    // 编辑
-    DoctorDto edit(DoctorDto dto);
+    /**
+     * 查询多条数据
+     *
+     * @param offset 查询起始位置
+     * @param limit 查询条数
+     * @return 对象列表
+     */
+    List<Doctor> queryAllByLimit(int offset, int limit);
+
+    /**
+     * 新增数据
+     *
+     * @param doctor 实例对象
+     * @return 实例对象
+     */
+    Doctor insert(Doctor doctor);
+    List<Doctor> queryAll();
+    /**
+     * 修改数据
+     *
+     * @param doctor 实例对象
+     * @return 实例对象
+     */
+    Doctor update(Doctor doctor);
+
+    /**
+     * 通过主键删除数据
+     *
+     * @param doctorId 主键
+     * @return 是否成功
+     */
+    boolean deleteById(String doctorId);
+
+    List<Department> queryByDepartmentId(Integer departmentId);
+
+    List<Department> queryByHospitalId(Integer hospitalId);
 }

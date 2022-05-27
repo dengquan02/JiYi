@@ -1,11 +1,17 @@
 package com.example.signup;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import springfox.documentation.oas.annotations.EnableOpenApi;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.boot.web.servlet.ServletComponentScan;
+import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
 
-@EnableOpenApi
-@SpringBootApplication
+//@SpringBootApplication
+@MapperScan(value = {"com.example.signup.dao"})
+@ServletComponentScan
+@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
+@EnableRedisHttpSession//session共享
 public class SignUpApplication {
 
     public static void main(String[] args) {

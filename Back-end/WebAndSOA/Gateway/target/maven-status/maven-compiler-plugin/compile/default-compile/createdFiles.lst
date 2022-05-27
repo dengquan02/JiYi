@@ -1,0 +1,3 @@
+com\example\config\SwaggerProvider.class
+com\example\controller\SwaggerHandler.class
+com\example\GatewayApplication.class

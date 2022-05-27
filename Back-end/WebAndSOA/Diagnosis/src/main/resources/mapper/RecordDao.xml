@@ -5,78 +5,130 @@
     <resultMap id="BaseResultMap" type="com.ghz.diagnosis.entity.Record">
         <!--@Table record-->
         <result property="recordId" column="record_id" jdbcType="INTEGER"/>
-        <result property="patientId" column="patient_id" jdbcType="CHAR"/>
-        <result property="doctorId" column="doctor_id" jdbcType="CHAR"/>
+        <result property="patientId" column="patient_id" jdbcType="VARCHAR"/>
+        <result property="doctorId" column="doctor_id" jdbcType="VARCHAR"/>
+        <result property="recordDate" column="record_date" jdbcType="TIMESTAMP"/>
+        <result property="complaint" column="complaint" jdbcType="VARCHAR"/>
+        <result property="check" column="check_info" jdbcType="VARCHAR"/>
+        <result property="drug" column="drug" jdbcType="VARCHAR"/>
         <result property="content" column="content" jdbcType="VARCHAR"/>
-        <result property="date" column="record_date" jdbcType="DATE"/>
+        <result property="disable" column="disable" jdbcType="VARCHAR"/>
+        <result property="attachment" column="attachment" jdbcType="INTEGER"/>
+        <result property="judge" column="judge" jdbcType="VARCHAR"/>
+        <result property="star" column="star" jdbcType="INTEGER"/>
     </resultMap>
 
-    <select id="patientQueryAllRecordsById" resultMap="BaseResultMap">
+    <!--查询单个-->
+    <select id="queryById" resultMap="BaseResultMap">
         select
-          record_id, patient_id, doctor_id, content, record_date
+          record_id, patient_id, doctor_id, record_date, complaint, check_info, drug, content, disable, attachment,judge,star
         from web_and_soa.record
-        where patient_id = #{patient_id}
+        where record_id = #{recordId}
     </select>
 
-    <select id="doctorQueryAllRecordsById" resultMap="BaseResultMap">
+    <select id="queryByPatientId" resultMap="BaseResultMap">
         select
-            record_id, patient_id, doctor_id, content, record_date
+            record_id, patient_id, doctor_id, record_date, complaint, check_info, drug, content, disable, attachment,judge,star
         from web_and_soa.record
-        where doctor_id = #{doctor_id}
+        where patient_id = #{patientId}
+    </select>
+
+    <select id="queryByDoctorId" resultMap="BaseResultMap">
+        select
+            record_id, patient_id, doctor_id, record_date, complaint, check_info, drug, content, disable, attachment,judge,star
+        from web_and_soa.record
+        where doctor_id = #{doctorId}
     </select>
 
     <!--查询指定行数据-->
-    <select id="queryAllRecords" resultMap="BaseResultMap">
+    <select id="queryAllByLimit" resultMap="BaseResultMap">
         select
-          record_id, patient_id, doctor_id, content, record_date
+          record_id, patient_id, doctor_id, record_date, complaint, check_info, drug, content, disable, attachment,judge,star
         from web_and_soa.record
+        limit #{offset}, #{limit}
     </select>
 
-    <!--通过实体作为筛选条件查询-->
-    <select id="queryAll" resultMap="BaseResultMap">
-        select
-          record_id, patient_id, doctor_id, content, record_date
-        from web_and_soa.record
-        <where>
-            <if test="recordId != null">
-                and record_id = #{recordId}
-            </if>
-            <if test="patientId != null">
-                and patient_id = #{patientId}
-            </if>
-            <if test="doctorId != null">
-                and doctor_id = #{doctorId}
-            </if>
-            <if test="content != null and content != ''">
-                and content = #{content}
-            </if>
-            <if test="date != null">
-                and date = #{date}
-            </if>
-        </where>
-    </select>
+<!--    &lt;!&ndash;通过实体作为筛选条件查询&ndash;&gt;-->
+<!--    <select id="queryAll" resultMap="BaseResultMap">-->
+<!--        select-->
+<!--          record_id, patient_id, doctor_id, record_date, complaint, check_info, drug, content, disable, attachment,judge,star-->
+<!--        from web_and_soa.record-->
+<!--        <where>-->
+<!--            <if test="recordId != null">-->
+<!--                and record_id = #{recordId}-->
+<!--            </if>-->
+<!--            <if test="patientId != null and patientId != ''">-->
+<!--                and patient_id = #{patientId}-->
+<!--            </if>-->
+<!--            <if test="doctorId != null and doctorId != ''">-->
+<!--                and doctor_id = #{doctorId}-->
+<!--            </if>-->
+<!--            <if test="recordDate != null">-->
+<!--                and record_date = #{recordDate}-->
+<!--            </if>-->
+<!--            <if test="complaint != null and complaint != ''">-->
+<!--                and complaint = #{complaint}-->
+<!--            </if>-->
+<!--            <if test="check != null and check != ''">-->
+<!--                and check_info = #{check}-->
+<!--            </if>-->
+<!--            <if test="drug != null and drug != ''">-->
+<!--                and drug = #{drug}-->
+<!--            </if>-->
+<!--            <if test="content != null and content != ''">-->
+<!--                and content = #{content}-->
+<!--            </if>-->
+<!--            <if test="disable != null and disable != ''">-->
+<!--                and disable = #{disable}-->
+<!--            </if>-->
+<!--            <if test="attachment != null">-->
+<!--                and attachment = #{attachment}-->
+<!--            </if>-->
+<!--        </where>-->
+<!--    </select>-->
 
     <!--新增所有列-->
     <insert id="insert" keyProperty="recordId" useGeneratedKeys="true">
-        insert into web_and_soa.record(patient_id, doctor_id, content, record_date)
-        values (#{patientId}, #{doctorId}, #{content}, #{date})
+        insert into web_and_soa.record(patient_id, doctor_id, record_date, complaint, check_info, drug, content, disable, attachment,judge,star)
+        values (#{patientId}, #{doctorId}, #{recordDate}, #{complaint}, #{check}, #{drug}, #{content}, #{disable}, #{attachment},#{judge},#{star})
     </insert>
 
     <!--通过主键修改数据-->
     <update id="update">
         update web_and_soa.record
         <set>
-            <if test="patientId != null">
+            <if test="patientId != null and patientId != ''">
                 patient_id = #{patientId},
             </if>
-            <if test="doctorId != null">
+            <if test="doctorId != null and doctorId != ''">
                 doctor_id = #{doctorId},
+            </if>
+            <if test="recordDate != null">
+                record_date = #{recordDate},
+            </if>
+            <if test="complaint != null and complaint != ''">
+                complaint = #{complaint},
+            </if>
+            <if test="check != null and check != ''">
+                check_info = #{check},
+            </if>
+            <if test="drug != null and drug != ''">
+                drug = #{drug},
             </if>
             <if test="content != null and content != ''">
                 content = #{content},
             </if>
-            <if test="date != null">
-                record_date = #{date},
+            <if test="disable != null and disable != ''">
+                disable = #{disable},
+            </if>
+            <if test="attachment != null">
+                attachment = #{attachment},
+            </if>
+            <if test="judge != null and judge != ''">
+                judge = #{judge},
+            </if>
+            <if test="star != null">
+                star= #{star},
             </if>
         </set>
         where record_id = #{recordId}

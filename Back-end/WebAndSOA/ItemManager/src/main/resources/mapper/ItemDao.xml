@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dq.itemmanager.dao.ItemDao">
+
+    <resultMap id="BaseResultMap" type="com.dq.itemmanager.entity.Item">
+        <!--@Table item-->
+        <result property="itemId" column="item_id" jdbcType="INTEGER"/>
+        <result property="price" column="price" jdbcType="OTHER"/>
+        <result property="num" column="num" jdbcType="INTEGER"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="hospitalId" column="hospital_id" jdbcType="INTEGER"/>
+        <result property="otc" column="otc" jdbcType="INTEGER"/>
+        <result property="img" column="img" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="BaseResultMap">
+        select
+          item_id, price, num, name, hospital_id, otc,img
+        from web_and_soa.item
+        where item_id = #{itemId}
+    </select>
+
+    <select id="queryByHospitalId" resultMap="BaseResultMap">
+        select
+            item_id, price, num, name, hospital_id, otc,img
+        from web_and_soa.item
+        where hospital_id = #{hospitalId}
+    </select>
+
+    <select id="queryByName" resultMap="BaseResultMap">
+        select
+            item_id, price, num, name, hospital_id, otc,img
+        from web_and_soa.item
+        where name = #{name}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="BaseResultMap">
+        select
+          item_id, price, num, name, hospital_id, otc,img
+        from web_and_soa.item
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="BaseResultMap">
+        select
+          item_id, price, num, name, hospital_id, otc,img
+        from web_and_soa.item
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="itemId" useGeneratedKeys="true">
+        insert into web_and_soa.item(price, num, name, hospital_id, otc,img)
+        values (#{price}, #{num}, #{name}, #{hospitalId}, #{otc},#{img})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update web_and_soa.item
+        <set>
+            <if test="price != null">
+                price = #{price},
+            </if>
+            <if test="num != null">
+                num = #{num},
+            </if>
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            <if test="hospitalId != null">
+                hospital_id = #{hospitalId},
+            </if>
+            <if test="otc != null">
+                otc = #{otc},
+            </if>
+            <if test="img != null and img != ''">
+                img = #{img},
+            </if>
+        </set>
+        where item_id = #{itemId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from web_and_soa.item where item_id = #{itemId}
+    </delete>
+
+</mapper>

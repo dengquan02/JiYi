@@ -1,31 +1,28 @@
-package com.example.login.Entity;
+package com.example.login.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import java.io.Serializable;
 
-@Entity
-@Table(name = "admin")
-public class Admin {
-    @Id
-    @Column(name = "admin_id")
-    String admin_id;
+/**
+ * (Admin)实体类
+ *
+ * @author makejava
+ * @since 2022-05-12 08:42:39
+ */
+public class Admin implements Serializable {
 
-    public String getAdmin_id() {
-        return admin_id;
+    private Integer adminId;
+
+    private String name;
+
+    private String password;
+
+
+    public Integer getAdminId() {
+        return adminId;
     }
 
-    public void setAdmin_id(String admin_id) {
-        this.admin_id = admin_id;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
+    public void setAdminId(Integer adminId) {
+        this.adminId = adminId;
     }
 
     public String getName() {
@@ -36,9 +33,12 @@ public class Admin {
         this.name = name;
     }
 
-    @Column(name = "password")
-    String password;
+    public String getPassword() {
+        return password;
+    }
 
-    @Column(name = "name")
-    String name;
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
 }

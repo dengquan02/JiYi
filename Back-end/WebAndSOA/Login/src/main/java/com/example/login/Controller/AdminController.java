@@ -1,32 +1,49 @@
-package com.example.login.Controller;
+package com.example.login.controller;
 
+import com.example.login.entity.Admin;
+import com.example.login.service.AdminService;
+import org.springframework.web.bind.annotation.*;
 
-import com.example.login.Dto.AdminDto;
-import com.example.login.Service.AdminService;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
-@Api(tags = "管理员登录服务")
+/**
+ * (Admin)表控制层
+ *
+ * @author makejava
+ * @since 2022-05-12 07:58:12
+ */
 @RestController
-@RequestMapping("api/v1/admin")
+@RequestMapping("admin")
 public class AdminController {
-    final AdminService adminService;
+    /**
+     * 服务对象
+     */
+    @Resource
+    private AdminService adminService;
 
-    @Autowired
-    public AdminController(AdminService adminService) {
-        this.adminService = adminService;
+    /**
+     * 通过主键查询单条数据
+     *
+     * @param id 主键
+     * @return 单条数据
+     */
+    @PostMapping("/login")
+    public Admin selectOne(@RequestParam Integer id, @RequestParam String passwd,
+                           HttpServletResponse response, HttpServletRequest request) {
+        Admin admin;
+        if (id != null) {
+            admin = this.adminService.queryById(id);
+        } else {
+            response.setStatus(440);
+            return null;
+        }
+        if (admin == null || !admin.getPassword().equals(passwd)) {
+            response.setStatus(438);
+            return null;
+        }
+        return admin;
     }
 
-    @ApiOperation("管理员登录")
-    @PostMapping("login")
-    public ResponseEntity<AdminDto> Login(@RequestBody AdminDto dto) {
-        return new ResponseEntity<>( adminService.login ( dto ), HttpStatus.OK );
-    }
 }

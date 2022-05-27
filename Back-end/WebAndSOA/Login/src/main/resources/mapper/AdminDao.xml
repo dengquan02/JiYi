@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.login.dao.AdminDao">
+
+    <resultMap id="BaseResultMap" type="com.example.login.entity.Admin">
+        <!--@Table admin-->
+        <result property="adminId" column="admin_id" jdbcType="INTEGER"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="password" column="password" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="BaseResultMap">
+        select
+          admin_id, name, password
+        from web_and_soa.admin
+        where admin_id = #{adminId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="BaseResultMap">
+        select
+          admin_id, name, password
+        from web_and_soa.admin
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="BaseResultMap">
+        select
+          admin_id, name, password
+        from web_and_soa.admin
+        <where>
+            <if test="adminId != null">
+                and admin_id = #{adminId}
+            </if>
+            <if test="name != null and name != ''">
+                and name = #{name}
+            </if>
+            <if test="password != null and password != ''">
+                and password = #{password}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="adminId" useGeneratedKeys="true">
+        insert into web_and_soa.admin(name, password)
+        values (#{name}, #{password})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update web_and_soa.admin
+        <set>
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            <if test="password != null and password != ''">
+                password = #{password},
+            </if>
+        </set>
+        where admin_id = #{adminId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from web_and_soa.admin where admin_id = #{adminId}
+    </delete>
+
+</mapper>

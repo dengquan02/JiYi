@@ -1,66 +1,84 @@
-package com.example.manageuser.Service.Impl;
+package com.example.manageuser.service.impl;
 
-import com.example.manageuser.Dao.PatientDao;
-import com.example.manageuser.Dto.PatientDto;
-import com.example.manageuser.Entity.Patient;
-import com.example.manageuser.Service.PatientService;
-import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.example.manageuser.entity.Patient;
+import com.example.manageuser.dao.PatientDao;
+import com.example.manageuser.service.PatientService;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
+import javax.annotation.Resource;
+import java.util.List;
 
-@Transactional
-@Service
-public class PatientServiceImpl implements PatientService
-{
-    final PatientDao patientDao;
+/**
+ * (Patient)表服务实现类
+ *
+ * @author makejava
+ * @since 2022-05-13 19:36:33
+ */
+@Service("patientService")
+public class PatientServiceImpl implements PatientService {
+    @Resource
+    private PatientDao patientDao;
 
-    @Autowired
-    public PatientServiceImpl(PatientDao patientDao) {
-        this.patientDao = patientDao;
+    /**
+     * 通过ID查询单条数据
+     *
+     * @param patientId 主键
+     * @return 实例对象
+     */
+    @Override
+    public Patient queryById(String patientId) {
+        return this.patientDao.queryById(patientId);
+    }
+
+    /**
+     * 查询多条数据
+     *
+     * @param offset 查询起始位置
+     * @param limit 查询条数
+     * @return 对象列表
+     */
+    @Override
+    public List<Patient> queryAllByLimit(int offset, int limit) {
+        return this.patientDao.queryAllByLimit(offset, limit);
     }
 
     @Override
-    public PatientDto delete(PatientDto dto)
-    {
-        Integer result = patientDao.deleteByPatient_id( dto.getPatient_id() );
-        dto.setIsDeleted( result );
-        return dto;
+    public List<Patient> queryAll() {
+        return  this.patientDao.queryAll();
     }
 
+    /**
+     * 新增数据
+     *
+     * @param patient 实例对象
+     * @return 实例对象
+     */
     @Override
-    public PatientDto edit(PatientDto dto)
-    {
-        Patient patient = patientDao.findPatientByPatient_id( dto.getPatient_id() );
-        if ( dto.getPassword() == null ) {
-            dto.setPassword ( patient.getPassword() );
-        }
-        if ( dto.getSex() == null ) {
-            dto.setSex ( patient.getSex() );
-        }
-        if ( dto.getAge() == null ) {
-            dto.setAge ( patient.getAge() );
-        }
-        if ( dto.getName() == null ) {
-            dto.setName ( patient.getName() );
-        }
-        if ( dto.getEmail() == null ) {
-            dto.setEmail ( patient.getEmail() );
-        }
-
-        ModelMapper modelMapper = new ModelMapper ();
-        Patient report = modelMapper.map( dto, Patient.class );
-        PatientDto ret = modelMapper.map ( patientDao.save ( report ), PatientDto.class );
-        return ret;
+    public Patient insert(Patient patient) {
+        this.patientDao.insert(patient);
+        return patient;
     }
 
+    /**
+     * 修改数据
+     *
+     * @param patient 实例对象
+     * @return 实例对象
+     */
     @Override
-    public PatientDto get(String patient_id)
-    {
-        ModelMapper modelMapper = new ModelMapper ();
-        Patient report = patientDao.findPatientByPatient_id( patient_id );
-        PatientDto ret = modelMapper.map ( report, PatientDto.class );
-        return ret;
+    public Patient update(Patient patient) {
+        this.patientDao.update(patient);
+        return this.queryById(patient.getPatientId());
+    }
+
+    /**
+     * 通过主键删除数据
+     *
+     * @param patientId 主键
+     * @return 是否成功
+     */
+    @Override
+    public boolean deleteById(String patientId) {
+        return this.patientDao.deleteById(patientId) > 0;
     }
 }

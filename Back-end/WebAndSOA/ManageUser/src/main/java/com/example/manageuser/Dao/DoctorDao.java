@@ -1,23 +1,63 @@
-package com.example.manageuser.Dao;
+package com.example.manageuser.dao;
 
-import com.example.manageuser.Entity.Doctor;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Modifying;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
-import org.springframework.stereotype.Repository;
+import com.example.manageuser.entity.Department;
+import com.example.manageuser.entity.Doctor;
+import org.apache.ibatis.annotations.Param;
+import java.util.List;
 
-@Repository
-public interface DoctorDao extends JpaRepository<Doctor, String>
-{
-    @Modifying
-    @Query("delete from Doctor d where d.doctor_id=:doctor_id")
-    Integer deleteByDoctor_id(@Param("doctor_id") String doctor_id);
+/**
+ * (Doctor)表数据库访问层
+ *
+ * @author makejava
+ * @since 2022-05-13 19:35:51
+ */
+public interface DoctorDao {
 
-    @Modifying
-    @Query("delete from Doctor d where d.hospital_id=:hospital_id")
-    Integer deleteByHospital_id(@Param("hospital_id") Integer hospital_id);
+    /**
+     * 通过ID查询单条数据
+     *
+     * @param doctorId 主键
+     * @return 实例对象
+     */
+    Doctor queryById(String doctorId);
 
-    @Query(value = "from Doctor where doctor_id = ?1")
-    Doctor findDoctorByDoctor_id(String Id);
+    /**
+     * 查询指定行数据
+     *
+     * @param offset 查询起始位置
+     * @param limit 查询条数
+     * @return 对象列表
+     */
+    List<Doctor> queryAllByLimit(@Param("offset") int offset, @Param("limit") int limit);
+
+    List<Department> queryByDepartmentId(@Param("departmentId") Integer departmentId);
+
+    List<Department> queryByHospitalId(@Param("hospitalId") Integer hospitalId);
+
+    List<Doctor> queryAll();
+
+    /**
+     * 新增数据
+     *
+     * @param doctor 实例对象
+     * @return 影响行数
+     */
+    int insert(Doctor doctor);
+
+    /**
+     * 修改数据
+     *
+     * @param doctor 实例对象
+     * @return 影响行数
+     */
+    int update(Doctor doctor);
+
+    /**
+     * 通过主键删除数据
+     *
+     * @param doctorId 主键
+     * @return 影响行数
+     */
+    int deleteById(String doctorId);
+
 }

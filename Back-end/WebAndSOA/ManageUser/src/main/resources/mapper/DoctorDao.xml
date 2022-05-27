@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.manageuser.dao.DoctorDao">
+
+    <resultMap id="BaseResultMap" type="com.example.manageuser.entity.Doctor">
+        <!--@Table doctor-->
+        <result property="doctorId" column="doctor_id" jdbcType="VARCHAR"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="password" column="password" jdbcType="VARCHAR"/>
+        <result property="sex" column="sex" jdbcType="VARCHAR"/>
+        <result property="title" column="title" jdbcType="VARCHAR"/>
+        <result property="departmentId" column="department_id" jdbcType="INTEGER"/>
+        <result property="email" column="email" jdbcType="VARCHAR"/>
+        <result property="hospitalId" column="hospital_id" jdbcType="INTEGER"/>
+        <result property="reserveCtn" column="reserve_ctn" jdbcType="INTEGER"/>
+        <result property="pic" column="pic" jdbcType="OTHER"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="BaseResultMap">
+        select
+          doctor_id, name, password, sex, title, department_id, email, hospital_id, reserve_ctn, pic
+        from web_and_soa.doctor
+        where doctor_id = #{doctorId}
+    </select>
+
+    <select id="queryByDepartmentId" resultMap="BaseResultMap">
+        select
+            doctor_id, name, password, sex, title, department_id, email, hospital_id, reserve_ctn, pic
+        from web_and_soa.doctor
+        where department_id = #{departmentId}
+    </select>
+
+    <select id="queryByHospitalId" resultMap="BaseResultMap">
+        select
+            doctor_id, name, password, sex, title, department_id, email, hospital_id, reserve_ctn, pic
+        from web_and_soa.doctor
+        where hospital_id = #{hospitalId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="BaseResultMap">
+        select
+          doctor_id, name, password, sex, title, department_id, email, hospital_id, reserve_ctn, pic
+        from web_and_soa.doctor
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="BaseResultMap">
+        select
+          doctor_id, name, password, sex, title, department_id, email, hospital_id, reserve_ctn, pic
+        from web_and_soa.doctor
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="doctorId" useGeneratedKeys="true">
+        insert into web_and_soa.doctor(name, password, sex, title, department_id, email, hospital_id, reserve_ctn, pic)
+        values (#{name}, #{password}, #{sex}, #{title}, #{departmentId}, #{email}, #{hospitalId}, #{reserveCtn}, #{pic})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update web_and_soa.doctor
+        <set>
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            <if test="password != null and password != ''">
+                password = #{password},
+            </if>
+            <if test="sex != null and sex != ''">
+                sex = #{sex},
+            </if>
+            <if test="title != null and title != ''">
+                title = #{title},
+            </if>
+            <if test="departmentId != null">
+                department_id = #{departmentId},
+            </if>
+            <if test="email != null and email != ''">
+                email = #{email},
+            </if>
+            <if test="hospitalId != null">
+                hospital_id = #{hospitalId},
+            </if>
+            <if test="reserveCtn != null">
+                reserve_ctn = #{reserveCtn},
+            </if>
+            <if test="pic != null">
+                pic = #{pic},
+            </if>
+        </set>
+        where doctor_id = #{doctorId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from web_and_soa.doctor where doctor_id = #{doctorId}
+    </delete>
+
+</mapper>

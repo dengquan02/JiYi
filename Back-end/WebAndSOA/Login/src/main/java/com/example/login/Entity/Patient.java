@@ -1,78 +1,36 @@
-package com.example.login.Entity;
+package com.example.login.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Entity
-@Table(name = "patient")
-public class Patient
-{
-    @Id
-    @Column(name = "patient_id")
-    String patient_id;
+import java.io.Serializable;
 
-    @Column(name = "password")
-    String password;
+/**
+ * (Patient)实体类
+ *
+ * @author makejava
+ * @since 2022-05-12 08:54:55
+ */
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Patient implements Serializable {
 
-    @Column(name = "name")
-    String name;
+    private String patientId;
 
-    @Column(name = "email")
-    String email;
+    private String name;
 
-    @Column(name = "sex")
-    String sex;
+    private Integer age;
 
-    @Column(name = "age")
-    Integer age;
+    private String sex;
 
-    public String getPatient_id() {
-        return patient_id;
-    }
+    private String password;
 
-    public void setPatient_id(String patient_id) {
-        this.patient_id = patient_id;
-    }
+    private String email;
 
-    public String getPassword() {
-        return password;
-    }
+    private String idcard;
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
+    private byte[] pic;
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
-
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
-    }
 }

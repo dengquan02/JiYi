@@ -13,6 +13,15 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>com.ghz.diagnosis</groupId>-->
+        <!--            <artifactId>Diagnosis</artifactId>-->
+        <!--            <version>0.0.1-SNAPSHOT</version>-->
+        <!--        </dependency>-->
+        <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
@@ -26,8 +35,23 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <version>RELEASE</version>
-            <scope>compile</scope>
+<!--            <scope>compile</scope>-->
         </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>de.codecentric</groupId>-->
+<!--            <artifactId>spring-boot-admin-starter-server</artifactId>-->
+<!--            <version>2.2.3</version>-->
+<!--        </dependency>-->
+
+<!--        <dependency>-->
+<!--            <groupId>de.codecentric</groupId>-->
+<!--            <artifactId>spring-boot-admin-starter-server</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>de.codecentric</groupId>-->
+<!--            <artifactId>spring-boot-admin-starter-client</artifactId>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -41,14 +65,11 @@
             <scope>runtime</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
 
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <groupId>org.modelmapper</groupId>
+            <artifactId>modelmapper</artifactId>
+            <version>2.3.0</version>
         </dependency>
 
         <dependency>
@@ -57,19 +78,15 @@
         </dependency>
 
         <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-boot-starter</artifactId>
-            <version>3.0.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-seata</artifactId>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>org.modelmapper</groupId>
-            <artifactId>modelmapper</artifactId>
-            <version>2.3.0</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+            <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
 

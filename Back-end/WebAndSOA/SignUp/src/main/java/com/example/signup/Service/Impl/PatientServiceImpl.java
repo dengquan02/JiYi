@@ -1,45 +1,84 @@
-package com.example.signup.Service.Impl;
+package com.example.signup.service.impl;
 
-import com.example.signup.Dao.DoctorDao;
-import com.example.signup.Dao.PatientDao;
-import com.example.signup.Dto.DoctorDto;
-import com.example.signup.Dto.PatientDto;
-import com.example.signup.Entity.Doctor;
-import com.example.signup.Entity.Patient;
-import com.example.signup.Service.DoctorService;
-import com.example.signup.Service.PatientService;
-import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.example.signup.entity.Patient;
+import com.example.signup.dao.PatientDao;
+import com.example.signup.service.PatientService;
 import org.springframework.stereotype.Service;
 
-@Service
-public class PatientServiceImpl implements PatientService
-{
-    final PatientDao patientDao;
+import javax.annotation.Resource;
+import java.util.List;
 
-    @Autowired
-    public PatientServiceImpl(PatientDao patientDao) {
-        this.patientDao = patientDao;
+/**
+ * (Patient)表服务实现类
+ *
+ * @author makejava
+ * @since 2022-05-13 07:09:25
+ */
+@Service("patientService")
+public class PatientServiceImpl implements PatientService {
+    @Resource
+    private PatientDao patientDao;
+
+    /**
+     * 通过ID查询单条数据
+     *
+     * @param patientId 主键
+     * @return 实例对象
+     */
+    @Override
+    public Patient queryById(String patientId) {
+        return this.patientDao.queryById(patientId);
+    }
+
+    /**
+     * 查询多条数据
+     *
+     * @param offset 查询起始位置
+     * @param limit 查询条数
+     * @return 对象列表
+     */
+    @Override
+    public List<Patient> queryAllByLimit(int offset, int limit) {
+        return this.patientDao.queryAllByLimit(offset, limit);
+    }
+
+    /**
+     * 新增数据
+     *
+     * @param patient 实例对象
+     * @return 实例对象
+     */
+    @Override
+    public Patient insert(Patient patient) {
+        this.patientDao.insert(patient);
+        return patient;
+    }
+
+    /**
+     * 修改数据
+     *
+     * @param patient 实例对象
+     * @return 实例对象
+     */
+    @Override
+    public Patient update(Patient patient) {
+        this.patientDao.update(patient);
+        return this.queryById(patient.getPatientId());
+    }
+
+    /**
+     * 通过主键删除数据
+     *
+     * @param patientId 主键
+     * @return 是否成功
+     */
+    @Override
+    public boolean deleteById(String patientId) {
+        return this.patientDao.deleteById(patientId) > 0;
     }
 
     @Override
-    public PatientDto register(PatientDto dto)
-    {
-        ModelMapper modelMapper = new ModelMapper();
-        // 根据手机号查询用户
-        Patient one = patientDao.findPatientByPatient_id(dto.getPatient_id());
-        // 如果查询结果不为空，则已经注册
-        if (one != null) {
-            PatientDto ret = modelMapper.map(one, PatientDto.class);
-            ret.setAlready(true);
-            return ret;
-        }
-        // 如果结果为空，那么创建新的实体
-        // 根据dto映射实体类
-        Patient user = modelMapper.map(dto, Patient.class);
-        PatientDto ret = modelMapper.map(patientDao.save(user), PatientDto.class);
-        ret.setIfExist(true);
-        // 默认insert DML不会返回实体，需要进行一次select返回实体
-        return ret;
+    public Patient queryByEmail(String email) {
+        return this.patientDao.queryByEmail(email);
     }
 }

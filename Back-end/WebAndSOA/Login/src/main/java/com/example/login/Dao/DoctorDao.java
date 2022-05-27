@@ -1,11 +1,68 @@
-package com.example.login.Dao;
+package com.example.login.dao;
 
-import com.example.login.Entity.Doctor;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
+import com.example.login.entity.Doctor;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+import java.util.List;
 
-public interface DoctorDao extends JpaRepository<Doctor, String>
-{
-    @Query(value = "from Doctor where doctor_id = ?1")
-    Doctor findDoctorByDoctor_id(String Id);
+/**
+ * (Doctor)表数据库访问层
+ *
+ * @author makejava
+ * @since 2022-05-12 08:52:57
+ */
+@Mapper
+public interface DoctorDao {
+
+    /**
+     * 通过ID查询单条数据
+     *
+     * @param doctorId 主键
+     * @return 实例对象
+     */
+    Doctor queryById(String doctorId);
+
+    /**
+     * 查询指定行数据
+     *
+     * @param offset 查询起始位置
+     * @param limit 查询条数
+     * @return 对象列表
+     */
+    List<Doctor> queryAllByLimit(@Param("offset") int offset, @Param("limit") int limit);
+
+
+    /**
+     * 通过实体作为筛选条件查询
+     *
+     * @param doctor 实例对象
+     * @return 对象列表
+     */
+    List<Doctor> queryAll(Doctor doctor);
+
+    /**
+     * 新增数据
+     *
+     * @param doctor 实例对象
+     * @return 影响行数
+     */
+    int insert(Doctor doctor);
+
+    /**
+     * 修改数据
+     *
+     * @param doctor 实例对象
+     * @return 影响行数
+     */
+    int update(Doctor doctor);
+
+    /**
+     * 通过主键删除数据
+     *
+     * @param doctorId 主键
+     * @return 影响行数
+     */
+    int deleteById(String doctorId);
+
+    Doctor queryByEmail(String email);
 }

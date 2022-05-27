@@ -1,82 +1,112 @@
 server:
   port: 8088
 spring:
+  redis:
+    host: 47.102.148.102
+    port: 6379
+    password: 123
+    timeout: 10000
   application:
     name: api-gateway
   cloud:
     gateway:
       routes:
-        - id: reservation-route
-          uri: lb://reservation-service
-          predicates:
-            - Path=/reservation-service/**
-          filters:
-            - StripPrefix=1
+#        - id: reservation-route
+#          uri: lb://reservation-service
+#          predicates:
+#            - Path=/reservation-service/**
+#          filters:
+#            - StripPrefix=1
+#
+#        - id: diagnosis-route
+#          uri: lb://diagnosis-service
+#          predicates:
+#            - Path=/diagnosis-service/**
+#          filters:
+#            - StripPrefix=1
 
-        - id: diagnosis-route
-          uri: lb://diagnosis-service
-          predicates:
-            - Path=/diagnosis-service/**
-          filters:
-            - StripPrefix=1
+#        - id: login-route
+#          uri: lb://login-service
+#          predicates:
+#            - Path=/login-service/**
+#          filters:
+#            - StripPrefix=1
 
-        - id: login-route
-          uri: lb://login-service
-          predicates:
-            - Path=/login-service/**
-          filters:
-            - StripPrefix=1
-
-        - id: manageuser-route
-          uri: lb://manageuser-service
-          predicates:
-            - Path=/manageuser-service/**
-          filters:
-            - StripPrefix=1
-
+#        - id: manageuser-route
+#          uri: lb://manageuser-service
+#          predicates:
+#            - Path=/manageuser-service/**
+#          filters:
+#            - StripPrefix=1
+#
         - id: signup-route
           uri: lb://signup-service
           predicates:
             - Path=/signup-service/**
           filters:
             - StripPrefix=1
-
-        - id: item-route
-          uri: lb://item-service
-          predicates:
-            - Path=/item-service/**
-          filters:
-            - StripPrefix=1
-
-        - id: search-doctor-route
-          uri: lb://search-doctor-service
-          predicates:
-            - Path=/search-doctor-service/**
-          filters:
-            - StripPrefix=1
-
-        - id: search-hospital-route
-          uri: lb://search-hospital-service
-          predicates:
-            - Path=/search-hospital-service/**
-          filters:
-            - StripPrefix=1
-
-        - id: search-department-route
-          uri: lb://search-department-service
-          predicates:
-            - Path=/search-department-service/**
-          filters:
-            - StripPrefix=1
-
-        - id: order-route
-          uri: lb://order-service
-          predicates:
-            - Path=/order-service/**
-          filters:
-            - StripPrefix=1
+#
+#        - id: item-route
+#          uri: lb://item-service
+#          predicates:
+#            - Path=/item-service/**
+#          filters:
+#            - StripPrefix=1
+#
+#        - id: search-doctor-route
+#          uri: lb://search-doctor-service
+#          predicates:
+#            - Path=/search-doctor-service/**
+#          filters:
+#            - StripPrefix=1
+#
+#        - id: search-hospital-route
+#          uri: lb://search-hospital-service
+#          predicates:
+#            - Path=/search-hospital-service/**
+#          filters:
+#            - StripPrefix=1
+#
+#        - id: search-department-route
+#          uri: lb://search-department-service
+#          predicates:
+#            - Path=/search-department-service/**
+#          filters:
+#            - StripPrefix=1
+#
+#        - id: order-route
+#          uri: lb://order-service
+#          predicates:
+#            - Path=/order-service/**
+#          filters:
+#            - StripPrefix=1
     nacos:
       discovery:
-        server-addr: 47.102.148.102:8848
+        server-addr: 1.116.42.243:8849
         username: nacos
         password: nacos
+seata:
+  enabled: true
+  enable-auto-data-source-proxy: false
+  application-id: vforumc-user
+  tx-service-group: default_tx_group
+  service:
+    vgroup-mapping:
+      default_tx_group: default
+    disable-global-transaction: false
+  registry:
+    type: nacos
+    nacos:
+      application: seata-server
+      server-addr: 1.116.42.243:8849
+      namespace: 6330ec27-b453-40e4-a40a-79a81f9acda4
+      group: SEATA_GROUP
+      username: nacos
+      password: nacos
+  config:
+    nacos:
+      server-addr: 1.116.42.243:8849
+      namespace: 6330ec27-b453-40e4-a40a-79a81f9acda4
+      group: SEATA_GROUP
+      username: nacos
+      password: nacos

@@ -1,47 +1,84 @@
-package com.example.login.Service.Impl;
+package com.example.login.service.impl;
 
-import com.example.login.Dao.DoctorDao;
-import com.example.login.Dto.DoctorDto;
-import com.example.login.Entity.Doctor;
-import com.example.login.Service.DoctorService;
-import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.example.login.entity.Doctor;
+import com.example.login.dao.DoctorDao;
+import com.example.login.service.DoctorService;
 import org.springframework.stereotype.Service;
 
-@Service
-public class DoctorServiceImpl implements DoctorService
-{
-    final DoctorDao doctorDao;
+import javax.annotation.Resource;
+import java.util.List;
 
-    @Autowired
-    public DoctorServiceImpl(DoctorDao doctorDao) {
-        this.doctorDao = doctorDao;
+/**
+ * (Doctor)表服务实现类
+ *
+ * @author makejava
+ * @since 2022-05-12 00:03:57
+ */
+@Service("doctorService")
+public class DoctorServiceImpl implements DoctorService {
+    @Resource
+    private DoctorDao doctorDao;
+
+    /**
+     * 通过ID查询单条数据
+     *
+     * @param doctorId 主键
+     * @return 实例对象
+     */
+    @Override
+    public Doctor queryById(String doctorId) {
+        return this.doctorDao.queryById(doctorId);
+    }
+
+    /**
+     * 查询多条数据
+     *
+     * @param offset 查询起始位置
+     * @param limit 查询条数
+     * @return 对象列表
+     */
+    @Override
+    public List<Doctor> queryAllByLimit(int offset, int limit) {
+        return this.doctorDao.queryAllByLimit(offset, limit);
+    }
+
+    /**
+     * 新增数据
+     *
+     * @param doctor 实例对象
+     * @return 实例对象
+     */
+    @Override
+    public Doctor insert(Doctor doctor) {
+        this.doctorDao.insert(doctor);
+        return doctor;
+    }
+
+    /**
+     * 修改数据
+     *
+     * @param doctor 实例对象
+     * @return 实例对象
+     */
+    @Override
+    public Doctor update(Doctor doctor) {
+        this.doctorDao.update(doctor);
+        return this.queryById(doctor.getDoctorId());
+    }
+
+    /**
+     * 通过主键删除数据
+     *
+     * @param doctorId 主键
+     * @return 是否成功
+     */
+    @Override
+    public boolean deleteById(String doctorId) {
+        return this.doctorDao.deleteById(doctorId) > 0;
     }
 
     @Override
-    public DoctorDto login(DoctorDto dto)
-    {
-        ModelMapper modelMapper = new ModelMapper ();
-        Doctor one = doctorDao.findDoctorByDoctor_id ( dto.getDoctor_id () );
-        if (one == null) {
-            DoctorDto ret = modelMapper.map ( null, DoctorDto.class );
-            ret.setIfExist ( false );
-            return ret;
-        }
-        else {
-            if (!one.getPassword ().equals (dto.getPassword ())) {
-                DoctorDto ret = modelMapper.map ( one, DoctorDto.class );
-                ret.setIfExist ( true );
-                ret.setIfIllegal ( true );
-                return ret;
-            }
-            // 如果ID密码都正确，返回
-            else {
-                DoctorDto ret = modelMapper.map ( one, DoctorDto.class );
-                ret.setIfExist ( true );
-                ret.setIfIllegal ( false );
-                return ret;
-            }
-        }
+    public Doctor queryByEmail(String email) {
+        return this.doctorDao.queryByEmail(email);
     }
 }
