@@ -3,12 +3,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <modules>
+        <module>Diagnosis</module>
         <module>OrderManager</module>
         <module>ItemManager</module>
         <module>Gateway</module>
         <module>SignUp</module>
         <module>Login</module>
         <module>ManageUser</module>
+        <module>Reservation</module>
     </modules>
 
     <groupId>com.example</groupId>
@@ -27,6 +29,15 @@
 
     <dependencyManagement>
         <dependencies>
+
+            <!-- https://mvnrepository.com/artifact/org.codehaus.sonar/sonar-maven-plugin -->
+            <dependency>
+                <groupId>org.codehaus.sonar</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>5.1</version>
+            </dependency>
+
+
             <dependency>
 
                 <groupId>com.alibaba.cloud</groupId>
@@ -160,6 +171,11 @@
 
     <build>
         <plugins>
+                        <plugin>
+                            <groupId>org.sonarsource.scanner.maven</groupId>
+                            <artifactId>sonar-maven-plugin</artifactId>
+                            <version>3.7.0.1746</version>
+                        </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>

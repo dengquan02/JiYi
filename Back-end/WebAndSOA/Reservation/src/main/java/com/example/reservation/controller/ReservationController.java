@@ -220,7 +220,7 @@ public class ReservationController {
     public Object delete(@RequestParam String patientId,@RequestParam Integer rId) throws  Exception{
         List<Reservation> reservations = reservationService.queryBusyByPatient(patientId);
         for(Reservation reservation:reservations){
-            if (reservation.getReservationId()==rId){
+            if (reservation.getReservationId().equals(rId)){
                 Integer rYear=reservation.getRYear();
 
                 Integer rMonth=reservation.getRMonth();

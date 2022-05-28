@@ -43,8 +43,11 @@ public class CheckTotalController {
     @GetMapping("deleteCheck/{checkName}")
     public int deleteCheck(@PathVariable String checkName) {
         boolean b = checkTotalService.deleteById(checkName);
-        if(b) return 1;
-        else return 0;
+        if(b) {
+            return 1;
+        } else {
+            return 0;
+        }
     }
 
 }

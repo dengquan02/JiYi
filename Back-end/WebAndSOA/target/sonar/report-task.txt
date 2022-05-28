@@ -1,0 +1,6 @@
+projectKey=com.example:SpringCloud
+serverUrl=http://localhost:9000
+serverVersion=7.9.6.41879
+dashboardUrl=http://localhost:9000/dashboard?id=com.example%3ASpringCloud
+ceTaskId=AYEFP3OZk7O6h1zmtayY
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYEFP3OZk7O6h1zmtayY

@@ -10,6 +10,7 @@
     </parent>
 
     <groupId>com.dq</groupId>
+    <packaging>jar</packaging>
     <artifactId>OrderManager</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>OrderManager</name>
@@ -74,5 +75,31 @@
         </dependency>
 
     </dependencies>
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.7.0.1746</version>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.5.6</version>
+                <configuration>
+                    <!-- 指定该 Main Class 为全局的唯一入口 -->
+                    <mainClass>com.dq.ordermanager.OrderManagerApplication</mainClass>
+                    <layout>ZIP</layout>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <!-- 将依赖到的包都放进去 -->
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
